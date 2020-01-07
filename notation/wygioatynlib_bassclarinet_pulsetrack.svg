@@ -1,0 +1,620 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="210.00mm" height="297.00mm" viewBox="0 0 119.5016 169.0094">
+<!-- Page: 1/1 -->
+<text transform="translate(5.6906, 2.8453)" font-family="Century Schoolbook L" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>
+ </tspan>
+</text>
+<rect transform="translate(62.8592, 9.8826)" x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+<rect transform="translate(113.6210, 9.8826)" x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+<line transform="translate(5.6906, 11.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<line transform="translate(5.6906, 10.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<line transform="translate(5.6906, 9.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<line transform="translate(5.6906, 8.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<line transform="translate(5.6906, 7.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<rect transform="translate(5.6906, 12.8826)" x="8.2757" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 12.8826)" x="19.5260" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 13.8826)" x="19.6801" y="-0.1000" width="1.8202" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 12.8826)" x="38.3014" y="-0.1000" width="1.8202" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 12.8826)" x="45.5893" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 13.8826)" x="45.7315" y="-0.1000" width="1.8321" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 12.8826)" x="70.4419" y="-0.1000" width="1.8202" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 6.8826)" x="85.3258" y="-0.1000" width="1.8202" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 12.8826)" x="96.3511" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<path transform="translate(77.6236, 8.6726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<rect transform="translate(77.5586, 9.8826)" x="-0.0650" y="-1.2500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:22:10:11">
+<path transform="translate(76.9655, 14.7286) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:22:8:9">
+<path transform="translate(76.9655, 13.8326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:22:2:3">
+<path transform="translate(76.3074, 12.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<path transform="translate(75.1574, 12.8826) scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:22:13:14">
+<path transform="translate(79.0488, 9.8826) scale(0.0040, -0.0040)" d="M66 -500l101 327c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c16 0 55 51 60 68l46 151c-34 -12 -68 -22 -104 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c15 0 50 49 57 63c6 12 23 12 28 0l-179 -670c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(80.6988, 9.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:22:19:20">
+<path transform="translate(83.7494, 10.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:22:22:23">
+<path transform="translate(84.4075, 11.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<rect transform="translate(85.0005, 9.8826)" x="-0.0650" y="-3.7500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<path transform="translate(85.0655, 6.1726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<rect transform="translate(66.3082, 9.8826)" x="-0.0650" y="-3.7500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<path transform="translate(66.3732, 6.1726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<path transform="translate(63.6071, 10.3826) scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
+c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:21:13:14">
+<path transform="translate(67.7985, 9.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:21:17:18">
+<path transform="translate(70.4527, 9.8826) scale(0.0040, -0.0040)" d="M72 -250l117 326c-34 -12 -69 -22 -105 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 6 -59 35 -59c16 0 54 48 61 63c6 12 23 12 28 0l-123 -420c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(71.9027, 9.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:25:2:3">
+<path transform="translate(102.3707, 13.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:25:6:7">
+<path transform="translate(103.0288, 14.3326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:25:8:9">
+<path transform="translate(103.0288, 15.2286) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<rect transform="translate(103.6218, 9.8826)" x="-0.0650" y="-0.7500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<path transform="translate(103.6868, 9.1726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:14:12:13">
+<path transform="translate(17.0367, 9.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:25:12:13">
+<path transform="translate(105.1121, 9.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:25:16:17">
+<path transform="translate(107.7663, 9.8826) scale(0.0040, -0.0040)" d="M72 -250l117 326c-34 -12 -69 -22 -105 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 6 -59 35 -59c16 0 54 48 61 63c6 12 23 12 28 0l-123 -420c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(109.2163, 9.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:14:2:3">
+<path transform="translate(14.2953, 12.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<path transform="translate(82.7090, 10.3826) scale(0.0040, -0.0040)" d="M-8 375c8 4 17 7 26 7s17 -3 25 -7l-3 -183l106 20h3c10 0 18 -7 18 -17l7 -570c-8 -4 -16 -7 -25 -7s-17 3 -25 7l3 183l-106 -20h-3c-10 0 -18 7 -18 17zM131 112l-92 -17l-3 -207l92 17z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:22:25:26">
+<path transform="translate(86.4908, 9.8826) scale(0.0040, -0.0040)" d="M66 -500l101 327c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c16 0 55 51 60 68l46 151c-34 -12 -68 -22 -104 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c15 0 50 49 57 63c6 12 23 12 28 0l-179 -670c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(88.1408, 9.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:24:2:3">
+<path transform="translate(91.1913, 6.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:24:8:9">
+<path transform="translate(91.8494, 5.4326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:24:10:11">
+<path transform="translate(91.8494, 4.5366) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<rect transform="translate(91.2563, 9.8826)" x="-0.0650" y="-3.3122" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<path transform="translate(91.3213, 10.5926) scale(0.0040, -0.0040)" d="M0 205c90 50 208 128 208 228c0 23 -3 44 -8 66c-78 -88 -200 -157 -200 -279v-15zM227 864c0 26 -26 75 13 75c27 0 29 -51 29 -75c0 -38 -11 -70 -30 -100c16 -38 25 -79 25 -120c0 -38 -11 -70 -30 -100c11 -36 17 -73 17 -111c0 -179 -251 -254 -251 -433h-16v750h16
+v-105c98 44 227 116 227 219zM0 425c96 45 222 117 222 219c0 27 -5 54 -14 79c-79 -90 -208 -158 -208 -283v-15z" fill="currentColor"/>
+<path transform="translate(90.0413, 6.3826) scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:24:14:15">
+<path transform="translate(93.8617, 9.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:24:18:19">
+<path transform="translate(96.5159, 9.8826) scale(0.0040, -0.0040)" d="M72 -250l117 326c-34 -12 -69 -22 -105 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 6 -59 35 -59c16 0 54 48 61 63c6 12 23 12 28 0l-123 -420c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(97.9659, 9.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:14:8:9">
+<path transform="translate(14.9534, 14.7286) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:15:14:15">
+<path transform="translate(28.2870, 9.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<path transform="translate(6.4906, 8.8826) scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
+c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:15:18:19">
+<path transform="translate(30.9412, 9.8826) scale(0.0040, -0.0040)" d="M72 -250l117 326c-34 -12 -69 -22 -105 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 6 -59 35 -59c16 0 54 48 61 63c6 12 23 12 28 0l-123 -420c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(32.3912, 9.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<path transform="translate(10.6906, 11.8971) scale(0.0040, -0.0040)" d="M204 307c22 14 44 29 60 50c11 15 19 33 27 50c2 4 5 6 9 6c6 0 13 -5 13 -14v-245h72c10 0 15 -7 15 -14s-5 -15 -15 -15h-72v-8c0 -48 27 -94 72 -94c8 0 12 -5 12 -11s-4 -12 -12 -12c-44 0 -87 13 -131 13s-87 -13 -131 -13c-8 0 -12 6 -12 12s4 11 12 11
+c45 0 73 46 73 94v8h-167c-23 0 -31 14 -31 23c0 3 1 5 2 6c80 93 138 207 138 330c0 9 6 16 13 16h3c23 -7 47 -13 71 -13s48 6 71 13c2 1 3 1 5 1c11 0 18 -10 12 -17l-284 -330h167v131c0 8 1 17 8 22z" fill="currentColor"/>
+<path transform="translate(10.6906, 9.8826) scale(0.0040, -0.0040)" d="M204 307c22 14 44 29 60 50c11 15 19 33 27 50c2 4 5 6 9 6c6 0 13 -5 13 -14v-245h72c10 0 15 -7 15 -14s-5 -15 -15 -15h-72v-8c0 -48 27 -94 72 -94c8 0 12 -5 12 -11s-4 -12 -12 -12c-44 0 -87 13 -131 13s-87 -13 -131 -13c-8 0 -12 6 -12 12s4 11 12 11
+c45 0 73 46 73 94v8h-167c-23 0 -31 14 -31 23c0 3 1 5 2 6c80 93 138 207 138 330c0 9 6 16 13 16h3c23 -7 47 -13 71 -13s48 6 71 13c2 1 3 1 5 1c11 0 18 -10 12 -17l-284 -330h167v131c0 8 1 17 8 22z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:17:2:3">
+<path transform="translate(36.7960, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:17:5:6">
+<path transform="translate(37.4541, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:17:7:8">
+<path transform="translate(37.4541, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<rect transform="translate(36.8610, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.9372" ry="0.0400" fill="currentColor"/>
+<path transform="translate(36.9260, 13.9676) scale(0.0040, -0.0040)" d="M0 205c90 50 208 128 208 228c0 23 -3 44 -8 66c-78 -88 -200 -157 -200 -279v-15zM227 864c0 26 -26 75 13 75c27 0 29 -51 29 -75c0 -38 -11 -70 -30 -100c16 -38 25 -79 25 -120c0 -38 -11 -70 -30 -100c11 -36 17 -73 17 -111c0 -179 -251 -254 -251 -433h-16v750h16
+v-105c98 44 227 116 227 219zM0 425c96 45 222 117 222 219c0 27 -5 54 -14 79c-79 -90 -208 -158 -208 -283v-15z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:9:2:3">
+<rect transform="translate(10.6906, 6.5373)" x="1.0563" y="-2.6727" width="0.1158" height="2.5113" ry="0.0193" fill="currentColor"/>
+<path transform="translate(10.6906, 6.5373) scale(0.0036, -0.0036)" d="M217 139c57 0 112 -31 112 -94c0 -72 -55 -121 -102 -149c-35 -21 -74 -35 -115 -35c-57 0 -112 31 -112 94c0 72 55 121 102 149c35 21 74 35 115 35z" fill="currentColor"/>
+<text transform="translate(11.8626, 7.0309)" font-family="Century Schoolbook L" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>
+ = 55</tspan>
+</text>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:17:10:11">
+<path transform="translate(39.4664, 9.8826) scale(0.0040, -0.0040)" d="M66 -500l101 327c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c16 0 55 51 60 68l46 151c-34 -12 -68 -22 -104 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c15 0 50 49 57 63c6 12 23 12 28 0l-179 -670c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(41.1164, 9.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:14:16:17">
+<path transform="translate(19.6909, 9.8826) scale(0.0040, -0.0040)" d="M72 -250l117 326c-34 -12 -69 -22 -105 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 6 -59 35 -59c16 0 54 48 61 63c6 12 23 12 28 0l-123 -420c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(21.1409, 9.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:14:6:7">
+<path transform="translate(14.9534, 13.8326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:15:2:3">
+<path transform="translate(25.5456, 13.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:15:8:9">
+<path transform="translate(26.2037, 14.8326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:15:10:11">
+<path transform="translate(26.2037, 15.7286) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<rect transform="translate(26.7968, 9.8826)" x="-0.0650" y="-0.2500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<path transform="translate(26.8618, 9.6726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<path transform="translate(24.0956, 13.8826) scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
+c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
+<path transform="translate(15.6115, 8.6726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<path transform="translate(58.4545, 9.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:19:2:3">
+<path transform="translate(51.6089, 13.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:19:6:7">
+<path transform="translate(52.2670, 14.8326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:19:8:9">
+<path transform="translate(52.2670, 16.1081) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<rect transform="translate(52.8601, 9.8826)" x="-0.0650" y="-0.2500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:19:16:17">
+<path transform="translate(57.0045, 9.8826) scale(0.0040, -0.0040)" d="M72 -250l117 326c-34 -12 -69 -22 -105 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 6 -59 35 -59c16 0 54 48 61 63c6 12 23 12 28 0l-123 -420c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(52.9251, 9.6726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<path transform="translate(50.5685, 13.8826) scale(0.0040, -0.0040)" d="M-8 375c8 4 17 7 26 7s17 -3 25 -7l-3 -183l106 20h3c10 0 18 -7 18 -17l7 -570c-8 -4 -16 -7 -25 -7s-17 3 -25 7l3 183l-106 -20h-3c-10 0 -18 7 -18 17zM131 112l-92 -17l-3 -207l92 17z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:19:12:13">
+<path transform="translate(54.3503, 9.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<rect transform="translate(15.5465, 9.8826)" x="-0.0650" y="-1.2500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:21:9:10">
+<path transform="translate(65.7152, 12.6326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:17:16:17">
+<path transform="translate(44.1669, 12.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:17:22:23">
+<path transform="translate(44.8250, 13.8326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:21:7:8">
+<path transform="translate(65.7152, 11.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<rect transform="translate(45.4181, 9.8826)" x="-0.0650" y="-1.2500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:21:2:3">
+<path transform="translate(65.0571, 10.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<path transform="translate(45.4831, 8.6726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<path transform="translate(43.0169, 12.8826) scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:17:25:26">
+<path transform="translate(46.9083, 9.8826) scale(0.0040, -0.0040)" d="M66 -500l101 327c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c16 0 55 51 60 68l46 151c-34 -12 -68 -22 -104 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c15 0 50 49 57 63c6 12 23 12 28 0l-179 -670c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(48.5583, 9.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<rect transform="translate(5.6906, 18.8826)" x="5.6250" y="-0.1000" width="1.8202" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 18.8826)" x="49.9663" y="-0.1000" width="1.8349" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 24.8826)" x="64.2350" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 24.8826)" x="93.1223" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 25.8826)" x="93.2763" y="-0.1000" width="1.8202" height="0.2000" ry="0.1000" fill="currentColor"/>
+<line transform="translate(5.6906, 23.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<line transform="translate(5.6906, 22.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<line transform="translate(5.6906, 21.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<line transform="translate(5.6906, 20.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<line transform="translate(5.6906, 19.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<rect transform="translate(113.6210, 21.8826)" x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+<path transform="translate(71.5708, 20.6726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:29:24:25">
+<path transform="translate(74.9590, 21.8826) scale(0.0040, -0.0040)" d="M66 -500l101 327c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c16 0 55 51 60 68l46 151c-34 -12 -68 -22 -104 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c15 0 50 49 57 63c6 12 23 12 28 0l-179 -670c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(76.6090, 21.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:30:2:3">
+<path transform="translate(84.7338, 21.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:30:5:6">
+<path transform="translate(85.3919, 20.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:30:7:8">
+<path transform="translate(85.3919, 19.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<rect transform="translate(84.7988, 21.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.9372" ry="0.0400" fill="currentColor"/>
+<path transform="translate(84.8638, 25.9676) scale(0.0040, -0.0040)" d="M0 205c90 50 208 128 208 228c0 23 -3 44 -8 66c-78 -88 -200 -157 -200 -279v-15zM227 864c0 26 -26 75 13 75c27 0 29 -51 29 -75c0 -38 -11 -70 -30 -100c16 -38 25 -79 25 -120c0 -38 -11 -70 -30 -100c11 -36 17 -73 17 -111c0 -179 -251 -254 -251 -433h-16v750h16
+v-105c98 44 227 116 227 219zM0 425c96 45 222 117 222 219c0 27 -5 54 -14 79c-79 -90 -208 -158 -208 -283v-15z" fill="currentColor"/>
+<path transform="translate(55.9765, 23.0926) scale(0.0040, -0.0040)" d="M0 205c90 50 208 128 208 228c0 23 -3 44 -8 66c-78 -88 -200 -157 -200 -279v-15zM227 864c0 26 -26 75 13 75c27 0 29 -51 29 -75c0 -38 -11 -70 -30 -100c16 -38 25 -79 25 -120c0 -38 -11 -70 -30 -100c11 -36 17 -73 17 -111c0 -179 -251 -254 -251 -433h-16v750h16
+v-105c98 44 227 116 227 219zM0 425c96 45 222 117 222 219c0 27 -5 54 -14 79c-79 -90 -208 -158 -208 -283v-15z" fill="currentColor"/>
+<path transform="translate(54.8005, 18.8826) scale(0.0040, -0.0040)" d="M-8 375c8 4 17 7 26 7s17 -3 25 -7l-3 -183l106 20h3c10 0 18 -7 18 -17l7 -570c-8 -4 -16 -7 -25 -7s-17 3 -25 7l3 183l-106 -20h-3c-10 0 -18 7 -18 17zM131 112l-92 -17l-3 -207l92 17z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:29:11:12">
+<path transform="translate(60.4799, 21.8826) scale(0.0040, -0.0040)" d="M66 -500l101 327c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c16 0 55 51 60 68l46 151c-34 -12 -68 -22 -104 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c15 0 50 49 57 63c6 12 23 12 28 0l-179 -670c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(62.1299, 21.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:29:17:18">
+<path transform="translate(70.2546, 24.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:29:21:22">
+<path transform="translate(70.9127, 25.8326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<rect transform="translate(71.5058, 21.8826)" x="-0.0650" y="-1.2500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<path transform="translate(97.6919, 25.8826) scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
+c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:30:24:25">
+<path transform="translate(103.8463, 21.8826) scale(0.0040, -0.0040)" d="M66 -500l101 327c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c16 0 55 51 60 68l46 151c-34 -12 -68 -22 -104 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c15 0 50 49 57 63c6 12 23 12 28 0l-179 -670c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(105.4962, 21.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:30:10:11">
+<path transform="translate(89.3671, 21.8826) scale(0.0040, -0.0040)" d="M66 -500l101 327c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c16 0 55 51 60 68l46 151c-34 -12 -68 -22 -104 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c15 0 50 49 57 63c6 12 23 12 28 0l-179 -670c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(91.0171, 21.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:30:15:16">
+<path transform="translate(99.1419, 25.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:30:21:22">
+<path transform="translate(99.8000, 26.8326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<rect transform="translate(100.3931, 21.8826)" x="-0.0650" y="-0.2500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<path transform="translate(100.4581, 21.6726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<path transform="translate(11.6206, 23.0926) scale(0.0040, -0.0040)" d="M0 205c90 50 208 128 208 228c0 23 -3 44 -8 66c-78 -88 -200 -157 -200 -279v-15zM227 864c0 26 -26 75 13 75c27 0 29 -51 29 -75c0 -38 -11 -70 -30 -100c16 -38 25 -79 25 -120c0 -38 -11 -70 -30 -100c11 -36 17 -73 17 -111c0 -179 -251 -254 -251 -433h-16v750h16
+v-105c98 44 227 116 227 219zM0 425c96 45 222 117 222 219c0 27 -5 54 -14 79c-79 -90 -208 -158 -208 -283v-15z" fill="currentColor"/>
+<path transform="translate(10.0406, 18.8826) scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
+c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:26:14:15">
+<path transform="translate(16.1239, 21.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:26:18:19">
+<path transform="translate(20.7411, 21.8826) scale(0.0040, -0.0040)" d="M72 -250l117 326c-34 -12 -69 -22 -105 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 6 -59 35 -59c16 0 54 48 61 63c6 12 23 12 28 0l-123 -420c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(22.1911, 21.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<text transform="translate(4.7345, 18.7985)" font-family="Century Schoolbook L" font-size="1.7461" text-anchor="start" fill="currentColor">
+<tspan>
+3</tspan>
+</text>
+<path transform="translate(6.4906, 20.8826) scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
+c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:26:2:3">
+<path transform="translate(11.4906, 18.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:26:8:9">
+<path transform="translate(12.1486, 17.9326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:26:10:11">
+<path transform="translate(12.1486, 17.0366) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<rect transform="translate(11.5556, 21.8826)" x="-0.0650" y="-2.8122" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:27:13:14">
+<path transform="translate(38.3374, 21.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:27:17:18">
+<path transform="translate(42.9546, 21.8826) scale(0.0040, -0.0040)" d="M72 -250l117 326c-34 -12 -69 -22 -105 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 6 -59 35 -59c16 0 54 48 61 63c6 12 23 12 28 0l-123 -420c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(44.4046, 21.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:29:2:3">
+<path transform="translate(55.8465, 18.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:29:6:7">
+<path transform="translate(56.5046, 17.9326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:29:8:9">
+<path transform="translate(56.5046, 17.0366) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<rect transform="translate(55.9115, 21.8826)" x="-0.0650" y="-2.8122" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:27:2:3">
+<path transform="translate(33.6330, 22.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:27:7:8">
+<path transform="translate(34.2911, 23.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:27:9:10">
+<path transform="translate(34.2911, 24.6326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<rect transform="translate(34.8842, 21.8826)" x="-0.0650" y="-3.7500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<path transform="translate(34.9492, 18.1726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<path transform="translate(32.1830, 22.3826) scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
+c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
+<rect transform="translate(5.6906, 36.8826)" x="5.4710" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 37.8826)" x="5.4710" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 36.8826)" x="16.9053" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 37.8826)" x="16.9053" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 36.8826)" x="24.4653" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 37.8826)" x="24.4653" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 36.8826)" x="85.5175" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 37.8826)" x="85.6716" y="-0.1000" width="1.8202" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 36.8826)" x="97.0935" y="-0.1000" width="1.8202" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 30.8826)" x="102.4010" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 29.8826)" x="102.4010" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 28.8826)" x="102.4010" y="-0.1000" width="1.9743" height="0.2000" ry="0.1000" fill="currentColor"/>
+<rect transform="translate(5.6906, 27.8826)" x="102.5550" y="-0.1000" width="1.8202" height="0.2000" ry="0.1000" fill="currentColor"/>
+<line transform="translate(5.6906, 35.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<line transform="translate(5.6906, 34.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<line transform="translate(5.6906, 33.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<line transform="translate(5.6906, 32.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<line transform="translate(5.6906, 31.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="108.0705" y2="-0.0000"/>
+<rect transform="translate(68.0011, 33.8826)" x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+<rect transform="translate(70.4124, 33.8826)" x="-0.0650" y="-3.7500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:37:7:8">
+<path transform="translate(69.8193, 36.6326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:37:5:6">
+<path transform="translate(69.8193, 35.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:37:2:3">
+<path transform="translate(69.1612, 34.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<path transform="translate(64.8653, 33.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:35:25:26">
+<path transform="translate(63.2153, 33.8826) scale(0.0040, -0.0040)" d="M66 -500l101 327c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c16 0 55 51 60 68l46 151c-34 -12 -68 -22 -104 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c15 0 50 49 57 63c6 12 23 12 28 0l-179 -670c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(70.4774, 30.1726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:32:2:3">
+<path transform="translate(11.4906, 37.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:37:10:11">
+<path transform="translate(71.9356, 33.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:34:26:27">
+<path transform="translate(48.2373, 33.8826) scale(0.0040, -0.0040)" d="M66 -500l101 327c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c16 0 55 51 60 68l46 151c-34 -12 -68 -22 -104 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c15 0 50 49 57 63c6 12 23 12 28 0l-179 -670c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(49.8873, 33.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:32:6:7">
+<path transform="translate(12.1486, 38.8326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:35:2:3">
+<path transform="translate(53.0230, 33.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:35:7:8">
+<path transform="translate(53.6811, 32.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:35:9:10">
+<path transform="translate(53.6811, 31.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<rect transform="translate(53.0880, 33.8826)" x="-0.0650" y="-0.3122" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<path transform="translate(53.1530, 37.5926) scale(0.0040, -0.0040)" d="M0 205c90 50 208 128 208 228c0 23 -3 44 -8 66c-78 -88 -200 -157 -200 -279v-15zM227 864c0 26 -26 75 13 75c27 0 29 -51 29 -75c0 -38 -11 -70 -30 -100c16 -38 25 -79 25 -120c0 -38 -11 -70 -30 -100c11 -36 17 -73 17 -111c0 -179 -251 -254 -251 -433h-16v750h16
+v-105c98 44 227 116 227 219zM0 425c96 45 222 117 222 219c0 27 -5 54 -14 79c-79 -90 -208 -158 -208 -283v-15z" fill="currentColor"/>
+<path transform="translate(60.6420, 37.5926) scale(0.0040, -0.0040)" d="M0 205c90 50 208 128 208 228c0 23 -3 44 -8 66c-78 -88 -200 -157 -200 -279v-15zM227 864c0 26 -26 75 13 75c27 0 29 -51 29 -75c0 -38 -11 -70 -30 -100c16 -38 25 -79 25 -120c0 -38 -11 -70 -30 -100c11 -36 17 -73 17 -111c0 -179 -251 -254 -251 -433h-16v750h16
+v-105c98 44 227 116 227 219zM0 425c96 45 222 117 222 219c0 27 -5 54 -14 79c-79 -90 -208 -158 -208 -283v-15z" fill="currentColor"/>
+<rect transform="translate(60.5770, 33.8826)" x="-0.0650" y="-0.3122" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:35:22:23">
+<path transform="translate(61.1701, 32.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:35:17:18">
+<path transform="translate(60.5120, 33.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<path transform="translate(57.3763, 33.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:35:12:13">
+<path transform="translate(55.7263, 33.8826) scale(0.0040, -0.0040)" d="M66 -500l101 327c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c16 0 55 51 60 68l46 151c-34 -12 -68 -22 -104 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c15 0 50 49 57 63c6 12 23 12 28 0l-179 -670c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:37:41:42">
+<path transform="translate(88.3200, 33.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:39:2:3">
+<path transform="translate(91.5371, 37.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:39:8:9">
+<path transform="translate(92.1952, 38.8326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:39:10:11">
+<path transform="translate(92.1952, 39.7286) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<rect transform="translate(92.7883, 33.8826)" x="-0.0650" y="-0.2500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<path transform="translate(92.8533, 33.6726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<path transform="translate(97.1286, 35.5926) scale(0.0040, -0.0040)" d="M0 205c90 50 208 128 208 228c0 23 -3 44 -8 66c-78 -88 -200 -157 -200 -279v-15zM227 864c0 26 -26 75 13 75c27 0 29 -51 29 -75c0 -38 -11 -70 -30 -100c16 -38 25 -79 25 -120c0 -38 -11 -70 -30 -100c11 -36 17 -73 17 -111c0 -179 -251 -254 -251 -433h-16v750h16
+v-105c98 44 227 116 227 219zM0 425c96 45 222 117 222 219c0 27 -5 54 -14 79c-79 -90 -208 -158 -208 -283v-15z" fill="currentColor"/>
+<rect transform="translate(97.0636, 33.8826)" x="-0.0650" y="-2.3122" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:39:20:21">
+<path transform="translate(97.6567, 30.4326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:39:17:18">
+<path transform="translate(96.9986, 31.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:39:13:14">
+<path transform="translate(94.3115, 33.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<path transform="translate(90.0871, 37.8826) scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
+c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:32:12:13">
+<path transform="translate(14.2649, 33.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:37:14:15">
+<path transform="translate(74.6227, 34.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:37:17:18">
+<path transform="translate(75.2808, 35.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<rect transform="translate(75.8739, 33.8826)" x="-0.0650" y="-3.7500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<path transform="translate(75.9389, 30.1726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:37:20:21">
+<path transform="translate(77.3970, 33.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<path transform="translate(86.8618, 30.1726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<rect transform="translate(86.7968, 33.8826)" x="-0.0650" y="-3.7500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:37:38:39">
+<path transform="translate(86.2037, 35.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:37:35:36">
+<path transform="translate(85.5457, 34.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:37:31:32">
+<path transform="translate(82.8585, 33.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<path transform="translate(81.4004, 30.1726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<rect transform="translate(81.3354, 33.8826)" x="-0.0650" y="-3.7500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:37:28:29">
+<path transform="translate(80.7423, 35.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:37:25:26">
+<path transform="translate(80.0842, 34.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:39:41:42">
+<path transform="translate(108.4206, 27.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:39:48:49">
+<path transform="translate(109.0786, 26.4326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<rect transform="translate(108.4856, 33.8826)" x="-0.0650" y="-6.3122" width="0.1300" height="6.3122" ry="0.0400" fill="currentColor"/>
+<path transform="translate(108.5506, 33.8426) scale(0.0040, -0.0040)" d="M0 205c90 50 208 128 208 228c0 23 -3 44 -8 66c-78 -88 -200 -157 -200 -279v-15zM227 864c0 26 -26 75 13 75c27 0 29 -51 29 -75c0 -38 -11 -70 -30 -100c16 -38 25 -79 25 -120c0 -38 -11 -70 -30 -100c11 -36 17 -73 17 -111c0 -179 -251 -254 -251 -433h-16v750h16
+v-105c98 44 227 116 227 219zM0 425c96 45 222 117 222 219c0 27 -5 54 -14 79c-79 -90 -208 -158 -208 -283v-15z" fill="currentColor"/>
+<path transform="translate(106.9706, 27.3826) scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
+c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
+<path transform="translate(12.8067, 33.6726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:39:51:52">
+<path transform="translate(111.1239, 33.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<path transform="translate(24.2411, 33.6726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<rect transform="translate(24.1761, 33.8826)" x="-0.0650" y="-0.2500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:32:26:27">
+<path transform="translate(23.5830, 39.7286) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:32:24:25">
+<path transform="translate(23.5830, 38.8326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:32:20:21">
+<path transform="translate(22.9249, 37.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<rect transform="translate(12.7417, 33.8826)" x="-0.0650" y="-0.2500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<path transform="translate(18.4020, 33.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<text transform="translate(4.7345, 30.8326)" font-family="Century Schoolbook L" font-size="1.7461" text-anchor="start" fill="currentColor">
+<tspan>
+4</tspan>
+</text>
+<path transform="translate(6.4906, 32.8826) scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
+c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:39:23:24">
+<path transform="translate(99.7019, 33.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:39:37:38">
+<path transform="translate(105.7334, 33.8826) scale(0.0040, -0.0040)" d="M54 -500l86 327c-35 -13 -71 -23 -108 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c17 0 54 54 59 71l39 149c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c16 0 52 51 56 68l40 151c-33 -12 -68 -22 -103 -22c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c15 0 46 49 52 63c6 12 23 12 28 0l-216 -920c-8 -7 -18 -10 -28 -10s-19 3 -27 10z" fill="currentColor"/>
+</a>
+<path transform="translate(101.8091, 36.8826) scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+<path transform="translate(104.2753, 32.6726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<rect transform="translate(104.2103, 33.8826)" x="-0.0650" y="-1.2500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:39:34:35">
+<path transform="translate(103.6172, 37.8326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:39:28:29">
+<path transform="translate(102.9591, 36.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<path transform="translate(34.9092, 33.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:32:8:9">
+<path transform="translate(12.1486, 39.7286) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:34:2:3">
+<path transform="translate(38.0449, 33.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:34:7:8">
+<path transform="translate(38.7030, 32.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:34:9:10">
+<path transform="translate(38.7030, 31.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<rect transform="translate(38.1099, 33.8826)" x="-0.0650" y="-0.3122" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<path transform="translate(38.1749, 37.5926) scale(0.0040, -0.0040)" d="M0 205c90 50 208 128 208 228c0 23 -3 44 -8 66c-78 -88 -200 -157 -200 -279v-15zM227 864c0 26 -26 75 13 75c27 0 29 -51 29 -75c0 -38 -11 -70 -30 -100c16 -38 25 -79 25 -120c0 -38 -11 -70 -30 -100c11 -36 17 -73 17 -111c0 -179 -251 -254 -251 -433h-16v750h16
+v-105c98 44 227 116 227 219zM0 425c96 45 222 117 222 219c0 27 -5 54 -14 79c-79 -90 -208 -158 -208 -283v-15z" fill="currentColor"/>
+<path transform="translate(45.6640, 37.5926) scale(0.0040, -0.0040)" d="M0 205c90 50 208 128 208 228c0 23 -3 44 -8 66c-78 -88 -200 -157 -200 -279v-15zM227 864c0 26 -26 75 13 75c27 0 29 -51 29 -75c0 -38 -11 -70 -30 -100c16 -38 25 -79 25 -120c0 -38 -11 -70 -30 -100c11 -36 17 -73 17 -111c0 -179 -251 -254 -251 -433h-16v750h16
+v-105c98 44 227 116 227 219zM0 425c96 45 222 117 222 219c0 27 -5 54 -14 79c-79 -90 -208 -158 -208 -283v-15z" fill="currentColor"/>
+<rect transform="translate(45.5990, 33.8826)" x="-0.0650" y="-0.3122" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:34:23:24">
+<path transform="translate(46.1921, 32.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:34:18:19">
+<path transform="translate(45.5340, 33.3826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<path transform="translate(42.3983, 33.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:34:12:13">
+<path transform="translate(40.7483, 33.8826) scale(0.0040, -0.0040)" d="M66 -500l101 327c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c16 0 55 51 60 68l46 151c-34 -12 -68 -22 -104 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c15 0 50 49 57 63c6 12 23 12 28 0l-179 -670c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(36.8949, 33.3826) scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:32:16:17">
+<path transform="translate(16.9520, 33.8826) scale(0.0040, -0.0040)" d="M72 -250l117 326c-34 -12 -69 -22 -105 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 6 -59 35 -59c16 0 54 48 61 63c6 12 23 12 28 0l-123 -420c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:32:29:30">
+<path transform="translate(25.6992, 33.8826) scale(0.0040, -0.0040)" d="M66 -500l101 327c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c16 0 55 51 60 68l46 151c-34 -12 -68 -22 -104 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c15 0 50 49 57 63c6 12 23 12 28 0l-179 -670c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<path transform="translate(27.3492, 33.3826) scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:32:35:36">
+<path transform="translate(30.4849, 37.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:32:39:40">
+<path transform="translate(31.1430, 38.8326) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<rect transform="translate(31.7361, 33.8826)" x="-0.0650" y="-0.2500" width="0.1300" height="4.0622" ry="0.0400" fill="currentColor"/>
+<path transform="translate(31.8011, 33.6726) scale(0.0040, -0.0040)" d="M0 -213v-5c0 -111 86 -193 146 -284c3 11 4 23 4 35c0 93 -85 187 -150 254zM0 0c0 -175 193 -292 193 -467c0 -29 -7 -58 -19 -84c17 -35 29 -71 29 -111c0 -36 -9 -72 -24 -105c18 -35 30 -72 30 -113c0 -60 -16 -119 -42 -173c-5 -8 -12 -11 -19 -11
+c-13 0 -26 11 -23 27c26 49 42 102 42 157c0 91 -95 175 -167 233v-103h-16v750h16zM0 -430v-5c0 -112 89 -194 151 -285c6 19 9 38 9 58c0 90 -91 173 -160 232z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/github/wygioatynlib/notation/wygioatynlib_bassclarinet_pulsetrack.ly:32:42:43">
+<path transform="translate(33.2592, 33.8826) scale(0.0040, -0.0040)" d="M66 -500l101 327c-34 -12 -70 -23 -106 -23c-46 0 -87 33 -87 79c0 40 32 72 72 72c25 0 49 -15 57 -39c10 -28 5 -59 34 -59c16 0 55 51 60 68l46 151c-34 -12 -68 -22 -104 -22c-46 0 -87 33 -87 79c0 40 33 72 73 72c25 0 48 -15 56 -39c10 -28 5 -59 34 -59
+c15 0 50 49 57 63c6 12 23 12 28 0l-179 -670c-8 -7 -17 -10 -27 -10s-20 3 -28 10z" fill="currentColor"/>
+</a>
+<a transform="translate(31.4631, 165.1512)" xlink:href="http://lilypond.org/">
+<rect x="0.0000" y="-0.4439" width="56.5755" height="2.0827" fill="none" stroke="none" stroke-width="0.0"/>
+</a>
+<text transform="translate(31.4631, 165.1512)" font-family="Century Schoolbook L" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>
+Music engraving by LilyPond 2.18.2—www.lilypond.org</tspan>
+</text>
+</svg>

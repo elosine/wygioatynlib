@@ -6,12 +6,12 @@
     
     \clef alto
     \numericTimeSignature
-    \tempo 4 = 80
+    \tempo 4 = 63
     \time 4/4
     
 %     c  -  c''''
 
-    c8-.->\ff   cis'16-. a16-.
+    c8-.->\ffff   cis'16-. a16-.
     
     ees16-.-> des'-. b-. des'-.
     g16-.-> ees'16-. c'16-. b16-.

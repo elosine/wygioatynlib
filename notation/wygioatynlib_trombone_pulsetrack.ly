@@ -6,7 +6,7 @@
     
     \clef bass
     \numericTimeSignature
-    \tempo 4 = 85
+    \tempo 4 = 60
     \time 4/4
     
 %     b,,4  -  c''4

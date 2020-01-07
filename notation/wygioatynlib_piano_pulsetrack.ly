@@ -7,7 +7,7 @@
       
       \clef treble
       \numericTimeSignature
-      \tempo 4 = 85
+      \tempo 4 = 59
       \time 4/4
       
       %c,, - c' ' ' ' '

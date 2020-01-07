@@ -6,7 +6,7 @@
 {
   \clef treble
   \numericTimeSignature
-  \tempo 4 = 80
+  \tempo 4 = 65
   \time 4/4
   
   b'8-.-> d'8-. 
@@ -28,7 +28,7 @@
   ees'''16-.-> c'''16-. e'''16-.-> bes'16-. 
   d'16-. cis'16-. f'''16-. dis''16-.
   \tuplet 3/2 8 { cis'16-.  [e'-. cis'!-.] } f''16-. g'16-.
-  a'''16-.-> c''16-. b''16-. bes16-.
+  fis'''16-.-> c''16-. b''16-. bes16-.
   r16 e''16-. ees''16-. d''16-.
   \tuplet 3/2 8 { f''16-. [ cis''-. ges'-. ] } cis'!16-. a''16-.
   ais''16-. b''16-. c'''16-. d'''16-. f'8-. g''16-. fis''16-. 
