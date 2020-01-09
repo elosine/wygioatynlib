@@ -54,7 +54,35 @@ fetch('/pitchdata/sfAalysis003.txt')
     }
     console.log(pitchSet);
 
+    for (var i=0;i<pitchSet.length;i++){
 
+      console.log("New Pitch Set ----------------------  " + i);
+      console.log("Bass");
+      console.log(pitchSet[i][0][0]);
+      console.log(pitchSet[i][0][1]);
+      console.log(pitchSet[i][0][2]);
+      console.log(pitchSet[i][0][3]);
+
+      console.log("Tenor");
+      console.log(pitchSet[i][1][0]);
+      console.log(pitchSet[i][1][1]);
+      console.log(pitchSet[i][1][2]);
+      console.log(pitchSet[i][1][3]);
+
+      console.log("Alto");
+      console.log(pitchSet[i][2][0]);
+      console.log(pitchSet[i][2][1]);
+      console.log(pitchSet[i][2][2]);
+      console.log(pitchSet[i][2][3]);
+
+      console.log("Soprano");
+      console.log(pitchSet[i][3][0]);
+      console.log(pitchSet[i][3][1]);
+      console.log(pitchSet[i][3][2]);
+      console.log(pitchSet[i][3][3]);
+    }
+
+/*
     var pnum = Math.round(rrand(0, pitchSet.length));
     console.log("New Pitch Set ------------------");
     console.log("Bass");
@@ -392,4 +420,5 @@ fetch('/pitchdata/sfAalysis003.txt')
     console.log(pitchSet[pnum][3][1]);
     console.log(pitchSet[pnum][3][2]);
     console.log(pitchSet[pnum][3][3]);
+    */
   });
