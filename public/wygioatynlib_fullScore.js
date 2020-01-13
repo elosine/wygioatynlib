@@ -49,6 +49,13 @@ var GOFRETPOSZ = -GOFRETLENGTH / 2;
 var GOFRETWIDTH = 170;
 var goFretGeom = new THREE.CubeGeometry(GOFRETWIDTH, GOFRETHEIGHT, GOFRETLENGTH);
 var goFrets = []; //[goFret, goFretMatl]
+// NOTATION SVGS /////////////////////////////////////////////
+var SVG_NS = "http://www.w3.org/2000/svg";
+var SVG_XLINK = 'http://www.w3.org/1999/xlink';
+var pitchContainers = [];
+var pitchContainerDOMs = [];
+var notes;
+var NOTATION_CONTAINER_H = 100.0;
 // FUNCTION: onstartup --------------------------------------------------- //
 function onstartup() {
   createScene();
@@ -86,7 +93,7 @@ function createScene() {
   runway.position.z = -RUNWAYLENGTH / 2;
   runway.rotation.x = rads(-90);
   scene.add(runway);
-  //TRACKS ////////////////////////////////////////////////
+  // TRACKS ////////////////////////////////////////////////
   var trgeom = new THREE.CylinderGeometry(TRACK_DIAMETER, TRACK_DIAMETER, RUNWAYLENGTH, 32);
   var trmatl = new THREE.MeshLambertMaterial({
     color: 0x708090
@@ -111,7 +118,26 @@ function createScene() {
     tGoFretSet.push(tGoFret);
     tGoFretSet.push(goFretMatl);
     goFrets.push(tGoFretSet);
+
+    // NOTATION CONTAINERS ///////////////////////////////////////////////
+    var tcont = document.getElementById("notationContainersOuterDiv");
+    var tsvgCanvas = document.createElementNS(SVG_NS, "svg");
+    tsvgCanvas.setAttributeNS(null, "width", GOFRETWIDTH.toString());
+    tsvgCanvas.setAttributeNS(null, "height", NOTATION_CONTAINER_H.toString());
+    tsvgCanvas.setAttributeNS(null, "id", "notationSVGcont" + i.toString());
+    var trMargin = 34;
+    var ttrgap = 26;
+    var txloc = (ttrgap * i) + trMargin;
+    tsvgCanvas.setAttributeNS(null, "transform", "translate(" + txloc.toString() + ", 0)");
+    tsvgCanvas.setAttributeNS(null, "class", "notationCanvas");
+    tsvgCanvas.style.backgroundColor = "white";
+    tcont.appendChild(tsvgCanvas);
+    pitchContainers.push(tsvgCanvas);
   }
+  for (var i = 0; i < pitchContainers.length; i++) {
+    pitchContainerDOMs.push(document.getElementById(pitchContainers[i].id));
+  }
+
   // RENDER ///////////////////////////////////////////////
   // var helper = new THREE.CameraHelper(camera);
   // scene.add(helper);
