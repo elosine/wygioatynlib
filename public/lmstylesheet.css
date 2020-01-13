@@ -10,8 +10,7 @@ body {
 }
 
 #notationContainersOuterDiv {
-  /* background-color: black; */
-    background-color: #708090;
+  background-color: black;
   width: 1920PX;
-  height: 720px;
+  height: 360px;
 }

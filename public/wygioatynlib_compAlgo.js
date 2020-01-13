@@ -1,4 +1,5 @@
 var leadTime = 8.0;
+var eventSet = [];
 
 //ca 10.6 - 13.2 min
 var PIECEDURSEC = rrand(8.2, 11.1) * 60;

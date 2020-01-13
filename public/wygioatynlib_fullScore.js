@@ -1,4 +1,4 @@
-// GLOBAL VARIABLES ---------------------------------------------------- //
+// GLOBAL VARIABLES -------------------------------------------------------------- //
 // TIMING & ANIMATION ENGINE ///////////////////////////////////
 var FRAMERATE = 60.0;
 var MSPERFRAME = 1000.0 / FRAMERATE;
@@ -25,7 +25,7 @@ var clr_purple = new THREE.Color("rgb(255, 0, 255)");
 var clr_neonRed = new THREE.Color("rgb(255, 37, 2)");
 var clr_safetyOrange = new THREE.Color("rgb(255, 103, 0)");
 var clr_green = new THREE.Color("rgb(0, 255, 0)");
-// SCENE ///////////////////////////////////////////////////
+// SCENE /////////////////////////////////////////////////////////
 var camera, scene, renderer, canvas;
 //// Scene Settings ///////////////////////////////
 ////// Camera Position Settings //////////
@@ -36,31 +36,38 @@ var CAM_ROTATION_X = rads(-65);
 var SCENE_W = 1920;
 var SCENE_H = 720;
 var RUNWAYLENGTH = 1070;
-// TRACKS ///////////////////////////////////////////////////
+// TRACKS ////////////////////////////////////////////////////////
 var NUMTRACKS = 8;
 var TRACK_X_OFFSET = 800;
 var TRACK_Y_OFFSET = 10;
 var TRACK_DIAMETER = 20;
 var SPACE_BETWEEN_TRACKS = (TRACK_X_OFFSET * 2) / (NUMTRACKS - 1);
-// GOFRETS ///////////////////////////////////////////////////
+// GOFRETS ////////////////////////////////////////////////////////
 var GOFRETLENGTH = 32;
 var GOFRETHEIGHT = 14;
-var GOFRETPOSZ = -GOFRETLENGTH / 2;
-var GOFRETWIDTH = 170;
+var GOFRETPOSZ = (-GOFRETLENGTH / 2) +1;
+var GOFRETWIDTH = 190;
 var goFretGeom = new THREE.CubeGeometry(GOFRETWIDTH, GOFRETHEIGHT, GOFRETLENGTH);
 var goFrets = []; //[goFret, goFretMatl]
-// NOTATION SVGS /////////////////////////////////////////////
+// NOTATION SVGS /////////////////////////////////////////////////////
 var SVG_NS = "http://www.w3.org/2000/svg";
 var SVG_XLINK = 'http://www.w3.org/1999/xlink';
-var pitchContainers = [];
-var pitchContainerDOMs = [];
-var notes;
-var NOTATION_CONTAINER_H = 100.0;
-// FUNCTION: onstartup --------------------------------------------------- //
+var notationContainers = [];
+var notationContainerDOMs = [];
+var NOTATION_CONTAINER_H = 350.0;
+// EVENTS ////////////////////////////////////////////////////////////
+var eventMatrix = [];
+//// Beat Markers //////////////////////////////////
+var beatMarkerGeom = new THREE.CubeGeometry(GOFRETWIDTH, GOFRETHEIGHT, GOFRETLENGTH);
+
+// FUNCTION: onstartup ------------------------------------------------------------ //
 function onstartup() {
   createScene();
+  eventMatrix = createEvents();
+  console.log(eventMatrix);
+
 }
-// FUNCTION: createScene ------------------------------------------------- //
+// FUNCTION: createScene ---------------------------------------------------------- //
 function createScene() {
   // CAMERA /////////////////////////////////////////////////
   camera = new THREE.PerspectiveCamera(75, SCENE_W / SCENE_H, 1, 3000);
@@ -125,17 +132,17 @@ function createScene() {
     tsvgCanvas.setAttributeNS(null, "width", GOFRETWIDTH.toString());
     tsvgCanvas.setAttributeNS(null, "height", NOTATION_CONTAINER_H.toString());
     tsvgCanvas.setAttributeNS(null, "id", "notationSVGcont" + i.toString());
-    var trMargin = 34;
-    var ttrgap = 26;
+    var trMargin = 41;
+    var ttrgap = 45;
     var txloc = (ttrgap * i) + trMargin;
     tsvgCanvas.setAttributeNS(null, "transform", "translate(" + txloc.toString() + ", 0)");
     tsvgCanvas.setAttributeNS(null, "class", "notationCanvas");
     tsvgCanvas.style.backgroundColor = "white";
     tcont.appendChild(tsvgCanvas);
-    pitchContainers.push(tsvgCanvas);
+    notationContainers.push(tsvgCanvas);
   }
-  for (var i = 0; i < pitchContainers.length; i++) {
-    pitchContainerDOMs.push(document.getElementById(pitchContainers[i].id));
+  for (var i = 0; i < notationContainers.length; i++) {
+    notationContainerDOMs.push(document.getElementById(notationContainers[i].id));
   }
 
   // RENDER ///////////////////////////////////////////////
@@ -160,4 +167,75 @@ function update(aMSPERFRAME) {
   framect++;
   pieceClock += aMSPERFRAME;
   pieceClock = pieceClock - clockadj;
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////
+// FUNCTIONS -------------------------------------------------------------//
+////////////////////////////////////////////////////////////////////////////
+var leadTime = 8.0;
+var eventSet = [
+  [
+    [15, 0],
+    [18, 0],
+    [21, 0],
+    [24, 0],
+    [27, 0],
+    [30, 0],
+    [33, 0]
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  []
+];
+// FUNCTION: createEvents ----------------------------------------------- //
+function createEvents() {
+  var t_eventMatrix = [];
+  var t_eventIx = 0;
+  //// Instrument Level - 8 Arrays one for each instrument
+  ////// [0]Oboe, [1]Violin,  [2]Piano, [3]Perc,
+  ////// [4]Viola, [5]Trombone, [6]Bass Clarinet, [7]Cello
+  ////// eventSet[i] returns entire set of events for that Instrument
+  //////// eventSet[0] will be all Oboe events
+  //// eventSet is set of events by time from compAlgo
+  for (var i = 0; i < eventSet.length; i++) {
+    var t_eventsData_Set = [];
+    //// Event Level - Represents an array of data for a single event
+    ////// eventSet[i][j] will include:
+    ////// [ eventTime, eventType ]
+    for (var j = 0; j < eventSet[i].length; j++) {
+      var t_goTime = eventSet[i][j][0];
+      console.log(t_goTime);
+      t_goTime = t_goTime + leadTime;
+      var t_numPxTilGo = t_goTime * PXPERSEC;
+      var t_startZ = GOFRETPOSZ - t_numPxTilGo;
+      var t_goFrame = Math.round(t_numPxTilGo / PXPERFRAME);
+      //// Switch on eventType: eventSet[i][j][1]
+      switch (eventSet[i][j][1]) {
+        case 0: //beats
+          var t_beatMarkerMatl = new THREE.MeshLambertMaterial({
+            color: clr_neonMagenta
+          });
+          var t_beatMarkerMesh = new THREE.Mesh(beatMarkerGeom, t_beatMarkerMatl);
+          t_beatMarkerMesh.position.z = t_startZ;
+          t_beatMarkerMesh.position.y = GOFRETHEIGHT;
+          t_beatMarkerMesh.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * i);
+          t_beatMarkerMesh.name = t_eventIx + "_beat";
+          t_eventIx++;
+          // [ eventType, addToSceneGate, mesh, goFrame, goTime, startZ ]
+          var t_singleEventDataArray = [eventSet[i][j][1], true, t_beatMarkerMesh, t_goFrame, t_goTime, t_startZ];
+          break;
+        default:
+
+      }
+      t_eventsData_Set.push(t_singleEventDataArray);
+    }
+    t_eventMatrix.push(t_eventsData_Set);
+  }
+  return t_eventMatrix;
 }
