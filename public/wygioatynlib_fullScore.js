@@ -1,5 +1,5 @@
 // GLOBAL VARIABLES ---------------------------------------------------- //
-// TIMING & ANIMATION ENGINE ////////////////////////////////
+// TIMING & ANIMATION ENGINE ///////////////////////////////////
 var FRAMERATE = 60.0;
 var MSPERFRAME = 1000.0 / FRAMERATE;
 var SECPERFRAME = 1.0 / FRAMERATE;
@@ -31,11 +31,24 @@ var camera, scene, renderer, canvas;
 ////// Camera Position Settings //////////
 var CAM_Y = 550;
 var CAM_Z = 750;
-var CAM_ROTATION_X = rads(-90);
+var CAM_ROTATION_X = rads(-68);
 ////// Scene Size //////////
 var SCENE_W = 1920;
 var SCENE_H = 720;
 var RUNWAYLENGTH = 1070;
+// TRACKS ///////////////////////////////////////////////////
+var NUMTRACKS = 8;
+var TRACK_X_OFFSET = 800;
+var TRACK_Y_OFFSET = 10;
+var TRACK_DIAMETER = 20;
+var SPACE_BETWEEN_TRACKS = (TRACK_X_OFFSET * 2) / (NUMTRACKS - 1);
+// GOFRETS ///////////////////////////////////////////////////
+var GOFRETLENGTH = 32;
+var GOFRETHEIGHT = 14;
+var GOFRETPOSZ = -GOFRETLENGTH / 2;
+var GOFRETWIDTH = 170;
+var goFretGeom = new THREE.CubeGeometry(GOFRETWIDTH, GOFRETHEIGHT, GOFRETLENGTH);
+var goFrets = []; //[goFret, goFretMatl]
 // FUNCTION: onstartup --------------------------------------------------- //
 function onstartup() {
   createScene();
@@ -73,10 +86,35 @@ function createScene() {
   runway.position.z = -RUNWAYLENGTH / 2;
   runway.rotation.x = rads(-90);
   scene.add(runway);
+  //TRACKS ////////////////////////////////////////////////
+  var trgeom = new THREE.CylinderGeometry(TRACK_DIAMETER, TRACK_DIAMETER, RUNWAYLENGTH, 32);
+  var trmatl = new THREE.MeshLambertMaterial({
+    color: 0x708090
+  });
+  for (var i = 0; i < NUMTRACKS; i++) {
+    var tTr = new THREE.Mesh(trgeom, trmatl);
+    tTr.rotation.x = rads(-90);
+    tTr.position.z = -(RUNWAYLENGTH / 2);
+    tTr.position.y = (-TRACK_DIAMETER / 2) + TRACK_Y_OFFSET;
+    tTr.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * i);
+    scene.add(tTr);
+    var tGoFretSet = [];
+    var goFretMatl = new THREE.MeshLambertMaterial({
+      color: clr_neonGreen
+    });
+    tGoFret = new THREE.Mesh(goFretGeom, goFretMatl);
+    tGoFret.position.z = GOFRETPOSZ;
+    tGoFret.position.y = GOFRETHEIGHT;
+    var tTrackXpos = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * i);
+    tGoFret.position.x = tTrackXpos;
+    scene.add(tGoFret);
+    tGoFretSet.push(tGoFret);
+    tGoFretSet.push(goFretMatl);
+    goFrets.push(tGoFretSet);
+  }
   // RENDER ///////////////////////////////////////////////
-  var camera = new THREE.PerspectiveCamera(75, SCENE_W / SCENE_H, 0.1, 1000);
-  var helper = new THREE.CameraHelper(camera);
-  scene.add(helper);
+  // var helper = new THREE.CameraHelper(camera);
+  // scene.add(helper);
   renderer.render(scene, camera);
 }
 // FUNCTION: animationEngine --------------------------------------------- //
