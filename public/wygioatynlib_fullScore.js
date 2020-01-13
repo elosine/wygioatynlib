@@ -29,9 +29,9 @@ var clr_green = new THREE.Color("rgb(0, 255, 0)");
 var camera, scene, renderer, canvas;
 //// Scene Settings ///////////////////////////////
 ////// Camera Position Settings //////////
-var CAM_Y = 550;
-var CAM_Z = 750;
-var CAM_ROTATION_X = rads(-68);
+var CAM_Y = 370;
+var CAM_Z = 450;
+var CAM_ROTATION_X = rads(-65);
 ////// Scene Size //////////
 var SCENE_W = 1920;
 var SCENE_H = 720;
