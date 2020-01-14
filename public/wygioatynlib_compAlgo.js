@@ -1,5 +1,14 @@
-var leadTime = 8.0;
-var eventSet = [[],[],[],[],[],[],[],[]]; //[ timeCode, eventType ]
+var leadTime = 7.0;
+var eventSet = [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  []
+]; //[ timeCode, eventType ]
 // Event Types: 0 - Beat, 1 - Discrete Event
 
 // SECTION 1 1:50-2:10
@@ -14,26 +23,36 @@ var SECTION_1_DUR = rrand(110, 130);
 ////// [0]Oboe, [1]Violin,  [2]Piano, [3]Perc,
 ////// [4]Viola, [5]Trombone, [6]Bass Clarinet, [7]Cello
 // Scramble Instrument Order
-var ogInst = [0,1,2,3,4,5,6,7];
+var ogInst = [0, 1, 2, 3, 4, 5, 6, 7];
 var instrumentOrder = shuffle(ogInst);
-var secperbeat = 60.0 / temptempo;
 // Initial Entries
-for(var i=0;i<instrumentOrder.length;i++){
+for (var i = 0; i < instrumentOrder.length; i++) {
   var t_2ndEntry = rrand(6, 10);
   var t_nextEntry = t_2ndEntry;
-  if(i==0) eventSet[instrumentOrder[i]].push([0, 1]);
-  else if (i==1){
+  if (i == 0) eventSet[instrumentOrder[i]].push([0, 1]);
+  else if (i == 1) {
     eventSet[instrumentOrder[i]].push([t_2ndEntry, 1]);
   } else {
-    var t_addTime = rrand(2.5, 4.5);
+    var t_addTime = rrand(3.5, 5.5);
     t_nextEntry = t_nextEntry + t_addTime;
     eventSet[instrumentOrder[i]].push([t_nextEntry, 1]);
   }
 }
-console.log(eventSet);
 // Generate Beat Grids
-var tempi = [55,56,57,58,59,60];
-for (var i=0;i<tempi.length;i++){
+var tempi = [55, 56, 57, 58, 59, 60];
+for (var i = 0; i < instrumentOrder.length; i++) {
+  var t_beatDur = 60.0 / tempi[i];
+  var t_firstBeat =  eventSet[i][0][0];
+  //Add 4 count in
+  for (var j = 1; j < 4; j++) {
+    eventSet[i].push(  [(t_firstBeat - ( t_beatDur  *  j )) , 0 ] );
+  }
+    for (var j = 1; j < 999; j++) {
+      var t_newTime = eventSet[i][0][0] + (t_beatDur * j);
+      if (t_newTime < SECTION_1_DUR) {
+        eventSet[i].push([t_newTime, 0]);
+      } else break;
+    }
 
 }
 

@@ -15,6 +15,7 @@ var pieceClock = 0.0;
 var clockadj = 0.0;
 // COLORS //////////////////////////////////////////////////////////////
 var clr_neonMagenta = new THREE.Color("rgb(255, 21, 160)");
+var clr_seaGreen = new THREE.Color("rgb(0, 255, 108)");
 var clr_neonBlue = new THREE.Color("rgb(6, 107, 225)");
 var clr_forest = new THREE.Color("rgb(11, 102, 35)");
 var clr_jade = new THREE.Color("rgb(0, 168, 107)");
@@ -309,7 +310,7 @@ function createEvents() {
           break;
         case 1: // Events
           var t_eventMarkerMatl = new THREE.MeshLambertMaterial({
-            color: clr_purple
+            color: clr_seaGreen
           });
           var t_eventMarkerMesh = new THREE.Mesh(eventGoFretGeom, t_eventMarkerMatl);
           t_eventMarkerMesh.position.z = t_startZ;
