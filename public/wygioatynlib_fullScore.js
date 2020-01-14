@@ -1,5 +1,7 @@
-// GLOBAL VARIABLES -------------------------------------------------------------- //
-// TIMING & ANIMATION ENGINE ///////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+// GLOBAL VARIABLES ----------------------------------------------------------------//
+//////////////////////////////////////////////////////////////////////////////////////
+//TIMING & ANIMATION ENGINE ///////////////////////////////////////////
 var FRAMERATE = 60.0;
 var MSPERFRAME = 1000.0 / FRAMERATE;
 var SECPERFRAME = 1.0 / FRAMERATE;
@@ -11,7 +13,7 @@ var delta = 0.0;
 var lastFrameTimeMs = 0.0;
 var pieceClock = 0.0;
 var clockadj = 0.0;
-// COLORS ///////////////////////////////////////////////////
+// COLORS //////////////////////////////////////////////////////////////
 var clr_neonMagenta = new THREE.Color("rgb(255, 21, 160)");
 var clr_neonBlue = new THREE.Color("rgb(6, 107, 225)");
 var clr_forest = new THREE.Color("rgb(11, 102, 35)");
@@ -25,7 +27,7 @@ var clr_purple = new THREE.Color("rgb(255, 0, 255)");
 var clr_neonRed = new THREE.Color("rgb(255, 37, 2)");
 var clr_safetyOrange = new THREE.Color("rgb(255, 103, 0)");
 var clr_green = new THREE.Color("rgb(0, 255, 0)");
-// SCENE /////////////////////////////////////////////////////////
+// SCENE ///////////////////////////////////////////////////////////////
 var camera, scene, renderer, canvas;
 //// Scene Settings ///////////////////////////////
 ////// Camera Position Settings //////////
@@ -36,35 +38,52 @@ var CAM_ROTATION_X = rads(-65);
 var SCENE_W = 1920;
 var SCENE_H = 720;
 var RUNWAYLENGTH = 1070;
-// TRACKS ////////////////////////////////////////////////////////
+// TRACKS ///////////////////////////////////////////////////////////////
 var NUMTRACKS = 8;
 var TRACK_X_OFFSET = 800;
 var TRACK_Y_OFFSET = 10;
 var TRACK_DIAMETER = 20;
 var SPACE_BETWEEN_TRACKS = (TRACK_X_OFFSET * 2) / (NUMTRACKS - 1);
-// GOFRETS ////////////////////////////////////////////////////////
+// GOFRETS //////////////////////////////////////////////////////////////
+//// Beats //////////////////////////////////
 var GOFRETLENGTH = 32;
 var GOFRETHEIGHT = 14;
 var GOFRETPOSZ = (-GOFRETLENGTH / 2) + 1;
 var GOFRETWIDTH = 190;
 var goFretBigAdd = 5;
 var goFretGeom = new THREE.CubeGeometry(GOFRETWIDTH, GOFRETHEIGHT, GOFRETLENGTH);
-var goFretGeomBig = new THREE.CubeGeometry(GOFRETWIDTH+goFretBigAdd, GOFRETHEIGHT+goFretBigAdd, GOFRETLENGTH+goFretBigAdd);
+var goFretGeomBig = new THREE.CubeGeometry(GOFRETWIDTH + goFretBigAdd, GOFRETHEIGHT + goFretBigAdd, GOFRETLENGTH + goFretBigAdd);
 var goFrets = []; //[goFret, goFretMatl]
 var goFretBlink = [];
 for (var i = 0; i < NUMTRACKS; i++) {
   goFretBlink.push(0);
 }
-// NOTATION SVGS /////////////////////////////////////////////////////
+//// Events //////////////////////////////////
+var EVENTGOFRETLENGTH = 34;
+var EVENTGOFRETHEIGHT = 21;
+var EVENTGOFRETPOSZ = (-EVENTGOFRETLENGTH / 2) + 2;
+var EVENTGOFRETWIDTH = 70;
+var eventGoFretBigAdd = 7;
+var eventGoFretGeom = new THREE.CubeGeometry(EVENTGOFRETWIDTH, EVENTGOFRETHEIGHT, EVENTGOFRETLENGTH);
+var eventGoFretGeomBig = new THREE.CubeGeometry(EVENTGOFRETWIDTH + eventGoFretBigAdd, EVENTGOFRETHEIGHT + eventGoFretBigAdd, EVENTGOFRETLENGTH + eventGoFretBigAdd);
+var eventGoFrets = []; //[goFret, goFretMatl]
+var eventGoFretBlink = [];
+for (var i = 0; i < NUMTRACKS; i++) {
+  eventGoFretBlink.push(0);
+}
+// NOTATION SVGS /////////////////////////////////////////////////////////
 var SVG_NS = "http://www.w3.org/2000/svg";
 var SVG_XLINK = 'http://www.w3.org/1999/xlink';
 var notationContainers = [];
 var notationContainerDOMs = [];
 var NOTATION_CONTAINER_H = 350.0;
-// EVENTS ////////////////////////////////////////////////////////////
+// EVENTS ////////////////////////////////////////////////////////////////
 var eventMatrix = [];
 //// Beat Markers //////////////////////////////////
-var beatMarkerGeom = new THREE.CubeGeometry(GOFRETWIDTH+2, GOFRETHEIGHT+2, GOFRETLENGTH+2);
+var beatMarkerGeom = new THREE.CubeGeometry(GOFRETWIDTH + 2, GOFRETHEIGHT + 2, GOFRETLENGTH + 2);
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// FACTORY --------------------------------------------------------------------------------------//
+///////////////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION: onstartup --------------------------------------------------------------- //
 function onstartup() {
   createScene();
@@ -104,7 +123,7 @@ function createScene() {
   runway.position.z = -RUNWAYLENGTH / 2;
   runway.rotation.x = rads(-90);
   scene.add(runway);
-  // TRACKS ////////////////////////////////////////////////
+  // TRACKS ///////////////////////////////////////////////////////////
   var trgeom = new THREE.CylinderGeometry(TRACK_DIAMETER, TRACK_DIAMETER, RUNWAYLENGTH, 32);
   var trmatl = new THREE.MeshLambertMaterial({
     color: 0x708090
@@ -116,6 +135,8 @@ function createScene() {
     tTr.position.y = (-TRACK_DIAMETER / 2) + TRACK_Y_OFFSET;
     tTr.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * i);
     scene.add(tTr);
+    // GO FRETS ///////////////////////////////////////////////////////////
+    //// BEATS ///////////////////////////////////////
     var tGoFretSet = [];
     var goFretMatl = new THREE.MeshLambertMaterial({
       color: clr_neonGreen
@@ -129,7 +150,19 @@ function createScene() {
     tGoFretSet.push(tGoFret);
     tGoFretSet.push(goFretMatl);
     goFrets.push(tGoFretSet);
-
+    //// EVENTS ///////////////////////////////////////
+    var t_eventGoFretSet = [];
+    var t_eventGoFretMatl = new THREE.MeshLambertMaterial({
+      color: clr_yellow
+    });
+    t_eventGoFret = new THREE.Mesh(eventGoFretGeom, t_eventGoFretMatl);
+    t_eventGoFret.position.z = EVENTGOFRETPOSZ;
+    t_eventGoFret.position.y = EVENTGOFRETHEIGHT;
+    t_eventGoFret.position.x = tTrackXpos; //see beats
+    scene.add(t_eventGoFret);
+    t_eventGoFretSet.push(t_eventGoFret);
+    t_eventGoFretSet.push(t_eventGoFretMatl);
+    eventGoFrets.push(t_eventGoFretSet);
     // NOTATION CONTAINERS ///////////////////////////////////////////////
     var tcont = document.getElementById("notationContainersOuterDiv");
     var tsvgCanvas = document.createElementNS(SVG_NS, "svg");
@@ -148,45 +181,16 @@ function createScene() {
   for (var i = 0; i < notationContainers.length; i++) {
     notationContainerDOMs.push(document.getElementById(notationContainers[i].id));
   }
-
-
-
-
-
-
-
-
- // // n {x: -800, y: 14, z: -1552.5}
- // var t_beatMarkerMatl = new THREE.MeshLambertMaterial({
- //   color: clr_neonMagenta
- // });
- // var t_beatMarkerMesh = new THREE.Mesh(beatMarkerGeom, t_beatMarkerMatl);
- // t_beatMarkerMesh.position.z = -1067.5;
- // t_beatMarkerMesh.position.y = 14;
- // t_beatMarkerMesh.position.x = -800;
-// n {x: -800, y: 14, z: -1067.5}
-
-// FOR FRAME BY FRAME TESTS -------------------------------------------- //
-document.addEventListener('keydown', function(event) {
-  if (event.code == 'KeyA') {
-    fbf()
-  }
-});
-function fbf() {
-  update(MSPERFRAME);
-  // draw();
-}
-
-
-
-
-
-
-
-
-
-
-
+  // FOR FRAME BY FRAME TESTS -------------------------------------------- //
+  // document.addEventListener('keydown', function(event) {
+  //   if (event.code == 'KeyA') {
+  //     fbf()
+  //   }
+  // });
+  // function fbf() {
+  //   update(MSPERFRAME);
+  //   // draw();
+  // }
   // RENDER ///////////////////////////////////////////////
   // var helper = new THREE.CameraHelper(camera);
   // scene.add(helper);
@@ -227,47 +231,46 @@ function update(aMSPERFRAME) {
       }
       //When EVENT MESH reaches goline, blink and remove
       if (framect == eventMatrix[i][j][3]) {
-        goFretBlink[i] = framect + 11;
+        switch (eventMatrix[i][j][0]) {
+          case 0:
+            goFretBlink[i] = framect + 11;
+            break;
+          case 1:
+            eventGoFretBlink[i] = framect + 11;
+            break;
+          default:
+        }
         scene.remove(scene.getObjectByName(eventMatrix[i][j][2].name));
       }
     }
   }
-  //// GO FRET BLINK TIMER //////////////////////////////////////////
+  //// BLINK TIMERS ////////////////////////////////////////////////////////
+  ////// Beats //////////////////////////////////////////
   for (var i = 0; i < goFretBlink.length; i++) {
     if (framect <= goFretBlink[i]) {
       goFrets[i][0].material.color = clr_safetyOrange;
       goFrets[i][0].geometry = goFretGeomBig;
     } else {
-      goFrets[i][0].material.color = clr_neonGreen;
+      goFrets[i][0].material.color =  clr_neonGreen;
       goFrets[i][0].geometry = goFretGeom;
     }
   }
+  ////// EVENTS //////////////////////////////////////////
+  for (var i = 0; i < eventGoFretBlink.length; i++) {
+    if (framect <= eventGoFretBlink[i]) {
+      eventGoFrets[i][0].material.color = clr_neonRed;
+      eventGoFrets[i][0].geometry = eventGoFretGeomBig;
+    } else {
+      eventGoFrets[i][0].material.color =  clr_yellow;
+      eventGoFrets[i][0].geometry = eventGoFretGeom;
+    }
+  }
+  // RENDER EACH FRAME ////////////////////////////////////
   renderer.render(scene, camera);
 }
-
-
-////////////////////////////////////////////////////////////////////////////
-// FUNCTIONS -------------------------------------------------------------//
-////////////////////////////////////////////////////////////////////////////
-var leadTime = 4.0;
-var eventSet = [
-  [
-    [3, 0],
-    [4, 0],
-    [5, 0],
-    [7, 0],
-    [11, 0],
-    [22, 0],
-    [51, 0]
-  ],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  []
-];
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// FUNCTIONS ------------------------------------------------------------------------------------//
+///////////////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION: createEvents ----------------------------------------------- //
 function createEvents() {
   var t_eventMatrix = [];
@@ -302,7 +305,20 @@ function createEvents() {
           t_beatMarkerMesh.name = t_eventIx + "_beat";
           t_eventIx++;
           // [ eventType, addToSceneGate, mesh, goFrame, goTime, startZ ]
-          var t_singleEventDataArray = [ eventSet[i][j][1], true, t_beatMarkerMesh, t_goFrame, t_goTime, t_startZ];
+          var t_singleEventDataArray = [eventSet[i][j][1], true, t_beatMarkerMesh, t_goFrame, t_goTime, t_startZ];
+          break;
+        case 1: // Events
+          var t_eventMarkerMatl = new THREE.MeshLambertMaterial({
+            color: clr_purple
+          });
+          var t_eventMarkerMesh = new THREE.Mesh(eventGoFretGeom, t_eventMarkerMatl);
+          t_eventMarkerMesh.position.z = t_startZ;
+          t_eventMarkerMesh.position.y = EVENTGOFRETHEIGHT;
+          t_eventMarkerMesh.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * i);
+          t_eventMarkerMesh.name = t_eventIx + "_event";
+          t_eventIx++;
+          // [ eventType, addToSceneGate, mesh, goFrame, goTime, startZ ]
+          var t_singleEventDataArray = [eventSet[i][j][1], true, t_eventMarkerMesh, t_goFrame, t_goTime, t_startZ];
           break;
         default:
 
