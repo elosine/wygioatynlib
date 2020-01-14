@@ -1,5 +1,12 @@
 var leadTime = 8.0;
-var eventSet = [];
+
+// SECTION 1 1:50-2:10
+// 1st entry 6-10secs
+// sebsequent entries 2.5 4.5 secs
+// change pitch between 40%-60% then 40%-60% of remaining
+// last 25% - 18% begin loops
+
+//clock conductions for textures
 
 //ca 10.6 - 13.2 min
 var PIECEDURSEC = rrand(8.2, 11.1) * 60;

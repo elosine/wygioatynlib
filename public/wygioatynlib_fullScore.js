@@ -45,10 +45,16 @@ var SPACE_BETWEEN_TRACKS = (TRACK_X_OFFSET * 2) / (NUMTRACKS - 1);
 // GOFRETS ////////////////////////////////////////////////////////
 var GOFRETLENGTH = 32;
 var GOFRETHEIGHT = 14;
-var GOFRETPOSZ = (-GOFRETLENGTH / 2) +1;
+var GOFRETPOSZ = (-GOFRETLENGTH / 2) + 1;
 var GOFRETWIDTH = 190;
+var goFretBigAdd = 5;
 var goFretGeom = new THREE.CubeGeometry(GOFRETWIDTH, GOFRETHEIGHT, GOFRETLENGTH);
+var goFretGeomBig = new THREE.CubeGeometry(GOFRETWIDTH+goFretBigAdd, GOFRETHEIGHT+goFretBigAdd, GOFRETLENGTH+goFretBigAdd);
 var goFrets = []; //[goFret, goFretMatl]
+var goFretBlink = [];
+for (var i = 0; i < NUMTRACKS; i++) {
+  goFretBlink.push(0);
+}
 // NOTATION SVGS /////////////////////////////////////////////////////
 var SVG_NS = "http://www.w3.org/2000/svg";
 var SVG_XLINK = 'http://www.w3.org/1999/xlink';
@@ -58,16 +64,14 @@ var NOTATION_CONTAINER_H = 350.0;
 // EVENTS ////////////////////////////////////////////////////////////
 var eventMatrix = [];
 //// Beat Markers //////////////////////////////////
-var beatMarkerGeom = new THREE.CubeGeometry(GOFRETWIDTH, GOFRETHEIGHT, GOFRETLENGTH);
-
-// FUNCTION: onstartup ------------------------------------------------------------ //
+var beatMarkerGeom = new THREE.CubeGeometry(GOFRETWIDTH+2, GOFRETHEIGHT+2, GOFRETLENGTH+2);
+// FUNCTION: onstartup --------------------------------------------------------------- //
 function onstartup() {
   createScene();
   eventMatrix = createEvents();
-  console.log(eventMatrix);
-
+  requestAnimationFrame(animationEngine);
 }
-// FUNCTION: createScene ---------------------------------------------------------- //
+// FUNCTION: createScene ------------------------------------------------------------- //
 function createScene() {
   // CAMERA /////////////////////////////////////////////////
   camera = new THREE.PerspectiveCamera(75, SCENE_W / SCENE_H, 1, 3000);
@@ -145,45 +149,116 @@ function createScene() {
     notationContainerDOMs.push(document.getElementById(notationContainers[i].id));
   }
 
+
+
+
+
+
+
+
+ // // n {x: -800, y: 14, z: -1552.5}
+ // var t_beatMarkerMatl = new THREE.MeshLambertMaterial({
+ //   color: clr_neonMagenta
+ // });
+ // var t_beatMarkerMesh = new THREE.Mesh(beatMarkerGeom, t_beatMarkerMatl);
+ // t_beatMarkerMesh.position.z = -1067.5;
+ // t_beatMarkerMesh.position.y = 14;
+ // t_beatMarkerMesh.position.x = -800;
+// n {x: -800, y: 14, z: -1067.5}
+
+// FOR FRAME BY FRAME TESTS -------------------------------------------- //
+document.addEventListener('keydown', function(event) {
+  if (event.code == 'KeyA') {
+    fbf()
+  }
+});
+function fbf() {
+  update(MSPERFRAME);
+  // draw();
+}
+
+
+
+
+
+
+
+
+
+
+
   // RENDER ///////////////////////////////////////////////
   // var helper = new THREE.CameraHelper(camera);
   // scene.add(helper);
   renderer.render(scene, camera);
 }
-// FUNCTION: animationEngine --------------------------------------------- //
+// FUNCTION: animationEngine --------------------------------------------------------- //
 function animationEngine(timestamp) {
   delta += timestamp - lastFrameTimeMs;
   lastFrameTimeMs = timestamp;
   while (delta >= MSPERFRAME) {
     update(MSPERFRAME);
-    draw();
+    // draw();
     delta -= MSPERFRAME;
   }
   requestAnimationFrame(animationEngine);
 }
-// UPDATE -------------------------------------------------------------- //
+// UPDATE ---------------------------------------------------------------------------- //
 function update(aMSPERFRAME) {
-  // CLOCK ///////////////////////////////////////////////
+  // CLOCK ///////////////////////////////////////////////////////
   framect++;
   pieceClock += aMSPERFRAME;
   pieceClock = pieceClock - clockadj;
+  // EVENTS //////////////////////////////////////////////////////
+  // [ eventType, addToSceneGate, mesh, goFrame, goTime, startZ ]
+  for (var i = 0; i < eventMatrix.length; i++) {
+    for (var j = 0; j < eventMatrix[i].length; j++) {
+      // Add the EVENT MESH to the scene if it is on the runway
+      if (eventMatrix[i][j][2].position.z > (-RUNWAYLENGTH) && eventMatrix[i][j][2].position.z < GOFRETPOSZ) {
+        //// Add Event to Scene Gate
+        if (eventMatrix[i][j][1]) {
+          eventMatrix[i][j][1] = false;
+          scene.add(eventMatrix[i][j][2]);
+        }
+      }
+      // Advance EVENT MESH if it is not past gofret
+      if (eventMatrix[i][j][2].position.z < GOFRETPOSZ) {
+        eventMatrix[i][j][2].position.z += PXPERFRAME;
+      }
+      //When EVENT MESH reaches goline, blink and remove
+      if (framect == eventMatrix[i][j][3]) {
+        goFretBlink[i] = framect + 11;
+        scene.remove(scene.getObjectByName(eventMatrix[i][j][2].name));
+      }
+    }
+  }
+  //// GO FRET BLINK TIMER //////////////////////////////////////////
+  for (var i = 0; i < goFretBlink.length; i++) {
+    if (framect <= goFretBlink[i]) {
+      goFrets[i][0].material.color = clr_safetyOrange;
+      goFrets[i][0].geometry = goFretGeomBig;
+    } else {
+      goFrets[i][0].material.color = clr_neonGreen;
+      goFrets[i][0].geometry = goFretGeom;
+    }
+  }
+  renderer.render(scene, camera);
 }
-
 
 
 ////////////////////////////////////////////////////////////////////////////
 // FUNCTIONS -------------------------------------------------------------//
 ////////////////////////////////////////////////////////////////////////////
-var leadTime = 8.0;
+var leadTime = 4.0;
 var eventSet = [
   [
-    [15, 0],
-    [18, 0],
-    [21, 0],
-    [24, 0],
-    [27, 0],
-    [30, 0],
-    [33, 0]
+    [3, 0],
+    [4, 0],
+    [5, 0],
+    [7, 0],
+    [11, 0],
+    [22, 0],
+    [51, 0]
   ],
   [],
   [],
@@ -210,7 +285,6 @@ function createEvents() {
     ////// [ eventTime, eventType ]
     for (var j = 0; j < eventSet[i].length; j++) {
       var t_goTime = eventSet[i][j][0];
-      console.log(t_goTime);
       t_goTime = t_goTime + leadTime;
       var t_numPxTilGo = t_goTime * PXPERSEC;
       var t_startZ = GOFRETPOSZ - t_numPxTilGo;
@@ -228,7 +302,7 @@ function createEvents() {
           t_beatMarkerMesh.name = t_eventIx + "_beat";
           t_eventIx++;
           // [ eventType, addToSceneGate, mesh, goFrame, goTime, startZ ]
-          var t_singleEventDataArray = [eventSet[i][j][1], true, t_beatMarkerMesh, t_goFrame, t_goTime, t_startZ];
+          var t_singleEventDataArray = [ eventSet[i][j][1], true, t_beatMarkerMesh, t_goFrame, t_goTime, t_startZ];
           break;
         default:
 
