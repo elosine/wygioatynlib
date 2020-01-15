@@ -1,4 +1,11 @@
 \version "2.18.2"
+
+
+  
+  \paper{
+    paper-width = 500
+  }
+
 \score {
   <<
   \new Staff \with {
@@ -8,8 +15,7 @@
   {
       \clef treble
       \numericTimeSignature
-      \time 4/4
-      \tempo 4 = 55
+      \time 2/4
 
 %  \grace {f'16 [d' cis' a' g' d' cis'' f' d'']}
       f'32 [d' cis' a' g' d' cis'']
@@ -17,6 +23,7 @@
       eeh'32 [gih' g'' aeh' f' c' ais fih'' c']
       r4
       f''32  [ fih' geh' beh aeh' g'' d'']
+      s1
       
   }
   
@@ -31,6 +38,7 @@
    a32 [ cih' gih' cih'' g'' ais cih' g'']
    r4
    d'32 [ a' c' g' dis' g' c' dis' d']
+      s1
    
   }
   
@@ -45,6 +53,7 @@
      aeh32 [ f' g'' gih eeh' ais fih'' aeh ais]
      r4
      dis'32 [ g' c a' bes' d d']
+      s1
 
 
   }
@@ -60,6 +69,7 @@ r4
 g'32 [ g'' c'' cis'' d'' gis' a' ais'' c'' gis' g'']
 r4
 a'32[ aes'' e'' a' d'' f'' ges' ]
+      s1
 
   }
   
@@ -74,6 +84,7 @@ a'32[ aes'' e'' a' d'' f'' ges' ]
       g32[ d dis' c bes' d' ]
       r4
       a32 [g' dih' cih ais g'' dih' ais a ]
+      s1
   }
   
   \new Staff \with {
@@ -87,6 +98,7 @@ a'32[ aes'' e'' a' d'' f'' ges' ]
        aeh32 [aeh d' aeh, g' geh fih' ]
        r4
        fih'32 [f' aeh g' c' eeh' aeh] 
+      s1
   }
   
   \new Staff \with {
@@ -100,6 +112,7 @@ a'32[ aes'' e'' a' d'' f'' ges' ]
       g64 [r cih' r cih r gih, r g, r gih r ]
       r4
       g64 [r aeh r geh, r a r d, r aeh r e, r ]
+      s1
   }
   
   \new Staff \with {
@@ -115,12 +128,14 @@ a'32[ aes'' e'' a' d'' f'' ges' ]
       r4
       g,32 [a' g, g a' ]
       r4
+      s1
   }
   >>
    
 
   \layout{ 
     indent = 24
+    line-width = 400
   }
   
 
