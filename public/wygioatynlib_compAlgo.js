@@ -169,8 +169,8 @@ var eventSet = [
   [],
   [],
   []
-]; //[ timeCode, eventType ]
-// Event Types: 0 - Beat, 1 - Discrete Event
+]; //[ timeCode, eventType, svgNotationName/Path, pitchName/Path ]
+// Event Types: 0:Beat, 1:Discrete Event, 2:Notation Change, 3:PitchChange
 
 // SECTION 1 1:50-2:10
 // 1st entry 6-10secs
@@ -215,4 +215,6 @@ for (var i = 0; i < 8; i++) {
     } else break;
   }
 }
+//Pitch Changes for Section 1
+
 console.log(roundByStep(ps27[5][4], 0.5));
