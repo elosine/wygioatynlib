@@ -1,406 +1,65 @@
-var leadTime = 7.0;
-var eventSet = [
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  []
-]; //[ timeCode, eventType ]
-// Event Types: 0 - Beat, 1 - Discrete Event
 
-// SECTION 1 1:50-2:10
-// 1st entry 6-10secs
-// sebsequent entries 2.5 4.5 secs
-// change pitch between 40%-60% then 40%-60% of remaining
-// last 25% - 18% begin loops
-
-//clock conductions for textures
-
-var SECTION_1_DUR = rrand(110, 130);
-////// [0]Oboe, [1]Violin,  [2]Piano, [3]Perc,
-////// [4]Viola, [5]Trombone, [6]Bass Clarinet, [7]Cello
-// Scramble Instrument Order
-var ogInst = [0, 1, 2, 3, 4, 5, 6, 7];
-var instrumentOrder = shuffle(ogInst);
-// Initial Entries
-for (var i = 0; i < instrumentOrder.length; i++) {
-  var t_2ndEntry = rrand(6, 10);
-  var t_nextEntry = t_2ndEntry;
-  if (i == 0) eventSet[instrumentOrder[i]].push([0, 1]);
-  else if (i == 1) {
-    eventSet[instrumentOrder[i]].push([t_2ndEntry, 1]);
-  } else {
-    var t_addTime = rrand(3.5, 5.5);
-    t_nextEntry = t_nextEntry + t_addTime;
-    eventSet[instrumentOrder[i]].push([t_nextEntry, 1]);
-  }
-}
-// Generate Beat Grids
-var tempi = [55, 56, 57, 58, 59, 60];
-for (var i = 0; i < instrumentOrder.length; i++) {
-  var t_beatDur = 60.0 / tempi[i];
-  var t_firstBeat =  eventSet[i][0][0];
-  //Add 4 count in
-  for (var j = 1; j < 4; j++) {
-    eventSet[i].push(  [(t_firstBeat - ( t_beatDur  *  j )) , 0 ] );
-  }
-    for (var j = 1; j < 999; j++) {
-      var t_newTime = eventSet[i][0][0] + (t_beatDur * j);
-      if (t_newTime < SECTION_1_DUR) {
-        eventSet[i].push([t_newTime, 0]);
-      } else break;
-    }
-
-}
-
-
-//ca 10.6 - 13.2 min
-var PIECEDURSEC = rrand(8.2, 11.1) * 60;
-// 5 Sections: Hocket - Crescendos - Hocket/Crescendos/Accel - Hocket/Accel - Short Hocket :13-:27
-var sectionsSecs = [];
-//Section 1: Hocket 21-27%
-var section1dur = PIECEDURSEC * rrand(0.21, 0.27);
-//Section 6: Short Hocket :11-:17
-var section4dur = rrand(11, 17);
-//Section 2: Crescendos 37-39% of what is left
-var s2thru4 = PIECEDURSEC - section1dur - section4dur;
-var section2dur = s2thru4 * rrand(0.39, 0.43);
-//Section 3: Hocket/Crescendos/Accel 57-63% of what is left
-var section3dur = s2thru4 - section2dur;
-// SECTION 1 ------------------------------------------------------------- //
-//Section 1 Tempo Changes
-var sec1TempoChanges = palindromeTimeContainers(section1dur, 2.4, 9, 0.03, 0.06);
-//For every tempo change how many simultaneous tempi
-// 1, 2, 3, 4, 5, 7, 11, 12
-var numSimultaneousTempi = [1, 2, 3, 4, 5, 7, 11, 12];
-var tempiChances = [21, 17, 11, 11, 8, 7, 4, 4];
-var sec1NumTempi = [];
-for (var i = 0; i < sec1TempoChanges.length; i++) {
-  var time_numTempi = [];
-  time_numTempi.push(sec1TempoChanges[i]);
-  var numTempi = chooseWeighted(numSimultaneousTempi, tempiChances);
-  time_numTempi.push(numTempi);
-  sec1NumTempi.push(time_numTempi);
-}
-//For every tempo change choose tempi
-var sec1Tempi = [];
-//Generate divisions approx ever 5bpm
-var tempoMin = 54;
-var tempoMax = 91;
-var newTempo = tempoMin;
-var tempoSects = [];
-while (newTempo <= tempoMax) {
-  tempoSects.push(newTempo);
-  newTempo = newTempo + rrand(4.1, 5.7);
-}
-var tempi = [];
-//generate 3 tempi per section
-for (var i = 1; i < tempoSects.length; i++) {
-  var tempTempoSec = [];
-  for (var j = 0; j < 3; j++) {
-    var nextTempo = rrand(tempoSects[i - 1], tempoSects[i]);
-    //generate a random phase
-    var tempo_phase = [];
-    tempo_phase.push(nextTempo);
-    var phase = rrand(0, 1);
-    tempo_phase.push(phase);
-    tempTempoSec.push(tempo_phase);
-  }
-  tempi.push(tempTempoSec);
-}
-//shuffle tempo array
-var tempiShuffle = shuffle(tempi);
-var tempoArrayInc = 0;
-//grab a tempo from each section
-for (var i = 0; i < sec1NumTempi.length; i++) {
-  var tempSecTempi = [];
-  for (var j = 0; j < sec1NumTempi[i][1]; j++) {
-    var thisTempo = choose(tempiShuffle[tempoArrayInc]);
-    tempoArrayInc = (tempoArrayInc + 1) % tempiShuffle.length;
-    tempSecTempi.push(thisTempo);
-  }
-  var timecode_tempi = [];
-  timecode_tempi.push(sec1NumTempi[i][0]);
-  timecode_tempi.push(tempSecTempi);
-  sec1Tempi.push(timecode_tempi);
-}
-//Generate a timegrid for every beat
-// sec1Tempi[i][0] is the time code start for that section
-//sec1Tempi[1] = an array of tempi;
-var timeGrid = [];
-for (var i = 1; i < sec1Tempi.length; i++) {
-  var thisSectionTimes = [];
-  thisSectionTimes.push(sec1Tempi[i - 1][0]);
-  var tempTempoTimes = [];
-  for (var j = 0; j < sec1Tempi[i][1].length; j++) {
-    var tCurrTime = sec1Tempi[i - 1][0];
-    //find #sec/beat
-    var temptempo = sec1Tempi[i][1][j][0];
-    var tempphase = sec1Tempi[i][1][j][1];
-    var secperbeat = 60.0 / temptempo; //tempo, [1] is phase
-    var durTil1stBeat = secperbeat * tempphase;
-    tCurrTime = tCurrTime + durTil1stBeat;
-    var thisTempoTimes = [];
-    while (tCurrTime <= sec1Tempi[i][0]) {
-      // while (tCurrTime <= (sec1Tempi[i][0]-secperbeat)) {
-      thisTempoTimes.push(tCurrTime);
-      tCurrTime = tCurrTime + secperbeat;
-      // thisTempoTimes.push(tCurrTime);
-    }
-    var tempArraySet = [];
-    tempArraySet.push(thisTempoTimes);
-    var emptyOrchArray = [];
-    tempArraySet.push(emptyOrchArray);
-    tempArraySet.unshift(sec1Tempi[i][1][j]);
-    tempTempoTimes.push(tempArraySet);
-
-  }
-  thisSectionTimes.push(tempTempoTimes);
-  timeGrid.push(thisSectionTimes);
-}
-
-
-// Orchestration
-
-// Generate a large set of every player we will need for every section
-var maxNumOfPlayers = 16;
-var totalNumPlayers = 0;
-var playerGrid = [];
-var playerGridIx = 0;
-//Generate large grid of 16 players for each section
-for (var i = 0; i < timeGrid.length; i++) {
-  for (var j = 0; j < maxNumOfPlayers; j++) {
-    playerGrid.push(j);
-  }
-}
-//Generate the number of players for each section
-//Grab sequencially from  master player grid and scramble
-for (var i = 0; i < timeGrid.length; i++) {
-  //number players this section
-  var tNumPlayersThisSection = rrandInt(timeGrid[i][1].length, maxNumOfPlayers);
-  //Store for later use
-  timeGrid[i].push(tNumPlayersThisSection);
-  //Generate set of players for this sec
-  var tsecPlayersSet = [];
-  var tsecPlayersSetIx = 0;
-  for (var j = 0; j < tNumPlayersThisSection; j++) {
-    tsecPlayersSet.push(playerGrid[playerGridIx]);
-    playerGridIx++;
-  }
-  //Even number of players for each part
-  //Randomly distribute remainders
-  var tNumParts = timeGrid[i][1].length;
-  var tNumRepeats = Math.floor(tNumPlayersThisSection / timeGrid[i][1].length);
-  var tRemainderPlayers = tNumPlayersThisSection % timeGrid[i][1].length;
-  for (var j = 0; j < tNumRepeats; j++) {
-    for (var k = 0; k < timeGrid[i][1].length; k++) {
-      timeGrid[i][1][k][2].push(tsecPlayersSet[tsecPlayersSetIx]);
-      tsecPlayersSetIx++;
-    }
-  }
-  //With remainder players, randomly assign to one of the parts
-  var tscramParts = scrambleCount(timeGrid[i][1].length);
-  for (var j = 0; j < tRemainderPlayers; j++) {
-    timeGrid[i][1][tscramParts[j]][2].push(tsecPlayersSet[tsecPlayersSetIx]);
-    tsecPlayersSetIx++;
-  }
-}
-
-
-/*
-timegrid:
-[0] Section Start timecode
-[1] Arrays of Timecode for Each Tempo
-    [0] ... One Array for Every Tempo
-        [0] [Tempo in BPM, Phase]
-        [1] [Array of Timecode for each beat]
-        [2] [Array of Players]
-[2] Number of Players
-*/
-/* NEXT
-New Array organize playerGrid by player
-Generate pitch changes with the palindromeTimeContainers function
-Write algorithm to insert pitches for each beat per players
-Flag beats with pitch change
-*/
-
-/*
-Player will be index Number
-Each Array of time codes as an entry in array
-*/
-//Search for Player number
-var timeCodeByPart = [
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  []
+var ps193 = [
+  ["ob", "F#5", "fih''", 734.8205566406249, 77.87866155272926, -66.68175506591797],
+  ["vl", "G5", "g''", 793.3639526367189, 79.20575189744818, -68.43545532226562],
+  ["pno", "A#3", "ais", 230.1361083984375, 57.7798060403218, -69.39955139160156],
+  ["perc", "C4", "c'", 259.74426269531244, 59.87506030890799, -69.5511703491211],
+  ["vla", "F4", "f'", 346.5499877929689, 64.866719326538, -68.47416687011719],
+  ["trb", "E¼b4", "eeh'", 322.99804687500006, 63.648263008993254, -66.6878433227539],
+  ["bcl", "A¼b3", "aeh", 213.98620605468747, 56.52017132510329, -56.3149299621582],
+  ["vc", "G¼#3", "gih", 201.87377929687506, 55.5114001476416, -68.81878662109375]
 ];
-for (var i = 0; i < timeGrid.length; i++) {
-  for (var j = 0; j < timeGrid[i][1].length; j++) {
-    for (var k = 0; k < timeGrid[i][1][j][2].length; k++) {
-      timeCodeByPart[timeGrid[i][1][j][2][k]].push(timeGrid[i][1][j][1]);
-    }
-  }
-}
-//MAKE PITCH DATA
-var pitchChangeTimes = palindromeTimeContainers(PIECEDURSEC, 7, 21, 0.01, 0.17);
-//Fetch Pitches From Fullman Analysis
-var pitchChanges = [];
-fetch('/pitchdata/sfAalysis003.txt')
-  .then(response => response.text())
-  .then(text => {
-    var pitchesArray1 = [];
-    var t1 = text.split(":");
-    for (var i = 0; i < t1.length; i++) {
-      var temparr = t1[i].split(';');
-      var t3 = [];
-      for (var j = 0; j < temparr.length; j++) {
-        var temparr2 = temparr[j].split("&");
-        var t4 = [];
-        for (var k = 0; k < temparr2.length; k++) {
-          t4.push(temparr2[k].split(","));
-        }
-        t3.push(t4);
-      }
-      pitchesArray1.push(t3);
-    }
-    return pitchesArray1;
-  })
-  .then(valArr => {
-    //All parts need to have 4 pitches per section
-    //this will remove the ones that do not have full sections
-    var ttoosmall = [];
-    var tnewPitchesArray = [];
-    for (var i = 0; i < valArr.length; i++) {
-      for (var j = 0; j < valArr[i].length; j++) {
-        if (valArr[i][j].length < 4) {
-          ttoosmall.push(i);
-        }
-      }
-    }
-    for (var i = 0; i < valArr.length; i++) {
-      var tallGood = true;
-      for (var j = 0; j < ttoosmall.length; j++) {
-        if (i == ttoosmall[j]) {
-          tallGood = false;
-          break;
-        }
-      }
-      if (tallGood) tnewPitchesArray.push(valArr[i]);
-    }
-    // SHUFFLE UP PITCHES
-    var ts = [];
-    for (var i = 0; i < tnewPitchesArray.length; i++) {
-      ts.push(i);
-    }
-    var tss = shuffle(ts);
-    var tnewPitchesArray2 = [];
-    for (var i = 0; i < tnewPitchesArray.length; i++) {
-      tnewPitchesArray2.push(tnewPitchesArray[tss[i]]);
-    }
-    // pitchesArray is index for each second
-    // 4 arrays for every section: bass, tenor, alto, soprano
-    // Each section array contains up to 4 pitches for each of 4 singers
-    // [hz, midi, relative Amp]
-    var pitchesArrayMaxTime = tnewPitchesArray2.length - 1;
-    var pitchChangeTimesMaxTime = pitchChangeTimes[pitchChangeTimes.length - 1];
-    for (var i = 0; i < pitchChangeTimes.length; i++) {
-      var ttimepartsarr = [];
-      var ttimecode;
-      if (i != 0) {
-        ttimecode = leadTime + pitchChangeTimes[i];
-        // ttimecode = pitchChangeTimes[i];
-      } else ttimecode = leadTime;
-      ttimepartsarr.push(ttimecode);
-      ttimepartsarr.push(Math.round(ttimecode * FRAMERATE));
-      var tScaledTime = scale(pitchChangeTimes[i], 0.0, pitchChangeTimesMaxTime, 0.0, pitchesArrayMaxTime);
-      for (var j = 0; j < tnewPitchesArray2.length; j++) {
-        if (tScaledTime < j) {
-          ttimepartsarr.push(tnewPitchesArray2[j - 1]);
-          pitchChanges.push(ttimepartsarr);
-          break;
-        }
-      }
-    }
-    // DOWNLOAD pitchChanges ----------------------------------------------- //
-    //// pitchChanges [each pitch change] [ timeSec, goFrame, [Array of pitch arrays] ] [hz, midi, relAmp]
-    var tempstr1 = "";
-    for (var i = 0; i < pitchChanges.length; i++) {
-      var tempstr2 = "";
-      for (var j = 0; j < pitchChanges[i][2].length; j++) {
-        var tempstr3 = "";
-        for (var k = 0; k < pitchChanges[i][2][j].length; k++) {
-          if (k == 0) {
-            tempstr3 = pitchChanges[i][2][j][k].toString();
-          } else {
-            tempstr3 = tempstr3 + "?" + pitchChanges[i][2][j][k].toString();
-          }
-        }
-        if (j == 0) {
-          tempstr2 = tempstr3;
-        } else {
-          tempstr2 = tempstr2 + "%" + tempstr3;
-        }
-      }
-      if (i == 0) {
-        tempstr1 = pitchChanges[i][0] + "$" + pitchChanges[i][1] + "$" + tempstr2;
-      } else {
-        tempstr1 = tempstr1 + "&" + pitchChanges[i][0] + "$" + pitchChanges[i][1] + "$" + tempstr2;
-      }
-    }
-    // downloadStrToHD(tempstr1, "pitchChanges_text", 'text/plain');
-  });
-// UPLOAD pitchChanges from file -------------------------------------- //
-function uploadPitchChangesFromFile(path) {
-  fetch(path)
-    .then(response => response.text())
-    .then(text => {
-      var pitchesArray1 = [];
-      var t1 = text.split("&");
-      var d3 = [];
-      for (var i = 0; i < t1.length; i++) {
-        var temparr = t1[i].split('$');
-        var t3 = [];
-        var t4 = temparr[2].split("%");
-        var d2 = [];
-        for (var j = 0; j < t4.length; j++) {
-          var t5 = t4[j].split("?");
-          var d1 = [];
-          for (var k = 0; k < t5.length; k++) {
-            var t6 = t5[k].split(",");
-            var t6f = [];
-            for (var l = 0; l < t6.length; l++) {
-              t6f.push(parseFloat(t6[l]));
-            }
-            d1.push(t6f);
-          }
-          d2.push(d1)
-        }
-        var d4 = [];
-        d4.push(parseFloat(temparr[0]));
-        d4.push(parseFloat(temparr[1]));
-        d4.push(d2);
-        d3.push(d4);
-      }
-      return d3;
-    });
-}
-//MAKE DICTIONARY OF PITCH NOTATION BY MIDI NOTE NUMBER AND PATH STRING
+var ps113 = [
+  ["ob", "G5", "g''", 794.0368652343749, 79.22042959268147, -64.76925659179688],
+  ["vln", "C#5", "cih''", 558.5174560546874, 73.12918617650247, -63.97966766357422],
+  ["pno", "A#3", "ais", 231.48193359375, 57.8807529181162, -62.436012268066406],
+  ["perc", "G4", "g'", 396.34552001953136, 67.19106174765656, -58.106101989746094],
+  ["vla", "D4¼#", "dih'", 298.77319335937506, 62.298566257892304, -53.915794372558594],
+  ["trb", "G3¼#", "gih", 200.52795410156247, 55.395598107236964, -64.15660858154297],
+  ["bc", "A3", "a", 222.0611572265625, 57.16144243264082, -61.627532958984375],
+  ["vc", "C3¼#", "cih", 133.90960693359375, 48.405071308214815, -61.66714096069336]
+];
+var ps173 = [
+  ["ob", "D5", "d''", 586.7797851562501, 73.98378775901415, -60.00305938720703],
+  ["vln", "F5", "f''", 704.539489746094, 77.15012458486073, -64.7326889038086],
+  ["pno", "G3", "g", 197.8363037109375, 55.1616439997274, -58.672576904296875],
+  ["perc", "A3", "a", 218.023681640625, 56.843775896306525, -63.52577590942383],
+  ["vla", "G¼b4", "geh'", 382.8872680664063, 66.59299396937001, -65.16079711914062],
+  ["trb", "E4", "e'", 327.03552246093733, 63.86332590496039, -65.4526596069336],
+  ["bcl", "A¼b2", "aeh", 107.666015625, 44.628713000339374, -65.81742095947266],
+  ["vc", "A¼b3", "aeh", 215.33203124999997, 56.628713000339374, -65.77326965332031]
+
+];
+var ps44 = [
+  ["ob", "C¼b5", "ceh''", 513.4323120117185, 71.67204682370539, -54.20226287841797],
+  ["vln", "B¼b4", "beh'", 476.7585754394528, 70.38906437670724, -56.74132537841797],
+  ["pno", "A4", "a'", 438.73901367187483, 68.95031371246395, -55.0628662109375],
+  ["perc", "F#4", "fis'", 364.04571533203136, 65.71939326761282, -47.91668701171875],
+  ["vla", "D4", "d'", 291.37115478515614, 61.86425443841172, -55.55368423461914],
+  ["trb", "A3", "a", 218.023681640625, 56.843775896306525, -54.03341293334961],
+  ["bcl", "G3", "g", 196.49047851562506, 55.04347056825124, -52.384952545166016],
+  ["vc", "D¼b3", "des", 144.0032958984375, 49.66317969850479, -53.01714324951172]
+];
+var ps27 = [
+  ["ob", "G5", "g''", 794.0368652343749, 79.22042959268147, -55.520206451416016],
+  ["vln", "F1/4#4", "fih'", 355.2978515625, 65.29830529399247, -59.45197296142578],
+  ["pno", "F5", "f''", 706.5582275390624, 77.19965921233285, -57.727317810058594],
+  ["perc", "D5", "d''", 593.5089111328123, 74.18119400838127, -59.670982360839844],
+  ["vla", "B1/4b3", "beh", 236.86523437499994, 58.27875528533859, -59.702964782714844],
+  ["trb", "A1/4b3", "aeh", 213.98620605468747, 56.52017132510329, -56.72692108154297],
+  ["bcl", "A1/4b2", "aeh,", 107.666015625, 44.628713000339374, -57.23842239379883],
+  ["vc", "G1/4#3", "geh", 203.2196044921875, 55.626432733591976, -58.54011917114258]
+];
+var ps1 = [
+  ["ob", "A4", "a'", 441.4306640625, 69.05619991710803, -60.34303283691406],
+  ["vln", "Bb4", "bes'", 461.6180419921875, 69.83035305576477, -60.34886169433594],
+  ["pn", "G4", "g'", 396.34552001953136, 67.19106174765656, -55.7911491394043],
+  ["perc", "D4", "d'", 294.06280517578114, 62.0234494956982, -52.699337005615234],
+  ["vla", "D#4", "dis'", 310.88562011718756, 62.98656435868372, -60.32509231567383],
+  ["tb", "G3", "g", 197.8363037109375, 55.1616439997274, -54.86480712890625],
+  ["bcl", "c3", "c", 131.21795654296875, 48.05353962668636, -57.08091354370117],
+  ["vc", "D3", "d", 146.69494628906256, 49.98378775901415, -59.329627990722656],
+];
 var notesMidiDict = {
   36: '/svgs/036c2.svg',
   36.5: '/svgs/036p5cqs2.svg',
@@ -494,173 +153,66 @@ var notesMidiDict = {
   80.5: '/svgs/080p5aqf5.svg',
   81.0: '/svgs/081a5.svg'
 }
-// for (const [key, value] of Object.entries(notesMidiDict)) {}
-//arrays to download:
-//// timeCodeByPart
-//// pitchChanges
-// timeCodeByPart[part#(0-15)][Array for each new tempo containing timecodeSec][array of timecodeSec]
-// DOWNLOAD timeCodeByPart --------------------------------------------
-// var timeCodeByPart_toString = array3dtoString(timeCodeByPart);
-// downloadStrToHD(timeCodeByPart_toString, "timeCodeByPart", 'text/plain');
-// UPLOAD timeCodeByPart from text file ----------------------------------- //
-// fetch('/piecesData/timeCodeByPart.txt ')
-//   .then(response => response.text())
-//   .then(text => {
-//     var testArr = stringTo3DFloatArray(text);
-//   });
-// DOWNLOAD pitchChanges ----------------------------------------------- //
-//// (see fetch above)
 
+////////////////////////////////////////////////////////////////////////////////////
+// ---------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////
 
-// SECTION 2 ------------------------------------------------------------- //
-// Find end of section 1
-var sec1LastEventTime = 0;
-for (var i = 0; i < timeCodeByPart.length; i++) {
-  var tlast = timeCodeByPart[i].length - 1;
-  var tlast2 = timeCodeByPart[i][tlast].length - 1;
-  var tlast3 = timeCodeByPart[i][tlast][tlast2];
-  if (tlast3 > sec1LastEventTime) {
-    sec1LastEventTime = tlast3;
+var leadTime = 7.0;
+var eventSet = [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  []
+]; //[ timeCode, eventType ]
+// Event Types: 0 - Beat, 1 - Discrete Event
+
+// SECTION 1 1:50-2:10
+// 1st entry 6-10secs
+// sebsequent entries 2.5 4.5 secs
+// change pitch between 40%-60% then 40%-60% of remaining
+// last 25% - 18% begin loops
+
+//clock conductions for textures
+
+var SECTION_1_DUR = rrand(110, 130);
+////// [0]oboe, [1]Violin,  [2]Piano, [3]Perc,
+////// [4]Viola, [5]Trombone, [6]Bass Clarinet, [7]Cello
+// Scramble Instrument Order
+var ogInst = [0, 1, 2, 3, 4, 5, 6, 7];
+var instrumentOrder = shuffle(ogInst);
+// Initial Entries
+for (var i = 0; i < instrumentOrder.length; i++) {
+  var t_2ndEntry = rrand(6, 10);
+  var t_nextEntry = t_2ndEntry;
+  if (i == 0) eventSet[instrumentOrder[i]].push([0, 1]);
+  else if (i == 1) {
+    eventSet[instrumentOrder[i]].push([t_2ndEntry, 1]);
+  } else {
+    var t_addTime = rrand(3.5, 5.5);
+    t_nextEntry = t_nextEntry + t_addTime;
+    eventSet[instrumentOrder[i]].push([t_nextEntry, 1]);
   }
 }
-// Create sec2 timecode by parts
-var sec1sec2Gap = 3;
-var sec2start = sec1LastEventTime + sec1sec2Gap;
-var breath = 2.7;
-var cresMin = 5.9;
-var cresMax = 7.83;
-var cresDurs = distributeOverRange(cresMin, cresMax, maxNumOfPlayers);
-var sec2TimeCodeByPart = [];
-var endSec2Time = sec2start + section2dur;
-for (var i = 0; i < maxNumOfPlayers; i++) {
-  var tempar = [];
-  sec2TimeCodeByPart.push(tempar);
-  for (var j = 0; j < 1000; j++) {
-    var tnextTimeCode = sec2start + ((cresDurs[i] + breath) * j);
-    if (tnextTimeCode > endSec2Time) {
-      break;
-    } else {
-      sec2TimeCodeByPart[i].push(tnextTimeCode);
-    }
+// Generate Beat Grids
+var tempi = [55, 56, 57, 58, 59, 60, 61, 62];
+for (var i = 0; i < 8; i++) {
+  var t_beatDur = 60.0 / tempi[i];
+  var t_firstBeat = eventSet[i][0][0];
+  //Add 4 count in
+  for (var j = 1; j < 5; j++) {
+    eventSet[i].push([(t_firstBeat - (t_beatDur * j)), 0]);
   }
-}
-// SECTION 3: Hocket/Crescendos/Accel --------------------------------- //
-// Find end of section 2
-var sec2LastEventTime = 0;
-for (var i = 0; i < sec2TimeCodeByPart.length; i++) {
-  var tlastix = sec2TimeCodeByPart[i].length - 1;
-  var tlastval = sec2TimeCodeByPart[i][tlastix];
-  if (tlastval > sec2LastEventTime) {
-    sec2LastEventTime = tlastval;
-  }
-}
-var section2_3gap = 0.5;
-var sec3StartTime = sec2LastEventTime + cresMax + section2_3gap;
-var sec3EndTime = sec3StartTime + section3dur;
-// DIVIDE PLAYERS INTO 3 GROUPS
-var sec3HocketPlayers = [];
-var sec3Cres = [];
-var sec3Accel = [];
-var playersScrambledSec3 = scrambleCount(16);
-var sec3HocketPlayers = playersScrambledSec3.slice(0, 5);
-var sec3Cres = playersScrambledSec3.slice(5, 10);
-var sec3Accel = playersScrambledSec3.slice(10, 16);
-// Hocket
-var sec3HocketTimeCode = [];
-for (var i = 0; i < sec3HocketPlayers.length; i++) {
-  //generate when tempi changes will take place
-  var tchgtimes = palindromeTimeContainers(section3dur, 1.8, 5.5, 0.03, 0.06);
-  var ttimecodePerTempo = [];
-  for (var j = 1; j < tchgtimes.length; j++) {
-    //Generate tempo for each change time
-    var ttempo = rrand(68, 105);
-    var tdur = tchgtimes[j] - tchgtimes[j - 1];
-    var tbeatdur = 60.0 / ttempo;
-    var tbeatsAtTempo = [];
-    //Generate as many beats as possible for each time container @ tempo
-    for (var k = 0; k < 100; k++) {
-      var titc = tbeatdur * k;
-      if (titc < (tdur - tbeatdur)) {
-        tbeatsAtTempo.push(tchgtimes[j - 1] + titc + sec3StartTime);
-      } else break;
-    }
-    ttimecodePerTempo.push(tbeatsAtTempo);
-  }
-  sec3HocketTimeCode.push(ttimecodePerTempo);
-}
-// Sec 3 Crescendos
-var sec3CresDurs = distributeOverRange(cresMin, cresMax, sec3Cres.length);
-var sec3CresTimeCodeByPart = [];
-for (var i = 0; i < sec3Cres.length; i++) {
-  var tempar = [];
-  sec3CresTimeCodeByPart.push(tempar);
-  for (var j = 0; j < 1000; j++) {
-    var tnextTimeCode = ((sec3CresDurs[i] + breath) * j) + sec3StartTime;
-    if (tnextTimeCode > sec3EndTime) {
-      break;
-    } else {
-      sec3CresTimeCodeByPart[i].push(tnextTimeCode);
-    }
-  }
-}
-// ACCEL
-var sec3AccelTimeCode = [];
-for (var i = 0; i < sec3Accel.length; i++) {
-  //generate when each accel begins
-  var tchgtimes = palindromeTimeContainers(section3dur, 19.2, 31.1, 0.03, 0.06);
-  var ttimecodePerAccel = [];
-  for (var j = 1; j < tchgtimes.length; j++) {
-    var titempo = 43.0;
-    var ttempo = titempo;
-    var taccelRate = rrand(1.052, 1.052);
-    var tmindur = 0.27;
-    var tdur = tchgtimes[j] - tchgtimes[j - 1];
-    var tibeatdur = 60.0 / titempo;
-    var tbeatdur = tibeatdur;
-    var tbeatsAtAccel = [];
-    //Generate as many beats as possible for each time container @ tempo
-    var titc = 0;
-    for (var k = 0; k < 100; k++) {
-      if (titc < (tdur - tibeatdur)) {
-        tbeatsAtAccel.push(tchgtimes[j - 1] + titc + sec3StartTime);
-        ttempo = ttempo * taccelRate;
-        tbeatdur = Math.max(tmindur, (60.0 / ttempo));
-        titc = titc + tbeatdur;
-      } else break;
-    }
-    ttimecodePerAccel.push(tbeatsAtAccel);
-  }
-  sec3AccelTimeCode.push(ttimecodePerAccel);
-}
-//SECTION 4 SHORT Hocket
-var sec4StartTime = sec3EndTime + cresMax;
-// Hocket
-var sec4TimeCode = [];
-for (var i = 0; i < maxNumOfPlayers; i++) {
-  var ttempo = rrand(68, 105);
-  var tbeatdur = 60.0 / ttempo;
-  var tbeatsAtTempo = [];
-  var titc = 0;
-  //Generate as many beats as possible for each time container @ tempo
-  for (var k = 0; k < 1000; k++) {
-    titc = tbeatdur * k;
-    if (titc < section4dur) {
-      tbeatsAtTempo.push(titc + sec4StartTime);
+  for (var j = 0; j < 999; j++) {
+    var t_newTime = eventSet[i][0][0] + (t_beatDur * j);
+    if (t_newTime < SECTION_1_DUR) {
+      eventSet[i].push([t_newTime, 0]);
     } else break;
   }
-  sec4TimeCode.push(tbeatsAtTempo);
 }
-/*
-NOTES
-Finish removing cres indicators
-Samples Record Demo
-Sample Part Score
-
-Function to save/reload piece data
-sec2TimeCodeByPart
-sec3HocketTimeCode
-sec3AccelTimeCode
-
-Pitch Change Indicators
-
-*/
+console.log(roundByStep(ps27[5][4], 0.5));
