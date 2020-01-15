@@ -185,17 +185,19 @@ function createScene() {
   // LOAD NOTATION ////////////////////////////////////////////////////////
 
 
+  var notationCont_boundingBox = notationContainers[0].getBoundingClientRect();
+  var notationContW = notationCont_boundingBox.width;
+  var notationContH = notationCont_boundingBox.height;
+
   var notationsForEachPart = [];
   for (var i = 0; i < NUMTRACKS; i++) {
     var notationSVGsDict = {};
     for (const [key, value] of Object.entries(notationPathsDict)) {
       var t_notationSVG = document.createElementNS(SVG_NS, "image");
       t_notationSVG.setAttributeNS(SVG_XLINK, 'xlink:href', value);
-      var t_notationCont_boundingBox = notationContainers[0].getBoundingClientRect();
-      var t_contW = t_notationCont_boundingBox.width;
-      t_notationSVG.setAttributeNS(null, 'width', t_contW.toString());
-      var t_contH = t_notationCont_boundingBox.height * 0.33333;
-      t_notationSVG.setAttributeNS(null, 'height', t_contH.toString());
+      t_notationSVG.setAttributeNS(null, 'width', notationContW.toString());
+      var t_svgH = notationContH * 0.33333333;
+      t_notationSVG.setAttributeNS(null, 'height', t_svgH.toString());
       t_notationSVG.setAttributeNS(null, 'visibility', 'visible');
       notationSVGsDict[key] = t_notationSVG;
     }
@@ -207,6 +209,30 @@ function createScene() {
     notationContainerDOMs[i].appendChild(t_img);
     // currentNotation.push(parseFloat(pitchChanges[0][2][0][i][1]));
   }
+
+// PITCHES SVGS
+    var pitchesForEachPartByPitchSet = [];
+    for (var i = 0; i < NUMTRACKS; i++) {
+      var pitchesSVGsDict = {};
+      for (const [key, value] of Object.entries(pitchNotationPathsDict)) {
+        var t_pitchSVG = document.createElementNS(SVG_NS, "image");
+        t_pitchSVG.setAttributeNS(SVG_XLINK, 'xlink:href', value[i]);
+        var t_svgW = notationContW * 0.5
+        t_pitchSVG.setAttributeNS(null, 'width', t_svgW.toString());
+        var t_svgH =notationContW * 0.33333;
+        t_pitchSVG.setAttributeNS(null, 'height', t_svgH.toString());
+        t_pitchSVG.setAttributeNS(null, 'visibility', 'visible');
+        pitchesSVGsDict[key] = t_pitchSVG;
+      }
+      pitchesForEachPartByPitchSet.push(pitchesSVGsDict);
+    }
+    console.log(pitchesForEachPartByPitchSet);
+    // DRAW INITIAL PITCHES FOR EACH TRACKS
+    // for (var i = 0; i < NUMTRACKS; i++) {
+    //   var t_img = notationsForEachPart[i]["pulseTrack"];
+    //   notationContainerDOMs[i].appendChild(t_img);
+    //   // currentNotation.push(parseFloat(pitchChanges[0][2][0][i][1]));
+    // }
 
 
 
