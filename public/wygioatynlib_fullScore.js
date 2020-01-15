@@ -182,6 +182,37 @@ function createScene() {
   for (var i = 0; i < notationContainers.length; i++) {
     notationContainerDOMs.push(document.getElementById(notationContainers[i].id));
   }
+  // LOAD NOTATION ////////////////////////////////////////////////////////
+
+
+  var notationsForEachPart = [];
+  for (var i = 0; i < NUMTRACKS; i++) {
+    var notationSVGsDict = {};
+    for (const [key, value] of Object.entries(notationPathsDict)) {
+      var t_notationSVG = document.createElementNS(SVG_NS, "image");
+      t_notationSVG.setAttributeNS(SVG_XLINK, 'xlink:href', value);
+      var t_notationCont_boundingBox = notationContainers[0].getBoundingClientRect();
+      var t_contW = t_notationCont_boundingBox.width;
+      t_notationSVG.setAttributeNS(null, 'width', t_contW.toString());
+      var t_contH = t_notationCont_boundingBox.height * 0.33333;
+      t_notationSVG.setAttributeNS(null, 'height', t_contH.toString());
+      t_notationSVG.setAttributeNS(null, 'visibility', 'visible');
+      notationSVGsDict[key] = t_notationSVG;
+    }
+    notationsForEachPart.push(notationSVGsDict);
+  }
+  // DRAW INITIAL PITCHES FOR EACH TRACKS
+  for (var i = 0; i < NUMTRACKS; i++) {
+    var t_img = notationsForEachPart[i]["pulseTrack"];
+    notationContainerDOMs[i].appendChild(t_img);
+    // currentNotation.push(parseFloat(pitchChanges[0][2][0][i][1]));
+  }
+
+
+
+
+
+
   // FOR FRAME BY FRAME TESTS -------------------------------------------- //
   // document.addEventListener('keydown', function(event) {
   //   if (event.code == 'KeyA') {
@@ -252,7 +283,7 @@ function update(aMSPERFRAME) {
       goFrets[i][0].material.color = clr_safetyOrange;
       goFrets[i][0].geometry = goFretGeomBig;
     } else {
-      goFrets[i][0].material.color =  clr_neonGreen;
+      goFrets[i][0].material.color = clr_neonGreen;
       goFrets[i][0].geometry = goFretGeom;
     }
   }
@@ -262,7 +293,7 @@ function update(aMSPERFRAME) {
       eventGoFrets[i][0].material.color = clr_neonRed;
       eventGoFrets[i][0].geometry = eventGoFretGeomBig;
     } else {
-      eventGoFrets[i][0].material.color =  clr_yellow;
+      eventGoFrets[i][0].material.color = clr_yellow;
       eventGoFrets[i][0].geometry = eventGoFretGeom;
     }
   }
