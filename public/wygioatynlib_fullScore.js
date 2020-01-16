@@ -83,8 +83,10 @@ var NOTATION_CONTAINER_H = 350.0;
 var eventMatrix = [];
 //// Beat Markers //////////////////////////////////
 var beatMarkerGeom = new THREE.CubeGeometry(GOFRETWIDTH + 2, GOFRETHEIGHT + 2, GOFRETLENGTH + 2);
-//// Beat Markers //////////////////////////////////
+//// Pitches //////////////////////////////////
 var pitchMarkerGeom = new THREE.CubeGeometry(GOFRETWIDTH -20, GOFRETHEIGHT + 6, 8);
+var currentPitchesById =[];
+var pitchSVGIdNum = 0;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // FACTORY --------------------------------------------------------------------------------------//
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -226,6 +228,8 @@ function createScene() {
         var t_svgY = notationContH - (notationContH/3);
         t_pitchSVG.setAttributeNS(null, "transform", "translate(" + t_svgX.toString() + "," + t_svgY.toString() + ")");
         t_pitchSVG.setAttributeNS(null, 'visibility', 'visible');
+        t_pitchSVG.setAttributeNS(null, 'id', 'pitchSVG' + pitchSVGIdNum.toString());
+        pitchSVGIdNum++;
         pitchesSVGsDict[key] = t_pitchSVG;
       }
       pitchesForEachPartByPitchSet.push(pitchesSVGsDict);
@@ -234,9 +238,8 @@ function createScene() {
     for (var i = 0; i < NUMTRACKS; i++) {
       var t_img = pitchesForEachPartByPitchSet[i][pitchSets[0]];
       notationContainerDOMs[i].appendChild(t_img);
-      // currentNotation.push(parseFloat(pitchChanges[0][2][0][i][1]));
+      currentPitchesById.push(t_img.id);
     }
-    console.log(pitchesForEachPartByPitchSet);
   // FOR FRAME BY FRAME TESTS -------------------------------------------- //
   // document.addEventListener('keydown', function(event) {
   //   if (event.code == 'KeyA') {
@@ -288,10 +291,13 @@ function update(aMSPERFRAME) {
       //When EVENT MESH reaches goline, blink and remove
       if (framect == eventMatrix[i][j][3]) {
         switch (eventMatrix[i][j][0]) {
-          case 0:
+          case 0: //beats
             goFretBlink[i] = framect + 11;
             break;
-          case 1:
+          case 1:  // events
+            eventGoFretBlink[i] = framect + 11;
+            break;
+          case 2:  // pitches
             eventGoFretBlink[i] = framect + 11;
             break;
           default:
@@ -323,15 +329,15 @@ function update(aMSPERFRAME) {
   }
   // NOTATION --------------------------------------------------------- //
   //REMOVE PREVIOUS NOTATION
-  // for (var i = 1; i < pitchChanges.length; i++) {
-  //   if (pitchChanges[i][1] == framect) {
-  //     for (var k = 0; k < 4; k++) {
-  //       var timg = notes[0][roundByStep(pitchChanges[i][2][0][k][1], 0.5)];
-  //       for (var l = 0; l < pitchContainerDOMs[k].children.length; l++) {
-  //         pitchContainerDOMs[k].removeChild(pitchContainerDOMs[k].children[l]);
-  //       }
-  //       currentPitches[k] = parseFloat(pitchChanges[i][2][0][k][1]);
-  //     }
+  for (var i = 0; i < pitchChanges.length; i++) {
+    if (pitchChanges[i][1] == framect) { //detect pitch change
+      for (var k = 0; k < 4; k++) {
+        var timg = notes[0][roundByStep(pitchChanges[i][2][0][k][1], 0.5)];
+        for (var l = 0; l < pitchContainerDOMs[k].children.length; l++) {
+          pitchContainerDOMs[k].removeChild(pitchContainerDOMs[k].children[l]);
+        }
+        currentPitches[k] = parseFloat(pitchChanges[i][2][0][k][1]);
+      }
   // RENDER EACH FRAME ////////////////////////////////////
   renderer.render(scene, camera);
 }

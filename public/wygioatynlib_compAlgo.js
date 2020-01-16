@@ -276,19 +276,18 @@ var sec1PitchChange1 = SECTION_1_DUR * rrand(0.4, 0.5);
 var sec1PitchChange2 = ((SECTION_1_DUR - sec1PitchChange1) * rrand(0.47, 0.54)) + sec1PitchChange1;
 sec1PitchChange1 = 2;
 sec1PitchChange2 = 4;
-for (var i = 0; i < eventSet.length; i++) {
-  pitchEvents[i].push([sec1PitchChange1, pitchSets[pitchSetIx]]);
+for (var i = 0; i < NUMTRACKS; i++) {
+  pitchEvents[i].push([sec1PitchChange1, pitchSets[pitchSetIx], ]);
 }
 pitchSetIx++;
-for (var i = 0; i < eventSet.length; i++) {
+for (var i = 0; i < NUMTRACKS; i++) {
   pitchEvents[i].push([sec1PitchChange2, pitchSets[pitchSetIx]]);
 }
 pitchSetIx++;
-console.log(pitchEvents);
-for (var i = 0; i < eventSet.length; i++) {
-  eventSet[i].push([sec1PitchChange1, 2]);
-  eventSet[i].push([sec1PitchChange2, 2]);
+for (var i = pitchEvents.length; i++) {
+  for (var j = 0; j < eventSet.length; j++) {
+    eventSet[j].push([ pitchEvents[i][0], 2, pitchEvents[i][1] ]); //[timecode, eventType(pitch), pitchset]
+  }
 }
-console.log(eventSet);
 
 //start with adding pitch events to update
