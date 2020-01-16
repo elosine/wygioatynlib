@@ -274,13 +274,21 @@ for (var i = 0; i < notationEvents.length; i++) {
 // Change pitch 40% - 60% of the way through
 var sec1PitchChange1 = SECTION_1_DUR * rrand(0.4, 0.5);
 var sec1PitchChange2 = ((SECTION_1_DUR - sec1PitchChange1) * rrand(0.47, 0.54)) + sec1PitchChange1;
-sec1PitchChange1 = 10;
-sec1PitchChange2 = 13;
-pitchEvents.push([sec1PitchChange1, pitchSets[pitchSetIx]);
+sec1PitchChange1 = 2;
+sec1PitchChange2 = 4;
+for (var i = 0; i < eventSet.length; i++) {
+  pitchEvents[i].push([sec1PitchChange1, pitchSets[pitchSetIx]]);
+}
 pitchSetIx++;
-pitchEvents.push([sec1PitchChange2, pitchSets[pitchSetIx]);
+for (var i = 0; i < eventSet.length; i++) {
+  pitchEvents[i].push([sec1PitchChange2, pitchSets[pitchSetIx]]);
+}
 pitchSetIx++;
-eventSet.push([sec1PitchChange1, 2);
-eventSet.push([sec1PitchChange2, 2);
+console.log(pitchEvents);
+for (var i = 0; i < eventSet.length; i++) {
+  eventSet[i].push([sec1PitchChange1, 2]);
+  eventSet[i].push([sec1PitchChange2, 2]);
+}
+console.log(eventSet);
 
-  //start with adding pitch events to update
+//start with adding pitch events to update

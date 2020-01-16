@@ -28,6 +28,7 @@ var clr_purple = new THREE.Color("rgb(255, 0, 255)");
 var clr_neonRed = new THREE.Color("rgb(255, 37, 2)");
 var clr_safetyOrange = new THREE.Color("rgb(255, 103, 0)");
 var clr_green = new THREE.Color("rgb(0, 255, 0)");
+var clr_white = new THREE.Color("rgb(255, 255, 255)");
 // SCENE ///////////////////////////////////////////////////////////////
 var camera, scene, renderer, canvas;
 //// Scene Settings ///////////////////////////////
@@ -82,6 +83,8 @@ var NOTATION_CONTAINER_H = 350.0;
 var eventMatrix = [];
 //// Beat Markers //////////////////////////////////
 var beatMarkerGeom = new THREE.CubeGeometry(GOFRETWIDTH + 2, GOFRETHEIGHT + 2, GOFRETLENGTH + 2);
+//// Beat Markers //////////////////////////////////
+var pitchMarkerGeom = new THREE.CubeGeometry(GOFRETWIDTH -20, GOFRETHEIGHT + 6, 8);
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // FACTORY --------------------------------------------------------------------------------------//
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -183,8 +186,6 @@ function createScene() {
     notationContainerDOMs.push(document.getElementById(notationContainers[i].id));
   }
   // LOAD NOTATION ////////////////////////////////////////////////////////
-
-
   var notationCont_boundingBox = notationContainers[0].getBoundingClientRect();
   var notationContW = notationCont_boundingBox.width;
   var notationContH = notationCont_boundingBox.height;
@@ -235,6 +236,7 @@ function createScene() {
       notationContainerDOMs[i].appendChild(t_img);
       // currentNotation.push(parseFloat(pitchChanges[0][2][0][i][1]));
     }
+    console.log(pitchesForEachPartByPitchSet);
   // FOR FRAME BY FRAME TESTS -------------------------------------------- //
   // document.addEventListener('keydown', function(event) {
   //   if (event.code == 'KeyA') {
@@ -319,9 +321,21 @@ function update(aMSPERFRAME) {
       eventGoFrets[i][0].geometry = eventGoFretGeom;
     }
   }
+  // NOTATION --------------------------------------------------------- //
+  //REMOVE PREVIOUS NOTATION
+  // for (var i = 1; i < pitchChanges.length; i++) {
+  //   if (pitchChanges[i][1] == framect) {
+  //     for (var k = 0; k < 4; k++) {
+  //       var timg = notes[0][roundByStep(pitchChanges[i][2][0][k][1], 0.5)];
+  //       for (var l = 0; l < pitchContainerDOMs[k].children.length; l++) {
+  //         pitchContainerDOMs[k].removeChild(pitchContainerDOMs[k].children[l]);
+  //       }
+  //       currentPitches[k] = parseFloat(pitchChanges[i][2][0][k][1]);
+  //     }
   // RENDER EACH FRAME ////////////////////////////////////
   renderer.render(scene, camera);
 }
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTIONS ------------------------------------------------------------------------------------//
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -346,9 +360,11 @@ function createEvents() {
       var t_numPxTilGo = t_goTime * PXPERSEC;
       var t_startZ = GOFRETPOSZ - t_numPxTilGo;
       var t_goFrame = Math.round(t_numPxTilGo / PXPERFRAME);
-      //// Switch on eventType: eventSet[i][j][1]
+      ////////////////////////////////////////////////////////////////////////////
+      //// ------ Switch on eventType: eventSet[i][j][1] -----------------------//
+      ////////////////////////////////////////////////////////////////////////////
       switch (eventSet[i][j][1]) {
-        case 0: //beats
+        case 0: // beats ---------------------------------------------------------------------
           var t_beatMarkerMatl = new THREE.MeshLambertMaterial({
             color: clr_neonMagenta
           });
@@ -358,10 +374,9 @@ function createEvents() {
           t_beatMarkerMesh.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * i);
           t_beatMarkerMesh.name = t_eventIx + "_beat";
           t_eventIx++;
-          // [ eventType, addToSceneGate, mesh, goFrame, goTime, startZ ]
           var t_singleEventDataArray = [eventSet[i][j][1], true, t_beatMarkerMesh, t_goFrame, t_goTime, t_startZ];
           break;
-        case 1: // Events
+        case 1: // Events ------------------------------------------------------------------
           var t_eventMarkerMatl = new THREE.MeshLambertMaterial({
             color: clr_seaGreen
           });
@@ -373,6 +388,19 @@ function createEvents() {
           t_eventIx++;
           // [ eventType, addToSceneGate, mesh, goFrame, goTime, startZ ]
           var t_singleEventDataArray = [eventSet[i][j][1], true, t_eventMarkerMesh, t_goFrame, t_goTime, t_startZ];
+          break;
+        case 2: // Pitches ---------------------------------------------------------------------
+          var t_pitchesMarkerMatl = new THREE.MeshLambertMaterial({
+            color: clr_white
+          });
+          var t_pitchMarkerMesh = new THREE.Mesh(pitchMarkerGeom, t_pitchesMarkerMatl);
+          t_pitchMarkerMesh.position.z = t_startZ;
+          t_pitchMarkerMesh.position.y = EVENTGOFRETHEIGHT;
+          t_pitchMarkerMesh.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * i);
+          t_pitchMarkerMesh.name = t_eventIx + "_pitch";
+          t_eventIx++;
+          // [ eventType, addToSceneGate, mesh, goFrame, goTime, startZ ]
+          var t_singleEventDataArray = [eventSet[i][j][1], true, t_pitchMarkerMesh, t_goFrame, t_goTime, t_startZ];
           break;
         default:
 
