@@ -13,7 +13,7 @@
 }
 \layout{ 
   indent = 0
-  line-width = 100
+  line-width = 50
 }
 \midi{}
 }

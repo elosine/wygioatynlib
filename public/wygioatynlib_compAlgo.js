@@ -153,18 +153,19 @@ var notesMidiDict = {
   80.0: '/svgs/080gs5.svg',
   80.5: '/svgs/080p5aqf5.svg',
   81.0: '/svgs/081a5.svg'
-}
+};
 
 ////// [0]oboe, [1]Violin,  [2]Piano, [3]Perc,
 ////// [4]Viola, [5]Trombone, [6]Bass Clarinet, [7]Cello
 // Pitch paths by pitch set by part
-var pitchNotationPathsDict = {};
+//Organize each pitch set with array in instrument Order
+var pitchesByPSbyPartDict = {};
 for (const [key, value] of Object.entries(pitchSetDict)) {
-  var t_pitchPathsPerPart = [];
+  var pitchesByPartSet = [];
   for (const [key2, value2] of Object.entries(value)) {
-    t_pitchPathsPerPart.push(notesMidiDict[ roundByStep(value2[3], 0.5) ]);
+    pitchesByPartSet.push(notesMidiDict[roundByStep(value2[3], 0.5)]);
   }
-  pitchNotationPathsDict[key] = [t_pitchPathsPerPart];
+  pitchesByPSbyPartDict[key] = pitchesByPartSet;
 }
 // Dictionary of notation paths
 var notationPathsDict = {
@@ -261,7 +262,7 @@ for (var i = 1; i < 20; i++) {
     pitchSets.push(t_psScramb[j]);
   }
 }
-var pitchSetIx = 0;
+var pitchSetIx = 1;
 // Section 1 NOTATION
 for (var i = 0; i < notationEvents.length; i++) {
   var t_firstEvent = [0, "/elements/wygioatynlib_pulsetrack_b.svg"];
@@ -273,3 +274,13 @@ for (var i = 0; i < notationEvents.length; i++) {
 // Change pitch 40% - 60% of the way through
 var sec1PitchChange1 = SECTION_1_DUR * rrand(0.4, 0.5);
 var sec1PitchChange2 = ((SECTION_1_DUR - sec1PitchChange1) * rrand(0.47, 0.54)) + sec1PitchChange1;
+sec1PitchChange1 = 10;
+sec1PitchChange2 = 13;
+pitchEvents.push([sec1PitchChange1, pitchSets[pitchSetIx]);
+pitchSetIx++;
+pitchEvents.push([sec1PitchChange2, pitchSets[pitchSetIx]);
+pitchSetIx++;
+eventSet.push([sec1PitchChange1, 2);
+eventSet.push([sec1PitchChange2, 2);
+
+  //start with adding pitch events to update
