@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.2"
+   width="91.431252mm"
+   height="31.237741mm"
+   viewBox="0 0 52.029433 17.776"
+   id="svg5077"
+   sodipodi:docname="wygioatynlib_pulsetrack_2_b.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata5083">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5081" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1073"
+     inkscape:window-height="696"
+     id="namedview5079"
+     showgrid="false"
+     inkscape:zoom="2.02"
+     inkscape:cx="172.14009"
+     inkscape:cy="41.353517"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg5077"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <!-- Page: 1/1 -->
+  <text
+     font-size="2.2001"
+     id="text4633"
+     style="font-size:2.20009995px;font-family:'Century Schoolbook L';text-anchor:start;fill:currentColor"
+     x="0.81371784"
+     y="-1">
+    <tspan
+       id="tspan4631" />
+  </text>
+  <line
+     x1="0.86371785"
+     y1="3.4300001"
+     x2="51.978718"
+     y2="3.4300001"
+     id="line4635"
+     style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round" />
+  <rect
+     x="51.838619"
+     y="2.3800001"
+     width="0.19"
+     height="2.0999999"
+     ry="0.0000"
+     id="rect4637"
+     style="fill:currentColor" />
+  <rect
+     x="23.900818"
+     y="2.3800001"
+     width="0.19"
+     height="2.0999999"
+     ry="0.0000"
+     id="rect4639"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:42:43"
+     id="a4643"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,37.9866,9.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path4641"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="33.637817"
+     y="0.43000001"
+     width="0.13"
+     height="2.8122001"
+     ry="0.039999999"
+     id="rect4645"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:45:46"
+     id="a4649"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,40.4782,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4647"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:50:51"
+     id="a4653"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,41.1362,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4651"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="36.787418"
+     y="0.43000001"
+     width="0.13"
+     height="2.8122001"
+     ry="0.039999999"
+     id="rect4655"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:55:56"
+     id="a4659"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,43.6277,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4657"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:62:63"
+     id="a4663"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,44.2858,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4661"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:64:65"
+     id="a4667"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,44.2858,9.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path4665"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="39.937019"
+     y="0.23999994"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4669"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:13:14"
+     id="a4673"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,32.8113,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4671"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:20:21"
+     id="a4677"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,33.4694,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4675"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="29.120617"
+     y="0.23999994"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4679"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:23:24"
+     id="a4683"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,35.0699,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4681"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:28:29"
+     id="a4687"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,35.728,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4685"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="31.379217"
+     y="0.23999994"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4689"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:34:35"
+     id="a4693"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,37.3286,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4691"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:40:41"
+     id="a4697"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,37.9866,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4695"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:89:90"
+     id="a4701"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,51.0618,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4699"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="46.712917"
+     y="0.23999994"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4703"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:95:96"
+     id="a4707"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,52.6623,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4705"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:101:102"
+     id="a4711"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,53.3204,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4709"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:103:104"
+     id="a4715"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,53.3204,9.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path4713"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="48.971619"
+     y="0.096699886"
+     width="0.13"
+     height="3.1454999"
+     ry="0.039999999"
+     id="rect4717"
+     style="fill:currentColor" />
+  <polygon
+     transform="translate(39.937018,0.24)"
+     points="0.04,0.2 0.04,-0.2 6.8659,-0.2 6.8659,0.2 "
+     id="polygon4719"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <polygon
+     transform="translate(39.937018,1.05)"
+     points="0.04,0.2 0.04,-0.2 6.8659,-0.2 6.8659,0.2 "
+     id="polygon4721"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <polygon
+     transform="translate(33.637818,0.43)"
+     points="0.04,0.2 0.04,-0.2 3.2396,-0.2 3.2396,0.2 "
+     id="polygon4723"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <polygon
+     transform="translate(25.971018,0.24)"
+     points="0.04,0.2 0.04,-0.2 5.4982,-0.2 5.4982,0.2 "
+     id="polygon4725"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <polygon
+     transform="translate(29.120618,1.05)"
+     points="0.04,0.2 0.04,-0.2 2.3486,-0.2 2.3486,0.2 "
+     id="polygon4727"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <polygon
+     transform="translate(14.685718,0.43)"
+     points="0.04,0.2 0.04,-0.2 3.2396,-0.2 3.2396,0.2 "
+     id="polygon4729"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:67:68"
+     id="a4733"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,45.8864,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4731"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:72:73"
+     id="a4737"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,46.5445,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4735"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="42.195717"
+     y="0.23999994"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4739"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:76:77"
+     id="a4743"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,48.145,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4741"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:81:82"
+     id="a4747"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,48.8031,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4745"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="44.454319"
+     y="0.23999994"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4749"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:84:85"
+     id="a4753"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,50.4037,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4751"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:9:15:16"
+     id="a4757"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,14.3358,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4755"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:9:20:21"
+     id="a4761"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,14.9939,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4759"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:9:22:23"
+     id="a4765"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,14.9939,9.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path4763"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="10.645118"
+     y="0.096699886"
+     width="0.13"
+     height="3.1454999"
+     ry="0.039999999"
+     id="rect4767"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:9:28:29"
+     id="a4771"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,18.3764,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4769"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:9:34:35"
+     id="a4775"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,19.0345,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4773"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:9:36:37"
+     id="a4779"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,19.0345,9.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path4777"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="14.685718"
+     y="0.43000001"
+     width="0.13"
+     height="2.8122001"
+     ry="0.039999999"
+     id="rect4781"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:9:2:3"
+     id="a4785"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,10.2953,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4783"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:9:8:9"
+     id="a4789"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,10.9534,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4787"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:9:10:11"
+     id="a4793"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,10.9534,9.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path4791"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <path
+     d="m 2.6297178,4.2164 c 0.088,-0.056 0.176,-0.116 0.24,-0.2 0.044,-0.06 0.076,-0.132 0.108,-0.2 0.008,-0.016 0.02,-0.024 0.036,-0.024 0.024,0 0.052,0.02 0.052,0.056 v 0.98 h 0.288 c 0.04,0 0.06,0.028 0.06,0.056 0,0.028 -0.02,0.06 -0.06,0.06 h -0.288 v 0.032 c 0,0.192 0.108,0.376 0.288,0.376 0.032,0 0.048,0.02 0.048,0.044 0,0.024 -0.016,0.048 -0.048,0.048 -0.176,0 -0.348,-0.052 -0.524,-0.052 -0.176,0 -0.348,0.052 -0.524,0.052 -0.032,0 -0.048,-0.024 -0.048,-0.048 0,-0.024 0.016,-0.044 0.048,-0.044 0.18,0 0.292,-0.184 0.292,-0.376 v -0.032 h -0.668 c -0.092,0 -0.124,-0.056 -0.124,-0.092 0,-0.012 0.004,-0.02 0.008,-0.024 0.32,-0.372 0.552,-0.828 0.552,-1.32 0,-0.036 0.024,-0.064 0.052,-0.064 h 0.012 c 0.092,0.028 0.188,0.052 0.284,0.052 0.096,0 0.192,-0.024 0.284,-0.052 0.008,-0.004 0.012,-0.004 0.02,-0.004 0.044,0 0.072,0.04 0.048,0.068 l -1.136,1.32 h 0.668 v -0.524 c 0,-0.032 0.004,-0.068 0.032,-0.088 z"
+     id="path4795"
+     inkscape:connector-curvature="0"
+     style="fill:currentColor;stroke-width:0.004" />
+  <path
+     d="m 2.6297178,2.202 c 0.088,-0.056 0.176,-0.116 0.24,-0.2 0.044,-0.06 0.076,-0.132 0.108,-0.2 0.008,-0.016 0.02,-0.024 0.036,-0.024 0.024,0 0.052,0.02 0.052,0.056 v 0.98 h 0.288 c 0.04,0 0.06,0.028 0.06,0.056 0,0.028 -0.02,0.06 -0.06,0.06 h -0.288 v 0.032 c 0,0.192 0.108,0.376 0.288,0.376 0.032,0 0.048,0.02 0.048,0.044 0,0.024 -0.016,0.048 -0.048,0.048 -0.176,0 -0.348,-0.052 -0.524,-0.052 -0.176,0 -0.348,0.052 -0.524,0.052 -0.032,0 -0.048,-0.024 -0.048,-0.048 0,-0.024 0.016,-0.044 0.048,-0.044 0.18,0 0.292,-0.184 0.292,-0.376 V 2.93 h -0.668 c -0.092,0 -0.124,-0.056 -0.124,-0.092 0,-0.012 0.004,-0.02 0.008,-0.024 0.32,-0.372 0.552,-0.828 0.552,-1.32 0,-0.036 0.024,-0.064 0.052,-0.064 h 0.012 c 0.092,0.028 0.188,0.052 0.284,0.052 0.096,0 0.192,-0.024 0.284,-0.052 0.008,-0.004 0.012,-0.004 0.02,-0.004 0.044,0 0.072,0.04 0.048,0.068 l -1.136,1.32 h 0.668 V 2.29 c 0,-0.032 0.004,-0.068 0.032,-0.088 z"
+     id="path4797"
+     inkscape:connector-curvature="0"
+     style="fill:currentColor;stroke-width:0.004" />
+  <rect
+     x="6.6046176"
+     y="0.096699886"
+     width="0.13"
+     height="3.1454999"
+     ry="0.039999999"
+     id="rect4799"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:10:11"
+     id="a4803"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,30.3198,9.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path4801"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:8:9"
+     id="a4807"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,30.3198,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4805"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:10:2:3"
+     id="a4811"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,29.6617,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4809"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="25.971018"
+     y="0.23999994"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4813"
+     style="fill:currentColor" />
+  <rect
+     x="20.984919"
+     y="0.096699886"
+     width="0.13"
+     height="3.1454999"
+     ry="0.039999999"
+     id="rect4815"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:9:39:40"
+     id="a4819"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,21.526,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4817"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:9:44:45"
+     id="a4823"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,22.1841,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4821"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="17.835318"
+     y="0.43000001"
+     width="0.13"
+     height="2.8122001"
+     ry="0.039999999"
+     id="rect4825"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:9:50:51"
+     id="a4829"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,24.6756,7.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4827"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:9:56:57"
+     id="a4833"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,25.3337,8.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4831"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:9:58:59"
+     id="a4837"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,25.3337,9.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path4835"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <line
+     x1="0.86371785"
+     y1="15.43"
+     x2="51.978718"
+     y2="15.43"
+     id="line4839"
+     style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round" />
+  <rect
+     x="24.741919"
+     y="14.38"
+     width="0.19"
+     height="2.0999999"
+     ry="0.0000"
+     id="rect4841"
+     style="fill:currentColor" />
+  <rect
+     x="51.838619"
+     y="14.38"
+     width="0.19"
+     height="2.0999999"
+     ry="0.0000"
+     id="rect4843"
+     style="fill:currentColor" />
+  <rect
+     x="35.765617"
+     y="12.24"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4845"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:45:46"
+     id="a4849"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,41.6789,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4847"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:52:53"
+     id="a4853"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,42.337,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4851"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:54:55"
+     id="a4857"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,42.337,21.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path4855"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="37.988216"
+     y="12.24"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4859"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:57:58"
+     id="a4863"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,43.9015,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4861"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:62:63"
+     id="a4867"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,44.5596,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4865"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="40.210819"
+     y="12.24"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4869"
+     style="fill:currentColor" />
+  <rect
+     x="30.472818"
+     y="12.24"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4871"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:24:25"
+     id="a4875"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,37.2338,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4873"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:31:32"
+     id="a4879"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,37.8919,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4877"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="33.543018"
+     y="12.24"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4881"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:34:35"
+     id="a4885"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,39.4563,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4883"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:39:40"
+     id="a4889"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,40.1144,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4887"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:96:97"
+     id="a4893"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,53.6395,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4891"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:101:102"
+     id="a4897"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,54.2976,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4895"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="49.948719"
+     y="12.43"
+     width="0.13"
+     height="2.8122001"
+     ry="0.039999999"
+     id="rect4899"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:52:53"
+     id="a4903"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,17.0866,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4901"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <polygon
+     transform="translate(46.878518,12.43)"
+     points="0.04,0.2 0.04,-0.2 3.1602,-0.2 3.1602,0.2 "
+     id="polygon4905"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <polygon
+     transform="translate(37.988218,12.24)"
+     points="0.04,0.2 0.04,-0.2 6.7577,-0.2 6.7577,0.2 "
+     id="polygon4907"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <polygon
+     transform="translate(37.988218,13.05)"
+     points="0.04,0.2 0.04,-0.2 6.7577,-0.2 6.7577,0.2 "
+     id="polygon4909"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <polygon
+     transform="translate(30.472818,12.24)"
+     points="0.04,0.2 0.04,-0.2 5.3828,-0.2 5.3828,0.2 "
+     id="polygon4911"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <polygon
+     transform="translate(33.543018,13.05)"
+     points="0.04,0.2 0.04,-0.2 2.3126,-0.2 2.3126,0.2 "
+     id="polygon4913"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <polygon
+     transform="translate(10.515218,12.24)"
+     points="0.04,0.2 0.04,-0.2 4.5351,-0.2 4.5351,0.2 "
+     id="polygon4915"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <polygon
+     transform="translate(10.515218,13.05)"
+     points="0.04,0.2 0.04,-0.2 2.3126,-0.2 2.3126,0.2 "
+     id="polygon4917"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <polygon
+     transform="translate(2.9998178,12.24)"
+     points="0.04,0.2 0.04,-0.2 5.3828,-0.2 5.3828,0.2 "
+     id="polygon4919"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <polygon
+     transform="translate(6.0701178,13.05)"
+     points="0.04,0.2 0.04,-0.2 2.3126,-0.2 2.3126,0.2 "
+     id="polygon4921"
+     style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:66:67"
+     id="a4925"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,46.1241,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4923"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:71:72"
+     id="a4929"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,46.7822,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4927"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="42.433319"
+     y="12.24"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4931"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:74:75"
+     id="a4935"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,48.3466,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4933"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:79:80"
+     id="a4939"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,49.0047,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4937"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="44.655918"
+     y="12.24"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4941"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:85:86"
+     id="a4945"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,50.5692,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4943"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:91:92"
+     id="a4949"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,51.2273,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4947"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:93:94"
+     id="a4953"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,51.2273,21.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path4951"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="46.878517"
+     y="12.43"
+     width="0.13"
+     height="2.8122001"
+     ry="0.039999999"
+     id="rect4955"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:24:25"
+     id="a4959"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,11.9834,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4957"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:31:32"
+     id="a4963"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,12.6415,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4961"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="8.2927179"
+     y="12.24"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4965"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:37:38"
+     id="a4969"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,14.2059,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4967"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:42:43"
+     id="a4973"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,14.864,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4971"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:44:45"
+     id="a4977"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,14.864,21.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path4975"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="10.515218"
+     y="12.24"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4979"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:47:48"
+     id="a4983"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,16.4285,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4981"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <text
+     font-size="1.7461"
+     id="text4987"
+     style="font-size:1.74609995px;font-family:'Century Schoolbook L';text-anchor:start;fill:currentColor"
+     x="-0.14238217"
+     y="14.3458">
+    <tspan
+       id="tspan4985">3</tspan>
+  </text>
+  <rect
+     x="2.9998178"
+     y="12.24"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect4989"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:10:11"
+     id="a4993"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,7.3486,21.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path4991"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:8:9"
+     id="a4997"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,7.3486,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path4995"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:13:14"
+     id="a5001"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,9.7608,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path4999"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:20:21"
+     id="a5005"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,10.4189,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path5003"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="6.070118"
+     y="12.24"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect5007"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:68:69"
+     id="a5011"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,21.7213,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path5009"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:74:75"
+     id="a5015"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,22.3794,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path5013"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:76:77"
+     id="a5019"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,22.3794,21.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path5017"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="18.030619"
+     y="12.0967"
+     width="0.13"
+     height="3.1454999"
+     ry="0.039999999"
+     id="rect5021"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:82:83"
+     id="a5025"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,25.6393,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path5023"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:87:88"
+     id="a5029"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,26.2974,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path5027"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:89:90"
+     id="a5033"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,26.2974,21.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path5031"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="21.948618"
+     y="12.0967"
+     width="0.13"
+     height="3.1454999"
+     ry="0.039999999"
+     id="rect5035"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:13:14"
+     id="a5039"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,34.1635,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path5037"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:19:20"
+     id="a5043"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,34.8216,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path5041"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:12:21:22"
+     id="a5047"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,34.8216,21.1213)"
+       d="m -211,88 c -8,2 -14,9 -14,18 0,10 9,19 19,19 2,0 3,-1 4,-1 L 206,19 c 13,0 19,-6 19,-19 0,-13 -6,-19 -19,-19 l -408,-105 c -1,0 -2,-1 -4,-1 -10,0 -19,9 -19,19 0,9 6,16 14,18 L 40,-23 180,0 40,23 Z"
+       id="path5045"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <path
+     d="m 26.497918,16.2164 c 0.088,-0.056 0.176,-0.116 0.24,-0.2 0.044,-0.06 0.076,-0.132 0.108,-0.2 0.008,-0.016 0.02,-0.024 0.036,-0.024 0.024,0 0.052,0.02 0.052,0.056 v 0.98 h 0.288 c 0.04,0 0.06,0.028 0.06,0.056 0,0.028 -0.02,0.06 -0.06,0.06 h -0.288 v 0.032 c 0,0.192 0.108,0.376 0.288,0.376 0.032,0 0.048,0.02 0.048,0.044 0,0.024 -0.016,0.048 -0.048,0.048 -0.176,0 -0.348,-0.052 -0.524,-0.052 -0.176,0 -0.348,0.052 -0.524,0.052 -0.032,0 -0.048,-0.024 -0.048,-0.048 0,-0.024 0.016,-0.044 0.048,-0.044 0.18,0 0.292,-0.184 0.292,-0.376 v -0.032 h -0.668 c -0.092,0 -0.124,-0.056 -0.124,-0.092 0,-0.012 0.004,-0.02 0.008,-0.024 0.32,-0.372 0.552,-0.828 0.552,-1.32 0,-0.036 0.024,-0.064 0.052,-0.064 h 0.012 c 0.092,0.028 0.188,0.052 0.284,0.052 0.096,0 0.192,-0.024 0.284,-0.052 0.008,-0.004 0.012,-0.004 0.02,-0.004 0.044,0 0.072,0.04 0.048,0.068 l -1.136,1.32 h 0.668 v -0.524 c 0,-0.032 0.004,-0.068 0.032,-0.088 z"
+     id="path5049"
+     inkscape:connector-curvature="0"
+     style="fill:currentColor;stroke-width:0.004" />
+  <path
+     d="m 26.418518,13.522 c -0.116,0 -0.236,0.032 -0.236,0.132 0,0.088 0.144,0.1 0.144,0.188 0,0.128 -0.104,0.232 -0.232,0.232 -0.128,0 -0.228,-0.104 -0.228,-0.232 0,-0.26 0.268,-0.412 0.552,-0.412 0.364,0 0.676,0.132 0.676,0.456 0,0.172 -0.016,0.328 -0.168,0.4 -0.036,0.016 -0.056,0.048 -0.056,0.084 0,0.036 0.02,0.072 0.056,0.088 0.164,0.076 0.224,0.228 0.224,0.412 0,0.368 -0.316,0.56 -0.716,0.56 -0.316,0 -0.616,-0.168 -0.616,-0.452 0,-0.144 0.12,-0.264 0.264,-0.264 0.144,0 0.26,0.12 0.26,0.264 0,0.1 -0.16,0.112 -0.16,0.212 0,0.108 0.128,0.148 0.252,0.148 0.196,0 0.252,-0.244 0.252,-0.468 v -0.064 c 0,-0.216 -0.008,-0.376 -0.2,-0.376 h -0.32 c -0.04,0 -0.056,-0.032 -0.056,-0.06 0,-0.028 0.016,-0.056 0.056,-0.056 h 0.32 c 0.196,0 0.2,-0.172 0.2,-0.396 v -0.032 c 0,-0.216 -0.072,-0.364 -0.268,-0.364 z"
+     id="path5051"
+     inkscape:connector-curvature="0"
+     style="fill:currentColor;stroke-width:0.004" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:2:3"
+     id="a5055"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,6.6906,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path5053"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="12.737818"
+     y="12.24"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect5057"
+     style="fill:currentColor" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:56:57"
+     id="a5061"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,18.6511,19.2753)"
+       d="m 220,138 c 56,0 109,-29 109,-91 0,-72 -56,-121 -103,-149 -36,-21 -76,-36 -117,-36 -56,0 -109,29 -109,91 0,72 56,121 103,149 36,21 76,36 117,36 z"
+       id="path5059"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/wygioatynlib_pulsetrack_2.ly:11:62:63"
+     id="a5065"
+     transform="translate(-4.8768822,-3.8453)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,19.3092,20.2253)"
+       d="M -50,0 C -50,28 -28,50 0,50 28,50 50,28 50,0 50,-28 28,-50 0,-50 -28,-50 -50,-28 -50,0 Z"
+       id="path5063"
+       inkscape:connector-curvature="0"
+       style="fill:currentColor" />
+  </a>
+  <rect
+     x="14.960418"
+     y="12.24"
+     width="0.13"
+     height="3.0021999"
+     ry="0.039999999"
+     id="rect5067"
+     style="fill:currentColor" />
+</svg>

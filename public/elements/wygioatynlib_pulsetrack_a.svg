@@ -13,7 +13,7 @@
    height="77.251831mm"
    width="61.747528mm"
    version="1.2"
-   sodipodi:docname="wygioatynlib_pulsetrack_b.svg"
+   sodipodi:docname="wygioatynlib_pulsetrack_a.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -1432,42 +1432,4 @@
      width="0.13"
      y="37.541264"
      x="20.099174" />
-  <path
-     style="fill:none;stroke:#ff0000;stroke-width:0.3905482;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 34.791025,0.1952741 H 22.71708 v 7.303981 h 11.961579 v 0.07232"
-     id="path6132"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ccccc" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path6134"
-     d="m 0,12.548092 h 12.488424 v 7.326175 H 0.2165742 v 0.07253"
-     style="fill:none;stroke:#ff0000;stroke-width:0.39618152;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     sodipodi:nodetypes="ccccc" />
-  <rect
-     style="fill:none;stroke:#00ff00;stroke-width:0.46789086;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="rect6138"
-     width="10.976793"
-     height="11.59838"
-     x="4.3336601"
-     y="10.137147" />
-  <rect
-     style="fill:none;stroke:#ffa300;stroke-width:0.42438835;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="rect6140"
-     width="12.638339"
-     height="7.3802767"
-     x="8.0081835"
-     y="24.497629" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path6142"
-     d="M 35.137755,24.566907 H 24.504333 v 7.303981 h 10.446834 v 0.07232"
-     style="fill:none;stroke:#0000ff;stroke-width:0.36498308;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     sodipodi:nodetypes="ccccc" />
-  <path
-     style="fill:none;stroke:#0000ff;stroke-width:0.51250273;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 0.1859127,36.378133 H 20.991416 v 7.326175 H 0.4555073 v 0.07253"
-     id="path6144"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="ccccc" />
 </svg>
