@@ -270,7 +270,7 @@ var notationElementDictByElementByPart = {
 ////////////////////////////////////////////////////////////////////////////////////
 // MAKE A SINGLE GLOBAL EVENTS SET
 // [ goTime, playerNum, eventType,  eventTypeSpecifics]
-// EVENT TYPES: 0-beat; 1-notation; 2-pitch;
+// EVENT TYPES: 0-beat; 1-notation; 2-pitch; 3-stop;
 //have set of initial states
 var initalEventsSet = [];
 for (var i = 0; i < NUMTRACKS; i++) {
@@ -279,7 +279,7 @@ for (var i = 0; i < NUMTRACKS; i++) {
   //initial notation
   initalEventsSet.push([0, i, 1, 'pulseTrack']);
 }
-var SECTION_1_DUR = rrand(110, 130);
+var SECTION_1_DUR = rrand(130, 157);
 var eventSet = [];
 // Instruments come in one at at time playing pulsetrack
 // Random entry order and entry times
@@ -295,26 +295,26 @@ for (var i = 0; i < instrumentOrder.length; i++) {
     eventSet.push([0, instrumentOrder[i], 1, 'pulseTrack']);
     //count in
     for (var j = 1; j < 5; j++) {
-      eventSet.push([  (  - (t_beatDur * j) ), instrumentOrder[i], 0, -1 ]);
+      eventSet.push([(-(t_beatDur * j)), instrumentOrder[i], 0, -1]);
     }
     // beat Grid
     for (var j = 0; j < 999; j++) {
       var t_newTime = t_beatDur * j;
       if (t_newTime < SECTION_1_DUR) {
-        eventSet.push([  t_newTime, instrumentOrder[i], 0, -1  ]);
+        eventSet.push([t_newTime, instrumentOrder[i], 0, -1]);
       } else break;
     }
   } else if (i == 1) {
     eventSet.push([t_2ndEntry, instrumentOrder[i], 1, 'pulseTrack']);
     //count in
     for (var j = 1; j < 5; j++) {
-      eventSet.push([  ( t_2ndEntry - (t_beatDur * j) ), instrumentOrder[i], 0, -1  ]);
+      eventSet.push([(t_2ndEntry - (t_beatDur * j)), instrumentOrder[i], 0, -1]);
     }
     // beat Grid
     for (var j = 0; j < 999; j++) {
       var t_newTime = t_2ndEntry + (t_beatDur * j);
       if (t_newTime < SECTION_1_DUR) {
-        eventSet.push([  t_newTime, instrumentOrder[i], 0, -1  ]);
+        eventSet.push([t_newTime, instrumentOrder[i], 0, -1]);
       } else break;
     }
   } else {
@@ -323,13 +323,13 @@ for (var i = 0; i < instrumentOrder.length; i++) {
     eventSet.push([t_nextEntry, instrumentOrder[i], 1, 'pulseTrack']);
     //count in
     for (var j = 1; j < 5; j++) {
-      eventSet.push([  ( t_nextEntry - (t_beatDur * j) ), instrumentOrder[i], 0, -1  ]);
+      eventSet.push([(t_nextEntry - (t_beatDur * j)), instrumentOrder[i], 0, -1]);
     }
     // beat Grid
     for (var j = 0; j < 999; j++) {
       var t_newTime = t_nextEntry + (t_beatDur * j);
       if (t_newTime < SECTION_1_DUR) {
-        eventSet.push([  t_newTime, instrumentOrder[i], 0, -1  ]);
+        eventSet.push([t_newTime, instrumentOrder[i], 0, -1]);
       } else break;
     }
   }
@@ -338,17 +338,59 @@ for (var i = 0; i < instrumentOrder.length; i++) {
 var sec1PitchChange1Time = SECTION_1_DUR * rrand(0.4, 0.5);
 var sec1PitchChange2Time = ((SECTION_1_DUR - sec1PitchChange1Time) * rrand(0.47, 0.54)) + sec1PitchChange1Time;
 for (var i = 0; i < NUMTRACKS; i++) {
-  eventSet.push([  sec1PitchChange1Time, i, 2, pitchSets[pitchSetIx]  ]);
+  eventSet.push([sec1PitchChange1Time, i, 2, pitchSets[pitchSetIx]]);
 }
 pitchSetIx++;
 for (var i = 0; i < NUMTRACKS; i++) {
-  eventSet.push([  sec1PitchChange2Time, i, 2, pitchSets[pitchSetIx]  ]);
+  eventSet.push([sec1PitchChange2Time, i, 2, pitchSets[pitchSetIx]]);
 }
 pitchSetIx++;
 //When to start looping and adding looping notation
 //Loops
 var sec1LoopsStartTime = rrand((SECTION_1_DUR * 0.74), (SECTION_1_DUR * 0.78));
 for (var i = 0; i < NUMTRACKS; i++) {
-  eventSet.push([  sec1LoopsStartTime, i, 1, 'pulseTrackLoops'  ])
+  eventSet.push([sec1LoopsStartTime, i, 1, 'pulseTrackLoops'])
 }
+// Add a group stop at the end of Section One
+// [ goTime, playerNum, eventType,  eventTypeSpecifics]
+for (var i = 0; i < NUMTRACKS; i++) {
+  eventSet.push([SECTION_1_DUR, i, 3, -1])
+}
+//Grace Note Motives ------------------------------------------------------------
+var SECTION_2_START = SECTION_1_DUR + 4;
+var SECTION_2_DUR = rrand(123, 153);
+var SECTIION_2_END = SECTION_2_START + SECTION_2_DUR;
+//// Generate an acceleration for each part
+// Staggered entries
+var t_startOrder = shuffle(ogInst);
+var t_sec2StartTimes = [0, 0, 0, 0, 0, 0, 0, 0];
+for (var i = 0; i < t_startOrder.length; i++) {
+  var t_addTime = rrand(3, 7);
+  t_sec2StartTimes[t_startOrder[i]] = (t_addTime * i) + SECTION_2_START;
+}
+// ACCEL ////////////////////
+for (var i = 0; i < t_sec2StartTimes.length; i++) {
+  var t_tempo = 13;
+  var t_minDur = 0.4;
+  var t_iBeatDur = 60.0 / t_tempo;
+  var t_accelRate = rrand(1.03, 1.033);
+  // var t_accelRate = 1.028;
+  var t_beatDur = t_iBeatDur;
+  var t_timeCode = t_sec2StartTimes[i];
+
+  // var t_timeCode = SECTION_2_START ; //////////////////////////////////////////
+
+  for (var j = 0; j < 999; j++) {
+    if (t_timeCode < (SECTIION_2_END - t_iBeatDur)) {
+      eventSet.push( [  t_timeCode, i, 0, -1  ] );
+      t_tempo = t_tempo * t_accelRate;
+      var t_newBeatDur = 60.0 / t_tempo
+      t_beatDur = Math.max(t_minDur, t_newBeatDur);
+      t_timeCode = t_timeCode + t_beatDur;
+      // console.log(t_beatDur);
+    } else break;
+  }
+}
+
+
 eventSet.sort(sortFunction2DArray);

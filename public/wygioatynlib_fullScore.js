@@ -14,6 +14,7 @@ var lastFrameTimeMs = 0.0;
 var pieceClock = 0.0;
 var clockadj = 0.0;
 var leadTime = 7.0;
+var startTime = 230;
 // COLORS //////////////////////////////////////////////////////////////
 var clr_neonMagenta = new THREE.Color("rgb(255, 21, 160)");
 var clr_seaGreen = new THREE.Color("rgb(0, 255, 108)");
@@ -42,7 +43,6 @@ var SCENE_W = 1920;
 var SCENE_H = 720;
 var RUNWAYLENGTH = 1070;
 var RUNWAYLENGTH_FRAMES = RUNWAYLENGTH / PXPERFRAME;
-console.log(RUNWAYLENGTH_FRAMES);
 // TRACKS ///////////////////////////////////////////////////////////////
 var NUMTRACKS = 8;
 var TRACK_X_OFFSET = 800;
@@ -63,6 +63,10 @@ var goFretBlink = [];
 for (var i = 0; i < NUMTRACKS; i++) {
   goFretBlink.push(0);
 }
+var stopGoFretBlink = [];
+for (var i = 0; i < NUMTRACKS; i++) {
+  stopGoFretBlink.push(0);
+}
 //// Events //////////////////////////////////
 var EVENTGOFRETLENGTH = 34;
 var EVENTGOFRETHEIGHT = 21;
@@ -76,6 +80,7 @@ var eventGoFretBlink = [];
 for (var i = 0; i < NUMTRACKS; i++) {
   eventGoFretBlink.push(0);
 }
+
 // NOTATION SVGS /////////////////////////////////////////////////////////
 var SVG_NS = "http://www.w3.org/2000/svg";
 var SVG_XLINK = 'http://www.w3.org/1999/xlink';
@@ -99,7 +104,6 @@ var dictOfPitchSVGsByPart = {};
 function onstartup() {
   createScene();
   eventMatrix = createEvents();
-  console.log(eventMatrix);
   requestAnimationFrame(animationEngine);
 }
 // FUNCTION: createScene ------------------------------------------------------------- //
@@ -325,6 +329,9 @@ function update(aMSPERFRAME) {
             notationContainerDOMs[t_playerNum].appendChild(t_img);
             currentPitchesById[t_playerNum] = t_img.id;
             break;
+          case 3: // Stop
+          stopGoFretBlink[t_playerNum] = framect + 11;
+            break;
           default:
         }
         scene.remove(scene.getObjectByName(t_mesh.name));
@@ -352,6 +359,13 @@ function update(aMSPERFRAME) {
       eventGoFrets[i][0].geometry = eventGoFretGeom;
     }
   }
+  ////// Stop //////////////////////////////////////////
+  for (var i = 0; i < stopGoFretBlink.length; i++) {
+    if (framect <= stopGoFretBlink[i]) {
+      goFrets[i][0].material.color = clr_red;
+      goFrets[i][0].geometry = goFretGeomBig;
+    }
+  }
   // RENDER EACH FRAME ////////////////////////////////////
   renderer.render(scene, camera);
 }
@@ -367,6 +381,7 @@ function createEvents() {
   for (var i = 0; i < eventSet.length; i++) {
     var t_goTime = eventSet[i][0];
     t_goTime = t_goTime + leadTime;
+    t_goTime = t_goTime - startTime;
     var t_playerNum = eventSet[i][1];
     var t_numPxTilGo = t_goTime * PXPERSEC;
     var t_startZ = GOFRETPOSZ - t_numPxTilGo;
@@ -406,6 +421,16 @@ function createEvents() {
         t_mesh.position.y = EVENTGOFRETHEIGHT;
         t_mesh.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * t_playerNum);
         t_mesh.name = t_eventIx + "_pitch";
+        break;
+      case 3: // Stop ---------------------------------------------------------------------
+        var t_stopMarkerMatl = new THREE.MeshLambertMaterial({
+          color: clr_neonRed
+        });
+        var t_mesh = new THREE.Mesh(beatMarkerGeom, t_stopMarkerMatl);
+        t_mesh.position.z = t_startZ;
+        t_mesh.position.y = EVENTGOFRETHEIGHT;
+        t_mesh.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * t_playerNum);
+        t_mesh.name = t_eventIx + "_stop";
         break;
       default:
     }
