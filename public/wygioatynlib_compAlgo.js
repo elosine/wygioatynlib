@@ -1,4 +1,4 @@
-var pitchSetDict = {
+var pitchSetDictFull = {
   "ps193": {
     "ob": ["F#5", "fih''", 734.8205566406249, 77.87866155272926, -66.68175506591797],
     "vl": ["G5", "g''", 793.3639526367189, 79.20575189744818, -68.43545532226562],
@@ -16,7 +16,7 @@ var pitchSetDict = {
     "perc": ["G4", "g'", 396.34552001953136, 67.19106174765656, -58.106101989746094],
     "vla": ["D4¼#", "dih'", 298.77319335937506, 62.298566257892304, -53.915794372558594],
     "trb": ["G3¼#", "gih", 200.52795410156247, 55.395598107236964, -64.15660858154297],
-    "bc": ["A3", "a", 222.0611572265625, 57.16144243264082, -61.627532958984375],
+    "bcl": ["A3", "a", 222.0611572265625, 57.16144243264082, -61.627532958984375],
     "vc": ["C3¼#", "cih", 133.90960693359375, 48.405071308214815, -61.66714096069336]
   },
   "ps173": {
@@ -58,9 +58,10 @@ var pitchSetDict = {
     "vla": ["D#4", "dis'", 310.88562011718756, 62.98656435868372, -60.32509231567383],
     "tb": ["G3", "g", 197.8363037109375, 55.1616439997274, -54.86480712890625],
     "bcl": ["c3", "c", 131.21795654296875, 48.05353962668636, -57.08091354370117],
-    "vc": ["D3", "d", 146.69494628906256, 49.98378775901415, -59.329627990722656],
+    "vc": ["D3", "d", 146.69494628906256, 49.98378775901415, -59.329627990722656]
   }
 };
+
 var notesMidiDict = {
   36: '/svgs/036c2.svg',
   36.5: '/svgs/036p5cqs2.svg',
@@ -155,139 +156,199 @@ var notesMidiDict = {
   81.0: '/svgs/081a5.svg'
 };
 
-////// [0]oboe, [1]Violin,  [2]Piano, [3]Perc,
-////// [4]Viola, [5]Trombone, [6]Bass Clarinet, [7]Cello
-// Pitch paths by pitch set by part
-//Organize each pitch set with array in instrument Order
-var pitchesByPSbyPartDict = {};
-for (const [key, value] of Object.entries(pitchSetDict)) {
-  var pitchesByPartSet = [];
-  for (const [key2, value2] of Object.entries(value)) {
-    pitchesByPartSet.push(notesMidiDict[roundByStep(value2[3], 0.5)]);
-  }
-  pitchesByPSbyPartDict[key] = pitchesByPartSet;
-}
-// Dictionary of notation paths
-var notationPathsDict = {
-  "pulseTrack": '/elements/wygioatynlib_pulsetrack_b.svg'
+var pitchSetDictByPSByPart = {
+  "ps193": [
+    [77.87866155272926, '/svgs/078fs5.svg'],
+    [79.20575189744818, '/svgs/079g5.svg'],
+    [57.7798060403218, '/svgs/058bf3.svg'],
+    [59.87506030890799, '/svgt/060c4t.svg'],
+    [64.866719326538, '/svgs/065f4.svg'],
+    [63.648263008993254, '/svgs/063p5eqf4.svg'],
+    [56.52017132510329, '/svgs/056p5aqf3.svg'],
+    [55.5114001476416, '/svgs/055p5gqs3.svg']
+  ],
+
+  "ps113": [
+    [79.22042959268147, '/svgs/079g5.svg'],
+    [73.12918617650247, '/svgs/073cs5.svg'],
+    [57.8807529181162, '/svgs/058bf3.svg'],
+    [67.19106174765656, '/svgs/067g4.svg'],
+    [62.298566257892304, '/svgs/062p5dqs4.svg'],
+    [55.395598107236964, '/svgs/055p5gqs3.svg'],
+    [57.16144243264082, '/svgs/057a3.svg'],
+    [48.405071308214815, '/svgs/048p5cqs3.svg']
+  ],
+
+  "ps173": [
+    [73.98378775901415, '/svgs/074d5.svg'],
+    [77.15012458486073, '/svgs/077f5.svg'],
+    [55.1616439997274, '/svgs/055g3.svg'],
+    [56.843775896306525, '/svgs/057a3.svg'],
+    [66.59299396937001, '/svgs/066p5gqf4.svg'],
+    [63.86332590496039, '/svgs/064e4.svg'],
+    [44.628713000339374, '/svgs/044p5aqf2.svg'],
+    [56.628713000339374, '/svgs/057a3.svg']
+  ],
+
+  "ps44": [
+    [71.67204682370539, '/svgs/071p5cqf5.svg'],
+    [70.38906437670724, '/svgs/070p5bqf4.svg'],
+    [68.95031371246395, '/svgs/069a4.svg'],
+    [65.71939326761282, '/svgs/066fs4.svg'],
+    [61.86425443841172, '/svgs/062d4.svg'],
+    [56.843775896306525, '/svgs/057a3.svg'],
+    [55.04347056825124, '/svgs/055g3.svg'],
+    [49.66317969850479, '/svgs/049p5dqf3.svg']
+  ],
+
+  "ps27": [
+    [79.22042959268147, '/svgs/079g5.svg'],
+    [65.29830529399247, '/svgs/065p5fqs4.svg'],
+    [77.19965921233285, '/svgs/077f5.svg'],
+    [74.18119400838127, '/svgs/074d5.svg'],
+    [58.27875528533859, '/svgs/058p5bqf3.svg'],
+    [56.52017132510329, '/svgs/056p5aqf3.svg'],
+    [44.628713000339374, '/svgs/044p5aqf2.svg'],
+    [55.626432733591976, '/svgs/055p5gqs3.svg']
+  ],
+
+  "ps1": [
+    [69.05619991710803, '/svgs/069a4.svg'],
+    [69.83035305576477, '/svgs/070bf4.svg'],
+    [67.19106174765656, '/svgs/067g4.svg'],
+    [62.0234494956982, '/svgs/062d4.svg'],
+    [62.98656435868372, '/svgs/063ef4.svg'],
+    [55.1616439997274, '/svgs/055g3.svg'],
+    [48.05353962668636, '/svgs/048c3.svg'],
+    [49.98378775901415, '/svgs/050d3.svg']
+  ]
 };
-
-////////////////////////////////////////////////////////////////////////////////////
-// ---------------------------------------------------------------------------------------
-// ---------------------------------------------------------------------------------------
-////////////////////////////////////////////////////////////////////////////////////
-
-var leadTime = 7.0;
-var eventSet = [
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  []
-]; //[ timeCode, eventType, svgNotationName/Path, pitchName/Path ]
-// Event Types: 0:Beat, 1:Discrete Event
-
-// SECTION 1 1:50-2:10
-// 1st entry 6-10secs
-// sebsequent entries 2.5 4.5 secs
-// change pitch between 40%-60% then 40%-60% of remaining
-// last 25% - 18% begin loops
-
-//clock conductions for textures
-
-var notationEvents = [
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  []
-];
-var pitchEvents = [
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  []
-]; //[TimeCode, fileName]
-var SECTION_1_DUR = rrand(110, 130);
-////// [0]oboe, [1]Violin,  [2]Piano, [3]Perc,
-////// [4]Viola, [5]Trombone, [6]Bass Clarinet, [7]Cello
-// Scramble Instrument Order
-var ogInst = [0, 1, 2, 3, 4, 5, 6, 7];
-var instrumentOrder = shuffle(ogInst);
-// Initial Entries
-for (var i = 0; i < instrumentOrder.length; i++) {
-  var t_2ndEntry = rrand(6, 10);
-  var t_nextEntry = t_2ndEntry;
-  if (i == 0) eventSet[instrumentOrder[i]].push([0, 1]);
-  else if (i == 1) {
-    eventSet[instrumentOrder[i]].push([t_2ndEntry, 1]);
-  } else {
-    var t_addTime = rrand(3.5, 5.5);
-    t_nextEntry = t_nextEntry + t_addTime;
-    eventSet[instrumentOrder[i]].push([t_nextEntry, 1]);
-  }
-}
-// Generate Beat Grids
-var tempi = [55, 56, 57, 58, 59, 60, 61, 62];
-for (var i = 0; i < 8; i++) {
-  var t_beatDur = 60.0 / tempi[i];
-  var t_firstBeat = eventSet[i][0][0];
-  //Add 4 count in
-  for (var j = 1; j < 5; j++) {
-    eventSet[i].push([(t_firstBeat - (t_beatDur * j)), 0]);
-  }
-  for (var j = 0; j < 999; j++) {
-    var t_newTime = eventSet[i][0][0] + (t_beatDur * j);
-    if (t_newTime < SECTION_1_DUR) {
-      eventSet[i].push([t_newTime, 0]);
-    } else break;
-  }
-}
 // Generate Pitch Sets
-var pitchSets = ["ps1"];
+var pitchSets = [];
 var pitchSetsOG = ["ps1", "ps27", "ps44", "ps113", "ps173", "ps193"];
-for (var i = 1; i < 20; i++) {
+for (var i = 0; i < 21; i++) {
   var t_psScramb = shuffle(pitchSetsOG);
   for (var j = 0; j < t_psScramb.length; j++) {
     pitchSets.push(t_psScramb[j]);
   }
 }
-var pitchSetIx = 1;
-// Section 1 NOTATION
-for (var i = 0; i < notationEvents.length; i++) {
-  var t_firstEvent = [0, "/elements/wygioatynlib_pulsetrack_b.svg"];
-  notationEvents[i].push(t_firstEvent);
-}
-// Section 1 pitches
-// Add to notationEvents
-// add to eventSet
-// Change pitch 40% - 60% of the way through
-var sec1PitchChange1 = SECTION_1_DUR * rrand(0.4, 0.5);
-var sec1PitchChange2 = ((SECTION_1_DUR - sec1PitchChange1) * rrand(0.47, 0.54)) + sec1PitchChange1;
-sec1PitchChange1 = 2;
-sec1PitchChange2 = 4;
-for (var i = 0; i < NUMTRACKS; i++) {
-  pitchEvents[i].push([sec1PitchChange1, pitchSets[pitchSetIx], ]);
-}
-pitchSetIx++;
-for (var i = 0; i < NUMTRACKS; i++) {
-  pitchEvents[i].push([sec1PitchChange2, pitchSets[pitchSetIx]]);
-}
-pitchSetIx++;
-for (var i = pitchEvents.length; i++) {
-  for (var j = 0; j < eventSet.length; j++) {
-    eventSet[j].push([ pitchEvents[i][0], 2, pitchEvents[i][1] ]); //[timecode, eventType(pitch), pitchset]
+pitchSets.unshift("ps1");
+//Remove direct repeats
+for (var i = 1; i < pitchSets.length; i++) {
+  if (pitchSets[i] == pitchSets[i - 1]) {
+    pitchSets.splice(i, 1);
   }
 }
-
-//start with adding pitch events to update
+var pitchSetIx = 1;
+////// [0]oboe, [1]Violin,  [2]Piano, [3]Perc, [4]Viola, [5]Trombone, [6]Bass Clarinet, [7]Cello
+// Dictionary of notation paths
+var notationElementDictByElementByPart = {
+  'pulseTrack': [
+    '/elements/wygioatynlib_pulsetrack_a.svg',
+    '/elements/wygioatynlib_pulsetrack_a.svg',
+    '/elements/wygioatynlib_pulsetrack_a.svg',
+    '/elements/wygioatynlib_pulsetrack_a.svg',
+    '/elements/wygioatynlib_pulsetrack_a.svg',
+    '/elements/wygioatynlib_pulsetrack_a.svg',
+    '/elements/wygioatynlib_pulsetrack_a.svg',
+    '/elements/wygioatynlib_pulsetrack_a.svg'
+  ],
+  'pulseTrackLoops': [
+    '/elements/wygioatynlib_pulsetrack_b.svg',
+    '/elements/wygioatynlib_pulsetrack_b.svg',
+    '/elements/wygioatynlib_pulsetrack_b.svg',
+    '/elements/wygioatynlib_pulsetrack_b.svg',
+    '/elements/wygioatynlib_pulsetrack_b.svg',
+    '/elements/wygioatynlib_pulsetrack_b.svg',
+    '/elements/wygioatynlib_pulsetrack_b.svg',
+    '/elements/wygioatynlib_pulsetrack_b.svg'
+  ]
+};
+////////////////////////////////////////////////////////////////////////////////////
+// ---------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////
+// MAKE A SINGLE GLOBAL EVENTS SET
+// [ goTime, playerNum, eventType,  eventTypeSpecifics]
+// EVENT TYPES: 0-beat; 1-notation; 2-pitch;
+//have set of initial states
+var initalEventsSet = [];
+for (var i = 0; i < NUMTRACKS; i++) {
+  //initial pitches
+  initalEventsSet.push([0, i, 2, pitchSets[0]]);
+  //initial notation
+  initalEventsSet.push([0, i, 1, 'pulseTrack']);
+}
+var SECTION_1_DUR = rrand(110, 130);
+var eventSet = [];
+// Instruments come in one at at time playing pulsetrack
+// Random entry order and entry times
+// Scramble Instrument Order
+var ogInst = [0, 1, 2, 3, 4, 5, 6, 7];
+var instrumentOrder = shuffle(ogInst);
+var t_tempi = [55, 56, 57, 58, 59, 60, 61, 62];
+for (var i = 0; i < instrumentOrder.length; i++) {
+  var t_2ndEntry = rrand(6, 10);
+  var t_nextEntry = t_2ndEntry;
+  var t_beatDur = 60.0 / t_tempi[i];
+  if (i == 0) {
+    eventSet.push([0, instrumentOrder[i], 1, 'pulseTrack']);
+    //count in
+    for (var j = 1; j < 5; j++) {
+      eventSet.push([  (  - (t_beatDur * j) ), instrumentOrder[i], 0, -1 ]);
+    }
+    // beat Grid
+    for (var j = 0; j < 999; j++) {
+      var t_newTime = t_beatDur * j;
+      if (t_newTime < SECTION_1_DUR) {
+        eventSet.push([  t_newTime, instrumentOrder[i], 0, -1  ]);
+      } else break;
+    }
+  } else if (i == 1) {
+    eventSet.push([t_2ndEntry, instrumentOrder[i], 1, 'pulseTrack']);
+    //count in
+    for (var j = 1; j < 5; j++) {
+      eventSet.push([  ( t_2ndEntry - (t_beatDur * j) ), instrumentOrder[i], 0, -1  ]);
+    }
+    // beat Grid
+    for (var j = 0; j < 999; j++) {
+      var t_newTime = t_2ndEntry + (t_beatDur * j);
+      if (t_newTime < SECTION_1_DUR) {
+        eventSet.push([  t_newTime, instrumentOrder[i], 0, -1  ]);
+      } else break;
+    }
+  } else {
+    var t_addTime = rrand(3.5, 5.5);
+    t_nextEntry = t_nextEntry + t_addTime;
+    eventSet.push([t_nextEntry, instrumentOrder[i], 1, 'pulseTrack']);
+    //count in
+    for (var j = 1; j < 5; j++) {
+      eventSet.push([  ( t_nextEntry - (t_beatDur * j) ), instrumentOrder[i], 0, -1  ]);
+    }
+    // beat Grid
+    for (var j = 0; j < 999; j++) {
+      var t_newTime = t_nextEntry + (t_beatDur * j);
+      if (t_newTime < SECTION_1_DUR) {
+        eventSet.push([  t_newTime, instrumentOrder[i], 0, -1  ]);
+      } else break;
+    }
+  }
+}
+// // Section 1 pitch changes
+var sec1PitchChange1Time = SECTION_1_DUR * rrand(0.4, 0.5);
+var sec1PitchChange2Time = ((SECTION_1_DUR - sec1PitchChange1Time) * rrand(0.47, 0.54)) + sec1PitchChange1Time;
+for (var i = 0; i < NUMTRACKS; i++) {
+  eventSet.push([  sec1PitchChange1Time, i, 2, pitchSets[pitchSetIx]  ]);
+}
+pitchSetIx++;
+for (var i = 0; i < NUMTRACKS; i++) {
+  eventSet.push([  sec1PitchChange2Time, i, 2, pitchSets[pitchSetIx]  ]);
+}
+pitchSetIx++;
+//When to start looping and adding looping notation
+//Loops
+var sec1LoopsStartTime = rrand((SECTION_1_DUR * 0.74), (SECTION_1_DUR * 0.78));
+for (var i = 0; i < NUMTRACKS; i++) {
+  eventSet.push([  sec1LoopsStartTime, i, 1, 'pulseTrackLoops'  ])
+}
+eventSet.sort(sortFunction2DArray);

@@ -13,6 +13,7 @@ var delta = 0.0;
 var lastFrameTimeMs = 0.0;
 var pieceClock = 0.0;
 var clockadj = 0.0;
+var leadTime = 7.0;
 // COLORS //////////////////////////////////////////////////////////////
 var clr_neonMagenta = new THREE.Color("rgb(255, 21, 160)");
 var clr_seaGreen = new THREE.Color("rgb(0, 255, 108)");
@@ -40,6 +41,8 @@ var CAM_ROTATION_X = rads(-65);
 var SCENE_W = 1920;
 var SCENE_H = 720;
 var RUNWAYLENGTH = 1070;
+var RUNWAYLENGTH_FRAMES = RUNWAYLENGTH / PXPERFRAME;
+console.log(RUNWAYLENGTH_FRAMES);
 // TRACKS ///////////////////////////////////////////////////////////////
 var NUMTRACKS = 8;
 var TRACK_X_OFFSET = 800;
@@ -79,14 +82,16 @@ var SVG_XLINK = 'http://www.w3.org/1999/xlink';
 var notationContainers = [];
 var notationContainerDOMs = [];
 var NOTATION_CONTAINER_H = 350.0;
+var dictOfNotationSVGsByPart = {};
+var currentNotationById = [];
 // EVENTS ////////////////////////////////////////////////////////////////
 var eventMatrix = [];
 //// Beat Markers //////////////////////////////////
 var beatMarkerGeom = new THREE.CubeGeometry(GOFRETWIDTH + 2, GOFRETHEIGHT + 2, GOFRETLENGTH + 2);
 //// Pitches //////////////////////////////////
-var pitchMarkerGeom = new THREE.CubeGeometry(GOFRETWIDTH -20, GOFRETHEIGHT + 6, 8);
-var currentPitchesById =[];
-var pitchSVGIdNum = 0;
+var pitchMarkerGeom = new THREE.CubeGeometry(GOFRETWIDTH - 20, GOFRETHEIGHT + 6, 8);
+var currentPitchesById = [];
+var dictOfPitchSVGsByPart = {};
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // FACTORY --------------------------------------------------------------------------------------//
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -94,29 +99,30 @@ var pitchSVGIdNum = 0;
 function onstartup() {
   createScene();
   eventMatrix = createEvents();
+  console.log(eventMatrix);
   requestAnimationFrame(animationEngine);
 }
 // FUNCTION: createScene ------------------------------------------------------------- //
 function createScene() {
-  // CAMERA /////////////////////////////////////////////////
+  // CAMERA //////////////////////////////////////////////////////////////////
   camera = new THREE.PerspectiveCamera(75, SCENE_W / SCENE_H, 1, 3000);
   camera.position.set(0, CAM_Y, CAM_Z);
   camera.rotation.x = rads(CAM_ROTATION_X);
-  // SCENE /////////////////////////////////////////////////
+  // SCENE ///////////////////////////////////////////////////////////////////
   scene = new THREE.Scene();
-  // LIGHTS ////////////////////////////////////////////////
+  // LIGHTS //////////////////////////////////////////////////////////////////
   var sun = new THREE.DirectionalLight(0xFFFFFF, 1.2);
   sun.position.set(100, 600, 175);
   scene.add(sun);
   var sun2 = new THREE.DirectionalLight(0x40A040, 0.6);
   sun2.position.set(-100, 350, 200);
   scene.add(sun2);
-  // RENDERER //////////////////////////////////////////////
+  // RENDERER ////////////////////////////////////////////////////////////////
   renderer = new THREE.WebGLRenderer();
   renderer.setSize(SCENE_W, SCENE_H);
   canvas = document.getElementById('runway');
   canvas.appendChild(renderer.domElement);
-  // RUNWAY ////////////////////////////////////////////////
+  // RUNWAY //////////////////////////////////////////////////////////////////
   var runwayMatl =
     new THREE.MeshLambertMaterial({
       color: 0x0040C0
@@ -129,7 +135,7 @@ function createScene() {
   runway.position.z = -RUNWAYLENGTH / 2;
   runway.rotation.x = rads(-90);
   scene.add(runway);
-  // TRACKS ///////////////////////////////////////////////////////////
+  // TRACKS //////////////////////////////////////////////////////////////////////////////////////
   var trgeom = new THREE.CylinderGeometry(TRACK_DIAMETER, TRACK_DIAMETER, RUNWAYLENGTH, 32);
   var trmatl = new THREE.MeshLambertMaterial({
     color: 0x708090
@@ -141,8 +147,8 @@ function createScene() {
     tTr.position.y = (-TRACK_DIAMETER / 2) + TRACK_Y_OFFSET;
     tTr.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * i);
     scene.add(tTr);
-    // GO FRETS ///////////////////////////////////////////////////////////
-    //// BEATS ///////////////////////////////////////
+    // GO FRETS ////////////////////////////////////////////////////////////////////////////
+    //// BEATS ////////////////////////////////////////
     var tGoFretSet = [];
     var goFretMatl = new THREE.MeshLambertMaterial({
       color: clr_neonGreen
@@ -187,59 +193,58 @@ function createScene() {
   for (var i = 0; i < notationContainers.length; i++) {
     notationContainerDOMs.push(document.getElementById(notationContainers[i].id));
   }
-  // LOAD NOTATION ////////////////////////////////////////////////////////
+  // MAKE ALL NOTATION SVGS /////////////////////////////////////////////////////////////
   var notationCont_boundingBox = notationContainers[0].getBoundingClientRect();
   var notationContW = notationCont_boundingBox.width;
   var notationContH = notationCont_boundingBox.height;
-
-  var notationsForEachPart = [];
-  for (var i = 0; i < NUMTRACKS; i++) {
-    var notationSVGsDict = {};
-    for (const [key, value] of Object.entries(notationPathsDict)) {
+  var notationContCenterX = notationContW / 2;
+  var notationContCenterY = notationContH / 2;
+  for (const [key, value] of Object.entries(notationElementDictByElementByPart)) {
+    var t_notationSVGs = [];
+    for (var j = 0; j < value.length; j++) {
       var t_notationSVG = document.createElementNS(SVG_NS, "image");
-      t_notationSVG.setAttributeNS(SVG_XLINK, 'xlink:href', value);
+      t_notationSVG.setAttributeNS(SVG_XLINK, 'xlink:href', value[j]);
       t_notationSVG.setAttributeNS(null, 'width', notationContW.toString());
       var t_svgH = notationContH * 0.6666666667;
       t_notationSVG.setAttributeNS(null, 'height', t_svgH.toString());
-      t_notationSVG.setAttributeNS(null, "transform", "translate( 0, 5)" );
+      t_notationSVG.setAttributeNS(null, "transform", "translate( 0, 5)");
+      t_notationSVG.setAttributeNS(null, "id", key + j.toString() );
       t_notationSVG.setAttributeNS(null, 'visibility', 'visible');
-      notationSVGsDict[key] = t_notationSVG;
+      t_notationSVGs.push(t_notationSVG);
     }
-    notationsForEachPart.push(notationSVGsDict);
+    dictOfNotationSVGsByPart[key] = t_notationSVGs;
   }
   // DRAW INITIAL NOTATION FOR EACH TRACK
   for (var i = 0; i < NUMTRACKS; i++) {
-    var t_img = notationsForEachPart[i]["pulseTrack"];
+    var t_img = dictOfNotationSVGsByPart["pulseTrack"][i];
     notationContainerDOMs[i].appendChild(t_img);
-    // currentNotation.push(parseFloat(pitchChanges[0][2][0][i][1]));
+    currentNotationById.push(t_img.id);
   }
-// PITCHES SVGS ///////////////////////////////////////////////////////////
-    var pitchesForEachPartByPitchSet = [];
-    for (var i = 0; i < NUMTRACKS; i++) {
-      var pitchesSVGsDict = {};
-      for (const [key, value] of Object.entries(pitchesByPSbyPartDict)) {
-        var t_pitchSVG = document.createElementNS(SVG_NS, "image");
-        t_pitchSVG.setAttributeNS(SVG_XLINK, 'xlink:href', value[i]);
-        var t_svgW = notationContW * 0.5
-        t_pitchSVG.setAttributeNS(null, 'width', t_svgW.toString());
-        var t_svgH =notationContH * 0.33333;
-        t_pitchSVG.setAttributeNS(null, 'height', t_svgH.toString());
-        var t_svgX = (notationContW/2) - (t_svgW/2);
-        var t_svgY = notationContH - (notationContH/3);
-        t_pitchSVG.setAttributeNS(null, "transform", "translate(" + t_svgX.toString() + "," + t_svgY.toString() + ")");
-        t_pitchSVG.setAttributeNS(null, 'visibility', 'visible');
-        t_pitchSVG.setAttributeNS(null, 'id', 'pitchSVG' + pitchSVGIdNum.toString());
-        pitchSVGIdNum++;
-        pitchesSVGsDict[key] = t_pitchSVG;
-      }
-      pitchesForEachPartByPitchSet.push(pitchesSVGsDict);
+  // PITCHES SVGS ///////////////////////////////////////////////////////////
+  for (const [key, value] of Object.entries(pitchSetDictByPSByPart)) {
+    var t_notationSVGs = [];
+    for (var j = 0; j < value.length; j++) {
+      var t_notationSVG = document.createElementNS(SVG_NS, "image");
+      t_notationSVG.setAttributeNS(SVG_XLINK, 'xlink:href', value[j][1]);
+      t_notationSVGw = notationContW.toString() * 0.5;
+      t_notationSVG.setAttributeNS(null, 'width', t_notationSVGw.toString());
+      var t_svgH = notationContH * 0.3333333;
+      t_notationSVG.setAttributeNS(null, 'height', t_svgH.toString());
+      var t_pitchX = notationContCenterX - (t_notationSVGw / 2);
+      var t_pitchY = notationContH * 0.67;
+      t_notationSVG.setAttributeNS(null, "transform", "translate(" + t_pitchX.toString() + "," + t_pitchY.toString() + ")");
+      t_notationSVG.setAttributeNS(null, "id", key + j.toString() );
+      t_notationSVG.setAttributeNS(null, 'visibility', 'visible');
+      t_notationSVGs.push(t_notationSVG);
     }
-    // DRAW INITIAL PITCHES FOR EACH TRACK
-    for (var i = 0; i < NUMTRACKS; i++) {
-      var t_img = pitchesForEachPartByPitchSet[i][pitchSets[0]];
-      notationContainerDOMs[i].appendChild(t_img);
-      currentPitchesById.push(t_img.id);
-    }
+    dictOfPitchSVGsByPart[key] = t_notationSVGs;
+  }
+  // DRAW INITIAL PITCHES FOR EACH TRACK
+  for (var i = 0; i < NUMTRACKS; i++) {
+    var t_img = dictOfPitchSVGsByPart[pitchSets[0]][i];
+    notationContainerDOMs[i].appendChild(t_img);
+    currentPitchesById.push(t_img.id);
+  }
   // FOR FRAME BY FRAME TESTS -------------------------------------------- //
   // document.addEventListener('keydown', function(event) {
   //   if (event.code == 'KeyA') {
@@ -268,41 +273,61 @@ function animationEngine(timestamp) {
 }
 // UPDATE ---------------------------------------------------------------------------- //
 function update(aMSPERFRAME) {
-  // CLOCK ///////////////////////////////////////////////////////
+  // CLOCK ////////////////////////////////////////////////////////////////////////////
   framect++;
   pieceClock += aMSPERFRAME;
   pieceClock = pieceClock - clockadj;
-  // EVENTS //////////////////////////////////////////////////////
-  // [ eventType, addToSceneGate, mesh, goFrame, goTime, startZ ]
+  // EVENTS ///////////////////////////////////////////////////////////////////////////
+  //// [ t_goFrame, t_playerNum, drawEventGate, t_eventType, t_mesh, t_goTime, t_startZ, t_eventSpecificData ]
   for (var i = 0; i < eventMatrix.length; i++) {
-    for (var j = 0; j < eventMatrix[i].length; j++) {
-      // Add the EVENT MESH to the scene if it is on the runway
-      if (eventMatrix[i][j][2].position.z > (-RUNWAYLENGTH) && eventMatrix[i][j][2].position.z < GOFRETPOSZ) {
-        //// Add Event to Scene Gate
-        if (eventMatrix[i][j][1]) {
-          eventMatrix[i][j][1] = false;
-          scene.add(eventMatrix[i][j][2]);
-        }
+    var t_goFrame = eventMatrix[i][0];
+    var t_mesh = eventMatrix[i][4];
+    // Advance EVENT MESH
+    t_mesh.position.z += PXPERFRAME;
+    //// Only look at events if they are on the scene
+    if ( t_goFrame <= (framect+RUNWAYLENGTH_FRAMES) && t_goFrame >= framect) {
+      var t_playerNum = eventMatrix[i][1];
+      var t_eventRenderGate = eventMatrix[i][2];
+      var t_eventType = eventMatrix[i][3];
+      var t_eventSpecificData = eventMatrix[i][7];
+      // Add Event Mesh to Scene
+      if (t_eventRenderGate) {
+        eventMatrix[i][2] = false;
+        scene.add(t_mesh);
       }
-      // Advance EVENT MESH if it is not past gofret
-      if (eventMatrix[i][j][2].position.z < GOFRETPOSZ) {
-        eventMatrix[i][j][2].position.z += PXPERFRAME;
-      }
-      //When EVENT MESH reaches goline, blink and remove
-      if (framect == eventMatrix[i][j][3]) {
-        switch (eventMatrix[i][j][0]) {
+      //When EVENT MESH reaches goline, blink and remove and run event specific functions
+      //// EVENT TYPES: 0-beat; 1-notation; 2-pitch;
+      if (framect == t_goFrame) {
+        switch (t_eventType) {
           case 0: //beats
-            goFretBlink[i] = framect + 11;
+            goFretBlink[t_playerNum] = framect + 11;
             break;
-          case 1:  // events
-            eventGoFretBlink[i] = framect + 11;
+          case 1: // Notation events
+            eventGoFretBlink[t_playerNum] = framect + 11;
+            //REMOVE PREVIOUS Notation
+            var t_oldNotationId = document.getElementById(currentNotationById[t_playerNum]);
+            if (t_oldNotationId != null) {
+              notationContainerDOMs[t_playerNum].removeChild(t_oldNotationId);
+            }
+            //Add New Notation
+            var t_img = dictOfNotationSVGsByPart[t_eventSpecificData][t_playerNum];
+            notationContainerDOMs[t_playerNum].appendChild(t_img);
+            currentNotationById[t_playerNum] = t_img.id;
             break;
-          case 2:  // pitches
-            eventGoFretBlink[i] = framect + 11;
+          case 2: // pitches
+            //REMOVE PREVIOUS Pitches
+            var t_oldNotationId = document.getElementById(currentPitchesById[t_playerNum]);
+            if (t_oldNotationId != null) {
+              notationContainerDOMs[t_playerNum].removeChild(t_oldNotationId);
+            }
+            //Add New Pitches
+            var t_img = dictOfPitchSVGsByPart[t_eventSpecificData][t_playerNum];
+            notationContainerDOMs[t_playerNum].appendChild(t_img);
+            currentPitchesById[t_playerNum] = t_img.id;
             break;
           default:
         }
-        scene.remove(scene.getObjectByName(eventMatrix[i][j][2].name));
+        scene.remove(scene.getObjectByName(t_mesh.name));
       }
     }
   }
@@ -327,93 +352,66 @@ function update(aMSPERFRAME) {
       eventGoFrets[i][0].geometry = eventGoFretGeom;
     }
   }
-  // NOTATION --------------------------------------------------------- //
-  //REMOVE PREVIOUS NOTATION
-  for (var i = 0; i < pitchChanges.length; i++) {
-    if (pitchChanges[i][1] == framect) { //detect pitch change
-      for (var k = 0; k < 4; k++) {
-        var timg = notes[0][roundByStep(pitchChanges[i][2][0][k][1], 0.5)];
-        for (var l = 0; l < pitchContainerDOMs[k].children.length; l++) {
-          pitchContainerDOMs[k].removeChild(pitchContainerDOMs[k].children[l]);
-        }
-        currentPitches[k] = parseFloat(pitchChanges[i][2][0][k][1]);
-      }
   // RENDER EACH FRAME ////////////////////////////////////
   renderer.render(scene, camera);
 }
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTIONS ------------------------------------------------------------------------------------//
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION: createEvents ----------------------------------------------- //
 function createEvents() {
+  ////// [0]oboe, [1]Violin,  [2]Piano, [3]Perc, [4]Viola, [5]Trombone, [6]Bass Clarinet, [7]Cello
+  // [ goTime, playerNum, eventType, eventSpecificData]  // EVENT TYPES: 0-beat; 1-notation; 2-pitch;
   var t_eventMatrix = [];
   var t_eventIx = 0;
-  //// Instrument Level - 8 Arrays one for each instrument
-  ////// [0]Oboe, [1]Violin,  [2]Piano, [3]Perc,
-  ////// [4]Viola, [5]Trombone, [6]Bass Clarinet, [7]Cello
-  ////// eventSet[i] returns entire set of events for that Instrument
-  //////// eventSet[0] will be all Oboe events
-  //// eventSet is set of events by time from compAlgo
   for (var i = 0; i < eventSet.length; i++) {
-    var t_eventsData_Set = [];
-    //// Event Level - Represents an array of data for a single event
-    ////// eventSet[i][j] will include:
-    ////// [ eventTime, eventType ]
-    for (var j = 0; j < eventSet[i].length; j++) {
-      var t_goTime = eventSet[i][j][0];
-      t_goTime = t_goTime + leadTime;
-      var t_numPxTilGo = t_goTime * PXPERSEC;
-      var t_startZ = GOFRETPOSZ - t_numPxTilGo;
-      var t_goFrame = Math.round(t_numPxTilGo / PXPERFRAME);
-      ////////////////////////////////////////////////////////////////////////////
-      //// ------ Switch on eventType: eventSet[i][j][1] -----------------------//
-      ////////////////////////////////////////////////////////////////////////////
-      switch (eventSet[i][j][1]) {
-        case 0: // beats ---------------------------------------------------------------------
-          var t_beatMarkerMatl = new THREE.MeshLambertMaterial({
-            color: clr_neonMagenta
-          });
-          var t_beatMarkerMesh = new THREE.Mesh(beatMarkerGeom, t_beatMarkerMatl);
-          t_beatMarkerMesh.position.z = t_startZ;
-          t_beatMarkerMesh.position.y = GOFRETHEIGHT;
-          t_beatMarkerMesh.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * i);
-          t_beatMarkerMesh.name = t_eventIx + "_beat";
-          t_eventIx++;
-          var t_singleEventDataArray = [eventSet[i][j][1], true, t_beatMarkerMesh, t_goFrame, t_goTime, t_startZ];
-          break;
-        case 1: // Events ------------------------------------------------------------------
-          var t_eventMarkerMatl = new THREE.MeshLambertMaterial({
-            color: clr_seaGreen
-          });
-          var t_eventMarkerMesh = new THREE.Mesh(eventGoFretGeom, t_eventMarkerMatl);
-          t_eventMarkerMesh.position.z = t_startZ;
-          t_eventMarkerMesh.position.y = EVENTGOFRETHEIGHT;
-          t_eventMarkerMesh.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * i);
-          t_eventMarkerMesh.name = t_eventIx + "_event";
-          t_eventIx++;
-          // [ eventType, addToSceneGate, mesh, goFrame, goTime, startZ ]
-          var t_singleEventDataArray = [eventSet[i][j][1], true, t_eventMarkerMesh, t_goFrame, t_goTime, t_startZ];
-          break;
-        case 2: // Pitches ---------------------------------------------------------------------
-          var t_pitchesMarkerMatl = new THREE.MeshLambertMaterial({
-            color: clr_white
-          });
-          var t_pitchMarkerMesh = new THREE.Mesh(pitchMarkerGeom, t_pitchesMarkerMatl);
-          t_pitchMarkerMesh.position.z = t_startZ;
-          t_pitchMarkerMesh.position.y = EVENTGOFRETHEIGHT;
-          t_pitchMarkerMesh.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * i);
-          t_pitchMarkerMesh.name = t_eventIx + "_pitch";
-          t_eventIx++;
-          // [ eventType, addToSceneGate, mesh, goFrame, goTime, startZ ]
-          var t_singleEventDataArray = [eventSet[i][j][1], true, t_pitchMarkerMesh, t_goFrame, t_goTime, t_startZ];
-          break;
-        default:
-
-      }
-      t_eventsData_Set.push(t_singleEventDataArray);
+    var t_goTime = eventSet[i][0];
+    t_goTime = t_goTime + leadTime;
+    var t_playerNum = eventSet[i][1];
+    var t_numPxTilGo = t_goTime * PXPERSEC;
+    var t_startZ = GOFRETPOSZ - t_numPxTilGo;
+    var t_goFrame = Math.round(t_numPxTilGo / PXPERFRAME);
+    var t_eventType = eventSet[i][2];
+    var t_eventSpecificData = eventSet[i][3];
+    ////////////////////////////////////////////////////////////////////////////
+    //// ------ Switch on eventType: eventSet[i][j][1] -----------------------//
+    ////////////////////////////////////////////////////////////////////////////
+    switch (t_eventType) {
+      case 0: // beats ---------------------------------------------------------------------
+        var t_beatMarkerMatl = new THREE.MeshLambertMaterial({
+          color: clr_neonMagenta
+        });
+        var t_mesh = new THREE.Mesh(beatMarkerGeom, t_beatMarkerMatl);
+        t_mesh.position.z = t_startZ;
+        t_mesh.position.y = GOFRETHEIGHT;
+        t_mesh.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * t_playerNum);
+        t_mesh.name = t_eventIx + "_beat";
+        break;
+      case 1: // Notation Events ------------------------------------------------------------------
+        var t_eventMarkerMatl = new THREE.MeshLambertMaterial({
+          color: clr_seaGreen
+        });
+        var t_mesh = new THREE.Mesh(eventGoFretGeom, t_eventMarkerMatl);
+        t_mesh.position.z = t_startZ;
+        t_mesh.position.y = EVENTGOFRETHEIGHT;
+        t_mesh.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * t_playerNum);
+        t_mesh.name = t_eventIx + "_notationevent";
+        break;
+      case 2: // Pitches ---------------------------------------------------------------------
+        var t_pitchesMarkerMatl = new THREE.MeshLambertMaterial({
+          color: clr_white
+        });
+        var t_mesh = new THREE.Mesh(pitchMarkerGeom, t_pitchesMarkerMatl);
+        t_mesh.position.z = t_startZ;
+        t_mesh.position.y = EVENTGOFRETHEIGHT;
+        t_mesh.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * t_playerNum);
+        t_mesh.name = t_eventIx + "_pitch";
+        break;
+      default:
     }
-    t_eventMatrix.push(t_eventsData_Set);
+    t_eventIx++;
+    var t_singleEventDataArray = [t_goFrame, t_playerNum, true, t_eventType, t_mesh, t_goTime, t_startZ, t_eventSpecificData];
+    t_eventMatrix.push(t_singleEventDataArray);
   }
   return t_eventMatrix;
 }
