@@ -14,7 +14,7 @@ var lastFrameTimeMs = 0.0;
 var pieceClock = 0.0;
 var clockadj = 0.0;
 var leadTime = 7.0;
-var startTime = 130;
+var startTime = 0;
 // COLORS //////////////////////////////////////////////////////////////
 var clr_neonMagenta = new THREE.Color("rgb(255, 21, 160)");
 var clr_seaGreen = new THREE.Color("rgb(0, 255, 108)");
@@ -41,7 +41,8 @@ var CAM_ROTATION_X = rads(-65);
 ////// Scene Size //////////
 var SCENE_W = 1920;
 var SCENE_H = 720;
-var RUNWAYLENGTH = 1070;
+// var RUNWAYLENGTH = 1070;
+var RUNWAYLENGTH = 2070;
 var RUNWAYLENGTH_FRAMES = RUNWAYLENGTH / PXPERFRAME;
 // TRACKS ///////////////////////////////////////////////////////////////
 var NUMTRACKS = 8;
@@ -80,7 +81,6 @@ var eventGoFretBlink = [];
 for (var i = 0; i < NUMTRACKS; i++) {
   eventGoFretBlink.push(0);
 }
-
 // NOTATION SVGS /////////////////////////////////////////////////////////
 var SVG_NS = "http://www.w3.org/2000/svg";
 var SVG_XLINK = 'http://www.w3.org/1999/xlink';
@@ -97,6 +97,13 @@ var beatMarkerGeom = new THREE.CubeGeometry(GOFRETWIDTH + 2, GOFRETHEIGHT + 2, G
 var pitchMarkerGeom = new THREE.CubeGeometry(GOFRETWIDTH - 20, GOFRETHEIGHT + 6, 8);
 var currentPitchesById = [];
 var dictOfPitchSVGsByPart = {};
+// CURVE FOLLOWERS /////////////////////////////////////////////////////////
+var cresCrvRects = [];
+var cresSvgCrvs = [];
+var cresCrvFollowers = [];
+var cresCrvCoords;
+var crvFollowData = [];
+var notationCanvasH;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // FACTORY --------------------------------------------------------------------------------------//
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -201,6 +208,7 @@ function createScene() {
   var notationCont_boundingBox = notationContainers[0].getBoundingClientRect();
   var notationContW = notationCont_boundingBox.width;
   var notationContH = notationCont_boundingBox.height;
+  notationCanvasH = notationContH * 0.6666666667;
   var notationContCenterX = notationContW / 2;
   var notationContCenterY = notationContH / 2;
   for (const [key, value] of Object.entries(notationElementDictByElementByPart)) {
@@ -212,7 +220,7 @@ function createScene() {
       var t_svgH = notationContH * 0.6666666667;
       t_notationSVG.setAttributeNS(null, 'height', t_svgH.toString());
       t_notationSVG.setAttributeNS(null, "transform", "translate( 0, 5)");
-      t_notationSVG.setAttributeNS(null, "id", key + j.toString() );
+      t_notationSVG.setAttributeNS(null, "id", key + j.toString());
       t_notationSVG.setAttributeNS(null, 'visibility', 'visible');
       t_notationSVGs.push(t_notationSVG);
     }
@@ -237,7 +245,7 @@ function createScene() {
       var t_pitchX = notationContCenterX - (t_notationSVGw / 2);
       var t_pitchY = notationContH * 0.67;
       t_notationSVG.setAttributeNS(null, "transform", "translate(" + t_pitchX.toString() + "," + t_pitchY.toString() + ")");
-      t_notationSVG.setAttributeNS(null, "id", key + j.toString() );
+      t_notationSVG.setAttributeNS(null, "id", key + j.toString());
       t_notationSVG.setAttributeNS(null, 'visibility', 'visible');
       t_notationSVGs.push(t_notationSVG);
     }
@@ -249,6 +257,62 @@ function createScene() {
     notationContainerDOMs[i].appendChild(t_img);
     currentPitchesById.push(t_img.id);
   }
+  // CURVES  ///////////////////////////////////////////////////////////
+  cresCrvCoords = plot(function(x) {
+    return Math.pow(x, 3);
+  }, [0, 1, 0, 1], notationContW, notationContH * 0.6666666667);
+  for (var i = 0; i < NUMTRACKS; i++) {
+    //// CURVE FOLLOW RECTS ////////////////////////////////////////
+    var tcresFollowRect = document.createElementNS(SVG_NS, "rect");
+    tcresFollowRect.setAttributeNS(null, "x", "0");
+    tcresFollowRect.setAttributeNS(null, "y", "0");
+    tcresFollowRect.setAttributeNS(null, "width", notationContW.toString());
+    tcresFollowRect.setAttributeNS(null, "height", "0");
+    tcresFollowRect.setAttributeNS(null, "fill", "rgba(255, 21, 160, 0.5)");
+    tcresFollowRect.setAttributeNS(null, "id", "cresFollowRect" + i.toString());
+    tcresFollowRect.setAttributeNS(null, "transform", "translate( 0, -3)");
+    tcresFollowRect.setAttributeNS(null, 'visibility', 'hidden');
+    notationContainerDOMs[i].appendChild(tcresFollowRect);
+    cresCrvRects.push(tcresFollowRect);
+    //// CURVES ////
+    var tcresSvgCrv = document.createElementNS(SVG_NS, "path");
+    var tpathstr = "";
+    for (var j = 0; j < cresCrvCoords.length; j++) {
+      if (j == 0) {
+        tpathstr = tpathstr + "M" + cresCrvCoords[j].x.toString() + " " + cresCrvCoords[j].y.toString() + " ";
+      } else {
+        tpathstr = tpathstr + "L" + cresCrvCoords[j].x.toString() + " " + cresCrvCoords[j].y.toString() + " ";
+      }
+    }
+    tcresSvgCrv.setAttributeNS(null, "d", tpathstr);
+    tcresSvgCrv.setAttributeNS(null, "stroke", "rgba(255, 21, 160, 0.5)");
+    tcresSvgCrv.setAttributeNS(null, "stroke-width", "4");
+    tcresSvgCrv.setAttributeNS(null, "fill", "none");
+    tcresSvgCrv.setAttributeNS(null, "id", "cresCrv" + i.toString());
+    tcresSvgCrv.setAttributeNS(null, "transform", "translate( 0, -3)");
+    tcresSvgCrv.setAttributeNS(null, 'visibility', 'hidden');
+    notationContainerDOMs[i].appendChild(tcresSvgCrv);
+    cresSvgCrvs.push(tcresSvgCrv);
+    // CURVE FOLLOWERS
+    var tcresSvgCirc = document.createElementNS(SVG_NS, "circle");
+    tcresSvgCirc.setAttributeNS(null, "cx", cresCrvCoords[0].x.toString());
+    tcresSvgCirc.setAttributeNS(null, "cy", cresCrvCoords[0].y.toString());
+    tcresSvgCirc.setAttributeNS(null, "r", "10");
+    tcresSvgCirc.setAttributeNS(null, "stroke", "none");
+    tcresSvgCirc.setAttributeNS(null, "fill", "rgba(255, 21, 160, 0.5)");
+    tcresSvgCirc.setAttributeNS(null, "id", "cresCrvCirc" + i.toString());
+    tcresSvgCirc.setAttributeNS(null, "transform", "translate( 0, -3)");
+    tcresSvgCirc.setAttributeNS(null, 'visibility', 'hidden');
+    notationContainerDOMs[i].appendChild(tcresSvgCirc);
+    cresCrvFollowers.push(tcresSvgCirc);
+    //Make FOLLOWERS
+    crvFollowData.push(0.0);
+  }
+
+
+
+
+
   // FOR FRAME BY FRAME TESTS -------------------------------------------- //
   // document.addEventListener('keydown', function(event) {
   //   if (event.code == 'KeyA') {
@@ -282,14 +346,15 @@ function update(aMSPERFRAME) {
   pieceClock += aMSPERFRAME;
   pieceClock = pieceClock - clockadj;
   // EVENTS ///////////////////////////////////////////////////////////////////////////
-  //// [ t_goFrame, t_playerNum, drawEventGate, t_eventType, t_mesh, t_goTime, t_startZ, t_eventSpecificData ]
+  //// [ t_goFrame, t_playerNum, drawEventGate, t_eventType, t_mesh, t_goTime, t_startZ, t_eventSpecificData, t_endFrame ]
   for (var i = 0; i < eventMatrix.length; i++) {
     var t_goFrame = eventMatrix[i][0];
+    var t_endFrame = eventMatrix[i][8];
     var t_mesh = eventMatrix[i][4];
     // Advance EVENT MESH
     t_mesh.position.z += PXPERFRAME;
     //// Only look at events if they are on the scene
-    if ( t_goFrame <= (framect+RUNWAYLENGTH_FRAMES) && t_goFrame >= framect) {
+    if (t_goFrame <= (framect + RUNWAYLENGTH_FRAMES) && t_endFrame >= framect) {
       var t_playerNum = eventMatrix[i][1];
       var t_eventRenderGate = eventMatrix[i][2];
       var t_eventType = eventMatrix[i][3];
@@ -299,9 +364,36 @@ function update(aMSPERFRAME) {
         eventMatrix[i][2] = false;
         scene.add(t_mesh);
       }
-      //When EVENT MESH reaches goline, blink and remove and run event specific functions
-      //// EVENT TYPES: 0-beat; 1-notation; 2-pitch;
+      //// GO FRAME ACTIONS /////////////////////////////////////////////////////////////////////////
       if (framect == t_goFrame) {
+        switch (t_eventType) {
+          case 4: // Cres
+            goFretBlink[t_playerNum] = framect + 11;
+            cresSvgCrvs[t_playerNum].setAttributeNS(null, "visibility", "visible");
+            cresCrvFollowers[t_playerNum].setAttributeNS(null, "visibility", "visible");
+            cresCrvRects[t_playerNum].setAttributeNS(null, "visibility", "visible");
+            break;
+          default:
+        }
+      }
+
+      //// UPDATES ////////////////////////////////////////////////////////////////////////////////////
+      if (framect > t_goFrame && framect < t_endFrame) {
+      switch (t_eventType) {
+        case 4: // Cres
+          crvFollowData[t_playerNum] = Math.floor(scale(framect, t_goFrame, t_endFrame, 0, cresCrvCoords.length));
+          cresCrvFollowers[t_playerNum].setAttributeNS(null, "cx", cresCrvCoords[crvFollowData[t_playerNum]].x.toString());
+          cresCrvFollowers[t_playerNum].setAttributeNS(null, "cy", cresCrvCoords[crvFollowData[t_playerNum]].y.toString());
+          var temph = notationCanvasH - cresCrvCoords[crvFollowData[t_playerNum]].y;
+          cresCrvRects[t_playerNum].setAttributeNS(null, "y", cresCrvCoords[crvFollowData[t_playerNum]].y.toString());
+          cresCrvRects[t_playerNum].setAttributeNS(null, "height", temph.toString());
+          break;
+        default:
+      }
+    }
+
+      //// END FRAME ACTIONS /////////////////////////////////////////////////////////////////////////
+      if (framect == t_endFrame) {
         switch (t_eventType) {
           case 0: //beats
             goFretBlink[t_playerNum] = framect + 11;
@@ -330,7 +422,13 @@ function update(aMSPERFRAME) {
             currentPitchesById[t_playerNum] = t_img.id;
             break;
           case 3: // Stop
-          stopGoFretBlink[t_playerNum] = framect + 11;
+            stopGoFretBlink[t_playerNum] = framect + 11;
+            break;
+          case 4: // Cres
+            crvFollowData[t_playerNum][0] = false;
+            cresSvgCrvs[t_playerNum].setAttributeNS(null, "visibility", "hidden");
+            cresCrvFollowers[t_playerNum].setAttributeNS(null, "visibility", "hidden");
+            cresCrvRects[t_playerNum].setAttributeNS(null, "visibility", "hidden");
             break;
           default:
         }
@@ -386,6 +484,7 @@ function createEvents() {
     var t_numPxTilGo = t_goTime * PXPERSEC;
     var t_startZ = GOFRETPOSZ - t_numPxTilGo;
     var t_goFrame = Math.round(t_numPxTilGo / PXPERFRAME);
+    var t_endFrame = t_goFrame;
     var t_eventType = eventSet[i][2];
     var t_eventSpecificData = eventSet[i][3];
     ////////////////////////////////////////////////////////////////////////////
@@ -432,10 +531,24 @@ function createEvents() {
         t_mesh.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * t_playerNum);
         t_mesh.name = t_eventIx + "_stop";
         break;
+      case 4: // Cres ---------------------------------------------------------------------
+        var t_cresDur = t_eventSpecificData;
+        var t_cresEventLength = t_cresDur * PXPERSEC;
+        var t_cresEventGeom = new THREE.CubeGeometry(50, GOFRETHEIGHT + 5, t_cresEventLength);
+        var t_stopMarkerMatl = new THREE.MeshLambertMaterial({
+          color: clr_purple
+        });
+        var t_mesh = new THREE.Mesh(t_cresEventGeom, t_stopMarkerMatl);
+        t_mesh.position.z = t_startZ - (t_cresEventLength / 2.0);
+        t_mesh.position.y = GOFRETHEIGHT;
+        t_mesh.position.x = -TRACK_X_OFFSET + (SPACE_BETWEEN_TRACKS * t_playerNum);
+        t_mesh.name = t_eventIx + "_cres";
+        t_endFrame = t_goFrame + Math.round(t_cresDur * FRAMERATE);
+        break;
       default:
     }
     t_eventIx++;
-    var t_singleEventDataArray = [t_goFrame, t_playerNum, true, t_eventType, t_mesh, t_goTime, t_startZ, t_eventSpecificData];
+    var t_singleEventDataArray = [t_goFrame, t_playerNum, true, t_eventType, t_mesh, t_goTime, t_startZ, t_eventSpecificData, t_endFrame];
     t_eventMatrix.push(t_singleEventDataArray);
   }
   return t_eventMatrix;

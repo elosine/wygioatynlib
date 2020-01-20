@@ -283,7 +283,38 @@ var notationElementDictByElementByPart = {
     '/elements/graceNoteFigures_trombone.svg',
     '/elements/graceNoteFigures_bassClarinet.svg',
     '/elements/graceNoteFigures_cello.svg'
+  ],
+  'blank': [
+    '/svgs/blank.svg',
+    '/svgs/blank.svg',
+    '/svgs/blank.svg',
+    '/svgs/blank.svg',
+    '/svgs/blank.svg',
+    '/svgs/blank.svg',
+    '/svgs/blank.svg',
+    '/svgs/blank.svg'
+  ],
+  'hairpin': [
+    '/elements/hairpin.svg',
+    '/elements/hairpin.svg',
+    '/elements/hairpin.svg',
+    '/elements/hairpin.svg',
+    '/elements/hairpin.svg',
+    '/elements/hairpin.svg',
+    '/elements/hairpin.svg',
+    '/elements/hairpin.svg'
+  ],
+  'trill': [
+    '/elements/trill.svg',
+    '/elements/trill.svg',
+    '/elements/trill.svg',
+    '/elements/trill.svg',
+    '/elements/trill.svg',
+    '/elements/trill.svg',
+    '/elements/trill.svg',
+    '/elements/trill.svg'
   ]
+
 };
 ////////////////////////////////////////////////////////////////////////////////////
 // ---------------------------------------------------------------------------------------
@@ -417,6 +448,63 @@ for (var i = 0; i < t_sec2StartTimes.length; i++) {
     } else break;
   }
 }
+// Section 3 - Crescendos
+var SECTION_3_START = SECTIION_2_END + 4;
+var SECTION_3_DUR = rrand(140, 169);
+var SECTIION_3_END = SECTION_3_START + SECTION_3_DUR;
+//Load Notation ////////////////
+for (var i = 0; i < NUMTRACKS; i++) {
+  eventSet.push([SECTIION_2_END, i, 1, 'hairpin'])
+}
+// // Section 3 pitch changes
+var sec3PitchChange1Time = SECTION_3_DUR * rrand(0.36, 0.42) ;
+var sec3PitchChange2Time = ((SECTION_3_DUR - sec3PitchChange1Time) * rrand(0.47, 0.54)) + sec3PitchChange1Time;
+sec3PitchChange1Time = sec3PitchChange1Time + SECTION_3_START;
+sec3PitchChange2Time = sec3PitchChange2Time + SECTION_3_START;
+for (var i = 0; i < NUMTRACKS; i++) {
+  eventSet.push([SECTION_3_START, i, 2, pitchSets[pitchSetIx]]);
+}
+pitchSetIx++;
+for (var i = 0; i < NUMTRACKS; i++) {
+  eventSet.push([sec3PitchChange1Time, i, 2, pitchSets[pitchSetIx]]);
+}
+pitchSetIx++;
+for (var i = 0; i < NUMTRACKS; i++) {
+  eventSet.push([sec3PitchChange2Time, i, 2, pitchSets[pitchSetIx]]);
+}
+pitchSetIx++;
+var breath = 3;
+var cresMin = 9;
+var cresMax = 13;
+var cresDurs = distributeOverRange(cresMin, cresMax, NUMTRACKS);
+for (var i = 0; i < NUMTRACKS; i++) {
+  var t_timeCode = SECTION_3_START;
+  var t_dur = cresDurs[i];
+  for (var j = 0; j < 999; j++) {
+    if (t_timeCode < (SECTIION_3_END - cresMax+breath)) {
+      eventSet.push([t_timeCode, i, 4, t_dur]);
+      t_timeCode = t_timeCode + t_dur + breath;
+      // console.log(t_beatDur);
+    } else break;
+  }
+}
+// Section 4 - Trills
+var SECTION_4_START = SECTIION_3_END + 4;
+var SECTION_4_DUR = rrand(40, 63);
+var SECTIION_4_END = SECTION_4_START + SECTION_4_DUR;
+//Load Notation ////////////////
+for (var i = 0; i < NUMTRACKS; i++) {
+  eventSet.push([SECTIION_3_END, i, 1, 'trill'])
+}
 
+//crescendo - piano rearticulate 4 octives with pedal use fermata over rest
+//perc - tam tam
+//last section combo accels and multi tempi
+//like pitl make time containers, choose teams 1,2, 3, 4, more weighted toward 1 and 2
+// choose menu of accel and tempi, mix tr, cres, grace notes, single pitches
+//long staggered entries of growing decels
+
+
+// EVENT TYPES: 0-beat; 1-notation; 2-pitch; 3-stop; 4-cres;
 
 eventSet.sort(sortFunction2DArray);
