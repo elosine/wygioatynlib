@@ -221,6 +221,17 @@ var pitchSetDictByPSByPart = {
     [55.1616439997274, '/svgs/055g3.svg'],
     [48.05353962668636, '/svgs/048c3.svg'],
     [49.98378775901415, '/svgs/050d3.svg']
+  ],
+
+  "nopitch": [
+    [0, '/svgs/blank.svg'],
+    [0, '/svgs/blank.svg'],
+    [0, '/svgs/blank.svg'],
+    [0, '/svgs/blank.svg'],
+    [0, '/svgs/blank.svg'],
+    [0, '/svgs/blank.svg'],
+    [0, '/svgs/blank.svg'],
+    [0, '/svgs/blank.svg']
   ]
 };
 // Generate Pitch Sets
@@ -262,6 +273,16 @@ var notationElementDictByElementByPart = {
     '/elements/wygioatynlib_pulsetrack_b.svg',
     '/elements/wygioatynlib_pulsetrack_b.svg',
     '/elements/wygioatynlib_pulsetrack_b.svg'
+  ],
+  'graceNoteGestures': [
+    '/elements/graceNoteFigures_oboe.svg',
+    '/elements/graceNoteFigures_violin.svg',
+    '/elements/graceNoteFigures_piano.svg',
+    '/elements/graceNoteFigures_glock.svg',
+    '/elements/graceNoteFigures_viola.svg',
+    '/elements/graceNoteFigures_trombone.svg',
+    '/elements/graceNoteFigures_bassClarinet.svg',
+    '/elements/graceNoteFigures_cello.svg'
   ]
 };
 ////////////////////////////////////////////////////////////////////////////////////
@@ -360,6 +381,14 @@ for (var i = 0; i < NUMTRACKS; i++) {
 var SECTION_2_START = SECTION_1_DUR + 4;
 var SECTION_2_DUR = rrand(123, 153);
 var SECTIION_2_END = SECTION_2_START + SECTION_2_DUR;
+//Load Notation ////////////////
+for (var i = 0; i < NUMTRACKS; i++) {
+  eventSet.push([SECTION_2_START, i, 1, 'graceNoteGestures'])
+}
+// No Pitches //////////////////
+for (var i = 0; i < NUMTRACKS; i++) {
+  eventSet.push([SECTION_2_START, i, 2, 'nopitch']);
+}
 //// Generate an acceleration for each part
 // Staggered entries
 var t_startOrder = shuffle(ogInst);
@@ -377,12 +406,9 @@ for (var i = 0; i < t_sec2StartTimes.length; i++) {
   // var t_accelRate = 1.028;
   var t_beatDur = t_iBeatDur;
   var t_timeCode = t_sec2StartTimes[i];
-
-  // var t_timeCode = SECTION_2_START ; //////////////////////////////////////////
-
   for (var j = 0; j < 999; j++) {
     if (t_timeCode < (SECTIION_2_END - t_iBeatDur)) {
-      eventSet.push( [  t_timeCode, i, 0, -1  ] );
+      eventSet.push([t_timeCode, i, 0, -1]);
       t_tempo = t_tempo * t_accelRate;
       var t_newBeatDur = 60.0 / t_tempo
       t_beatDur = Math.max(t_minDur, t_newBeatDur);

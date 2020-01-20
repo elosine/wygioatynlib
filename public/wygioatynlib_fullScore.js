@@ -14,7 +14,7 @@ var lastFrameTimeMs = 0.0;
 var pieceClock = 0.0;
 var clockadj = 0.0;
 var leadTime = 7.0;
-var startTime = 230;
+var startTime = 130;
 // COLORS //////////////////////////////////////////////////////////////
 var clr_neonMagenta = new THREE.Color("rgb(255, 21, 160)");
 var clr_seaGreen = new THREE.Color("rgb(0, 255, 108)");
