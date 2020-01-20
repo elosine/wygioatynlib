@@ -232,6 +232,71 @@ var pitchSetDictByPSByPart = {
     [0, '/svgs/blank.svg'],
     [0, '/svgs/blank.svg'],
     [0, '/svgs/blank.svg']
+  ],
+  "ps193alt": [
+    [77.87866155272926, '/svgs/078fs5.svg'],
+    [79.20575189744818, '/svgs/079g5.svg'],
+    [57.7798060403218, '/svgs/piano_cres_pitches_ps193.svg'],
+    [59.87506030890799, '/svgt/060c4t.svg'],
+    [64.866719326538, '/svgs/065f4.svg'],
+    [63.648263008993254, '/svgs/063p5eqf4.svg'],
+    [56.52017132510329, '/svgs/056p5aqf3.svg'],
+    [55.5114001476416, '/svgs/055p5gqs3.svg']
+  ],
+
+  "ps113alt": [
+    [79.22042959268147, '/svgs/079g5.svg'],
+    [73.12918617650247, '/svgs/073cs5.svg'],
+    [57.8807529181162, '/svgs/piano_cres_pitches_ps113.svg'],
+    [67.19106174765656, '/svgs/067g4.svg'],
+    [62.298566257892304, '/svgs/062p5dqs4.svg'],
+    [55.395598107236964, '/svgs/055p5gqs3.svg'],
+    [57.16144243264082, '/svgs/057a3.svg'],
+    [48.405071308214815, '/svgs/048p5cqs3.svg']
+  ],
+
+  "ps173alt": [
+    [73.98378775901415, '/svgs/074d5.svg'],
+    [77.15012458486073, '/svgs/077f5.svg'],
+    [55.1616439997274, '/svgs/piano_cres_pitches_ps173.svg'],
+    [56.843775896306525, '/svgs/057a3.svg'],
+    [66.59299396937001, '/svgs/066p5gqf4.svg'],
+    [63.86332590496039, '/svgs/064e4.svg'],
+    [44.628713000339374, '/svgs/044p5aqf2.svg'],
+    [56.628713000339374, '/svgs/057a3.svg']
+  ],
+
+  "ps44alt": [
+    [71.67204682370539, '/svgs/071p5cqf5.svg'],
+    [70.38906437670724, '/svgs/070p5bqf4.svg'],
+    [68.95031371246395, '/svgs/piano_cres_pitches_ps44.svg'],
+    [65.71939326761282, '/svgs/066fs4.svg'],
+    [61.86425443841172, '/svgs/062d4.svg'],
+    [56.843775896306525, '/svgs/057a3.svg'],
+    [55.04347056825124, '/svgs/055g3.svg'],
+    [49.66317969850479, '/svgs/049p5dqf3.svg']
+  ],
+
+  "ps27alt": [
+    [79.22042959268147, '/svgs/079g5.svg'],
+    [65.29830529399247, '/svgs/065p5fqs4.svg'],
+    [77.19965921233285, '/svgs/piano_cres_pitches_ps27.svg'],
+    [74.18119400838127, '/svgs/074d5.svg'],
+    [58.27875528533859, '/svgs/058p5bqf3.svg'],
+    [56.52017132510329, '/svgs/056p5aqf3.svg'],
+    [44.628713000339374, '/svgs/044p5aqf2.svg'],
+    [55.626432733591976, '/svgs/055p5gqs3.svg']
+  ],
+
+  "ps1alt": [
+    [69.05619991710803, '/svgs/069a4.svg'],
+    [69.83035305576477, '/svgs/070bf4.svg'],
+    [67.19106174765656, '/svgs/piano_cres_pitches_ps1.svg'],
+    [62.0234494956982, '/svgs/062d4.svg'],
+    [62.98656435868372, '/svgs/063ef4.svg'],
+    [55.1616439997274, '/svgs/055g3.svg'],
+    [48.05353962668636, '/svgs/048c3.svg'],
+    [49.98378775901415, '/svgs/050d3.svg']
   ]
 };
 // Generate Pitch Sets
@@ -320,10 +385,9 @@ var notationElementDictByElementByPart = {
 // ---------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////
-// MAKE A SINGLE GLOBAL EVENTS SET
 // [ goTime, playerNum, eventType,  eventTypeSpecifics]
-// EVENT TYPES: 0-beat; 1-notation; 2-pitch; 3-stop;
-//have set of initial states
+// EVENT TYPES: 0-beat; 1-notation; 2-pitch; 3-stop; 4-cres;
+// INITIAL EVENTS ----------------------------------------------------------------------- //
 var initalEventsSet = [];
 for (var i = 0; i < NUMTRACKS; i++) {
   //initial pitches
@@ -331,62 +395,36 @@ for (var i = 0; i < NUMTRACKS; i++) {
   //initial notation
   initalEventsSet.push([0, i, 1, 'pulseTrack']);
 }
-var SECTION_1_DUR = rrand(130, 157);
 var eventSet = [];
-// Instruments come in one at at time playing pulsetrack
-// Random entry order and entry times
-// Scramble Instrument Order
+// SECTION 1 ----------------------------------------------------------------------------- //
+var SECTION_1_DUR = rrand(100, 115);
+//// Scramble Instrument Order
 var ogInst = [0, 1, 2, 3, 4, 5, 6, 7];
-var instrumentOrder = shuffle(ogInst);
+var instrumentOrder = shuffle(ogInst.clone());
 var t_tempi = [55, 56, 57, 58, 59, 60, 61, 62];
+var t_2ndEntry = rrand(7, 11);
+var t_sec2StartTimes = [0, t_2ndEntry, 0, 0, 0, 0, 0, 0];
+for (var i = 2; i < instrumentOrder.length; i++) {
+  var t_addTime = rrand(3, 7);
+  t_sec2StartTimes[i] = t_sec2StartTimes[i - 1] + t_addTime;
+}
 for (var i = 0; i < instrumentOrder.length; i++) {
-  var t_2ndEntry = rrand(6, 10);
-  var t_nextEntry = t_2ndEntry;
   var t_beatDur = 60.0 / t_tempi[i];
-  if (i == 0) {
-    eventSet.push([0, instrumentOrder[i], 1, 'pulseTrack']);
-    //count in
-    for (var j = 1; j < 5; j++) {
-      eventSet.push([(-(t_beatDur * j)), instrumentOrder[i], 0, -1]);
-    }
-    // beat Grid
-    for (var j = 0; j < 999; j++) {
-      var t_newTime = t_beatDur * j;
-      if (t_newTime < SECTION_1_DUR) {
-        eventSet.push([t_newTime, instrumentOrder[i], 0, -1]);
-      } else break;
-    }
-  } else if (i == 1) {
-    eventSet.push([t_2ndEntry, instrumentOrder[i], 1, 'pulseTrack']);
-    //count in
-    for (var j = 1; j < 5; j++) {
-      eventSet.push([(t_2ndEntry - (t_beatDur * j)), instrumentOrder[i], 0, -1]);
-    }
-    // beat Grid
-    for (var j = 0; j < 999; j++) {
-      var t_newTime = t_2ndEntry + (t_beatDur * j);
-      if (t_newTime < SECTION_1_DUR) {
-        eventSet.push([t_newTime, instrumentOrder[i], 0, -1]);
-      } else break;
-    }
-  } else {
-    var t_addTime = rrand(3.5, 5.5);
-    t_nextEntry = t_nextEntry + t_addTime;
-    eventSet.push([t_nextEntry, instrumentOrder[i], 1, 'pulseTrack']);
-    //count in
-    for (var j = 1; j < 5; j++) {
-      eventSet.push([(t_nextEntry - (t_beatDur * j)), instrumentOrder[i], 0, -1]);
-    }
-    // beat Grid
-    for (var j = 0; j < 999; j++) {
-      var t_newTime = t_nextEntry + (t_beatDur * j);
-      if (t_newTime < SECTION_1_DUR) {
-        eventSet.push([t_newTime, instrumentOrder[i], 0, -1]);
-      } else break;
-    }
+  //// Load Notation
+  eventSet.push([t_sec2StartTimes[i], instrumentOrder[i], 1, 'pulseTrack']);
+  //// count in
+  for (var j = 1; j < 5; j++) {
+    eventSet.push([(t_sec2StartTimes[i] - (t_beatDur * j)), instrumentOrder[i], 0, -1]);
+  }
+  //// beat Grid
+  for (var j = 0; j < 999; j++) {
+    var t_newTime = (t_beatDur * j) + t_sec2StartTimes[i];
+    if (t_newTime < SECTION_1_DUR) {
+      eventSet.push([t_newTime, instrumentOrder[i], 0, -1]);
+    } else break;
   }
 }
-// // Section 1 pitch changes
+//// Section 1 pitch changes
 var sec1PitchChange1Time = SECTION_1_DUR * rrand(0.4, 0.5);
 var sec1PitchChange2Time = ((SECTION_1_DUR - sec1PitchChange1Time) * rrand(0.47, 0.54)) + sec1PitchChange1Time;
 for (var i = 0; i < NUMTRACKS; i++) {
@@ -397,17 +435,16 @@ for (var i = 0; i < NUMTRACKS; i++) {
   eventSet.push([sec1PitchChange2Time, i, 2, pitchSets[pitchSetIx]]);
 }
 pitchSetIx++;
-//When to start looping and adding looping notation
 //Loops
 var sec1LoopsStartTime = rrand((SECTION_1_DUR * 0.74), (SECTION_1_DUR * 0.78));
 for (var i = 0; i < NUMTRACKS; i++) {
   eventSet.push([sec1LoopsStartTime, i, 1, 'pulseTrackLoops'])
 }
 // Add a group stop at the end of Section One
-// [ goTime, playerNum, eventType,  eventTypeSpecifics]
 for (var i = 0; i < NUMTRACKS; i++) {
   eventSet.push([SECTION_1_DUR, i, 3, -1])
 }
+// SECTION 2 ----------------------------------------------------------------------------- //
 //Grace Note Motives ------------------------------------------------------------
 var SECTION_2_START = SECTION_1_DUR + 4;
 var SECTION_2_DUR = rrand(123, 153);
@@ -420,9 +457,8 @@ for (var i = 0; i < NUMTRACKS; i++) {
 for (var i = 0; i < NUMTRACKS; i++) {
   eventSet.push([SECTION_2_START, i, 2, 'nopitch']);
 }
-//// Generate an acceleration for each part
 // Staggered entries
-var t_startOrder = shuffle(ogInst);
+var t_startOrder = shuffle(ogInst.clone());
 var t_sec2StartTimes = [0, 0, 0, 0, 0, 0, 0, 0];
 for (var i = 0; i < t_startOrder.length; i++) {
   var t_addTime = rrand(3, 7);
@@ -444,10 +480,10 @@ for (var i = 0; i < t_sec2StartTimes.length; i++) {
       var t_newBeatDur = 60.0 / t_tempo
       t_beatDur = Math.max(t_minDur, t_newBeatDur);
       t_timeCode = t_timeCode + t_beatDur;
-      // console.log(t_beatDur);
     } else break;
   }
 }
+// SECTION 3 ----------------------------------------------------------------------------- //
 // Section 3 - Crescendos
 var SECTION_3_START = SECTIION_2_END + 4;
 var SECTION_3_DUR = rrand(140, 169);
@@ -457,20 +493,38 @@ for (var i = 0; i < NUMTRACKS; i++) {
   eventSet.push([SECTIION_2_END, i, 1, 'hairpin'])
 }
 // // Section 3 pitch changes
-var sec3PitchChange1Time = SECTION_3_DUR * rrand(0.36, 0.42) ;
+var sec3PitchChange1Time = SECTION_3_DUR * rrand(0.36, 0.42);
 var sec3PitchChange2Time = ((SECTION_3_DUR - sec3PitchChange1Time) * rrand(0.47, 0.54)) + sec3PitchChange1Time;
 sec3PitchChange1Time = sec3PitchChange1Time + SECTION_3_START;
 sec3PitchChange2Time = sec3PitchChange2Time + SECTION_3_START;
 for (var i = 0; i < NUMTRACKS; i++) {
-  eventSet.push([SECTION_3_START, i, 2, pitchSets[pitchSetIx]]);
+  if (i == 2) {
+    eventSet.push([SECTION_3_START, i, 2, pitchSets[pitchSetIx] + 'alt']);
+  } else if (i == 3) {
+    eventSet.push([SECTION_3_START, i, 2, 'nopitch']);
+  } else {
+    eventSet.push([SECTION_3_START, i, 2, pitchSets[pitchSetIx]]);
+  }
 }
 pitchSetIx++;
 for (var i = 0; i < NUMTRACKS; i++) {
-  eventSet.push([sec3PitchChange1Time, i, 2, pitchSets[pitchSetIx]]);
+  if (i == 2) {
+    eventSet.push([sec3PitchChange1Time, i, 2, pitchSets[pitchSetIx] + 'alt']);
+  } else if (i == 3) {
+    eventSet.push([sec3PitchChange1Time, i, 2, 'nopitch']);
+  } else {
+    eventSet.push([sec3PitchChange1Time, i, 2, pitchSets[pitchSetIx]]);
+  }
 }
 pitchSetIx++;
 for (var i = 0; i < NUMTRACKS; i++) {
-  eventSet.push([sec3PitchChange2Time, i, 2, pitchSets[pitchSetIx]]);
+  if (i == 2) {
+    eventSet.push([sec3PitchChange2Time, i, 2, pitchSets[pitchSetIx] + 'alt']);
+  } else if (i == 3) {
+    eventSet.push([sec3PitchChange2Time, i, 2, 'nopitch']);
+  } else {
+    eventSet.push([sec3PitchChange2Time, i, 2, pitchSets[pitchSetIx]]);
+  }
 }
 pitchSetIx++;
 var breath = 3;
@@ -481,21 +535,95 @@ for (var i = 0; i < NUMTRACKS; i++) {
   var t_timeCode = SECTION_3_START;
   var t_dur = cresDurs[i];
   for (var j = 0; j < 999; j++) {
-    if (t_timeCode < (SECTIION_3_END - cresMax+breath)) {
+    if (t_timeCode < (SECTIION_3_END - cresMax + breath)) {
       eventSet.push([t_timeCode, i, 4, t_dur]);
       t_timeCode = t_timeCode + t_dur + breath;
-      // console.log(t_beatDur);
     } else break;
   }
 }
+// SECTION 4 ----------------------------------------------------------------------------- //
 // Section 4 - Trills
-var SECTION_4_START = SECTIION_3_END + 4;
-var SECTION_4_DUR = rrand(40, 63);
+var SECTION_4_START = SECTIION_3_END + 3;
+var SECTION_4_DUR = rrand(115, 135);
 var SECTIION_4_END = SECTION_4_START + SECTION_4_DUR;
 //Load Notation ////////////////
 for (var i = 0; i < NUMTRACKS; i++) {
   eventSet.push([SECTIION_3_END, i, 1, 'trill'])
 }
+// Load PITCHES
+for (var i = 0; i < NUMTRACKS; i++) {
+  eventSet.push([SECTION_4_START, i, 2, pitchSets[pitchSetIx]]);
+}
+var breath = 1.7;
+var t_accDurMin = 0.85;
+var trillAccelDurs = cresDurs.clone();
+var t_accelRateSet = [];
+for (var i = 0; i < NUMTRACKS; i++) {
+  var t_accelRate = rrand(0.897, 0.907);
+  t_accelRateSet.push(t_accelRate);
+}
+// Staggered entries
+var t_instOrder = shuffle(ogInst.clone());
+var t_sec4StartTimes = [0, 0, 0, 0, 0, 0, 0, 0];
+for (var i = 0; i < t_startOrder.length; i++) {
+  var t_addTime = rrand(1.8, 2.4);
+  t_sec4StartTimes[t_instOrder[i]] = (t_addTime * i) + SECTION_4_START;
+}
+//  shorten accel duration
+for (var i = 0; i < NUMTRACKS; i++) {
+  var t_plNum = t_instOrder[i];
+  var t_timeCode = t_sec4StartTimes[t_plNum];
+  var t_dur = trillAccelDurs[t_plNum];
+  for (var j = 0; j < 999; j++) {
+    if (t_timeCode < (SECTIION_4_END - t_accDurMin + breath)) {
+      eventSet.push([t_timeCode, t_plNum, 4, t_dur]);
+      t_dur = t_dur * t_accelRateSet[t_plNum];
+      t_dur = Math.max(t_accDurMin, t_dur);
+      t_timeCode = t_timeCode + t_dur + breath;
+    } else break;
+  }
+}
+// SECTION 5 ----------------------------------------------------------------------------- //
+// Section 5 - Combos
+var SECTION_5_START = SECTIION_4_END + 5;
+var SECTION_5_DUR = rrand(105, 165);
+var SECTIION_5_END = SECTION_5_START + SECTION_5_DUR;
+//// Generate Sections
+var sec5Form = palindromeTimeContainers(SECTION_5_DUR, 3, 11, 0.016, 0.25);
+////// Num Parts per SECTION
+var sec5NumPartsPerSec = [];
+var t_instOrder = shuffle(ogInst.clone());
+for (var i = 0; i < sec5Form.length; i++) {
+  var t_numParts = rrandInt(2, 4);
+  sec5NumPartsPerSec.push(t_numParts);
+}
+// Player Per Parts
+var t_timeCode_Inst = []; //[ timecode, [insts] ]
+for (var i = 0; i < sec5Form.length; i++) {
+  var t_arr = [];
+  t_arr.push(sec5Form[i] + SECTION_5_START);
+  var t_numParts = sec5NumPartsPerSec[i];
+  var t_insts = [];
+  for (var j = 0; j < t_numParts; j++) {
+    if (t_instOrder.length > 0) {
+      t_insts.push(t_instOrder[0]);
+      t_instOrder.splice(0, 1);
+    } else {
+      t_instOrder = shuffle(ogInst.clone());
+      t_insts.push(t_instOrder[0]);
+      t_instOrder.splice(0, 1);
+    }
+  }
+  t_arr.push(t_insts);
+  t_timeCode_Inst.push(t_arr);
+}
+// cresc, trill, grace note accel, accel, at tempo
+
+
+//start with cres length
+//decrease with each articulation until times up
+//slightly shorter breath
+
 
 //crescendo - piano rearticulate 4 octives with pedal use fermata over rest
 //perc - tam tam

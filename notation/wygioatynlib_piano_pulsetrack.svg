@@ -214,7 +214,7 @@ c45 0 73 46 73 94v8h-167c-23 0 -31 14 -31 23c0 3 1 5 2 6c80 93 138 207 138 330c0
 <path transform="translate(10.6906, 10.9999) scale(0.0036, -0.0036)" d="M217 139c57 0 112 -31 112 -94c0 -72 -55 -121 -102 -149c-35 -21 -74 -35 -115 -35c-57 0 -112 31 -112 94c0 72 55 121 102 149c35 21 74 35 115 35z" fill="currentColor"/>
 <text transform="translate(11.8626, 11.4935)" font-family="Century Schoolbook L" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>
- = 85</tspan>
+ = 59</tspan>
 </text>
 </a>
 <rect transform="translate(34.7155, 14.3453)" x="-0.0650" y="-0.8122" width="0.1300" height="3.8874" ry="0.0400" fill="currentColor"/>

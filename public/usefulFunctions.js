@@ -263,6 +263,9 @@ function plot(fn, range, width, height) {
   }
   return tpoints;
 }
+Array.prototype.clone = function() {
+	return this.slice(0);
+};
 
 
 
