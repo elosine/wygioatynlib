@@ -589,50 +589,149 @@ var SECTION_5_START = SECTIION_4_END + 5;
 var SECTION_5_DUR = rrand(105, 165);
 var SECTIION_5_END = SECTION_5_START + SECTION_5_DUR;
 //// Generate Sections
-var sec5Form = palindromeTimeContainers(SECTION_5_DUR, 3, 11, 0.016, 0.25);
-////// Num Parts per SECTION
-var sec5NumPartsPerSec = [];
-var t_instOrder = shuffle(ogInst.clone());
-for (var i = 0; i < sec5Form.length; i++) {
-  var t_numParts = rrandInt(2, 4);
-  sec5NumPartsPerSec.push(t_numParts);
-}
-// Player Per Parts
-var t_timeCode_Inst = []; //[ timecode, [insts] ]
-for (var i = 0; i < sec5Form.length; i++) {
+var sec5Form = palindromeTimeContainers(SECTION_5_DUR, 3, 11, 0.011, 0.20);
+var sec5EvtAr = [];
+for (var i = 1; i < sec5Form.length; i++) {
   var t_arr = [];
-  t_arr.push(sec5Form[i] + SECTION_5_START);
-  var t_numParts = sec5NumPartsPerSec[i];
-  var t_insts = [];
-  for (var j = 0; j < t_numParts; j++) {
-    if (t_instOrder.length > 0) {
-      t_insts.push(t_instOrder[0]);
-      t_instOrder.splice(0, 1);
+  var t_dur = sec5Form[i] - sec5Form[i - 1];
+  t_arr.push(sec5Form[i - 1] + SECTION_5_START);
+  t_arr.push(t_dur);
+  sec5EvtAr.push(t_arr);
+}
+//sec5EvtAr [gotime, dur]
+//generate separate event per gotime for each instrument/eventtype
+var sec5EventList = [];
+//Generate Large Instrument list
+var sec5Insts = [];
+for (var i = 0; i < 99; i++) {
+  var t_insts = shuffle(ogInst.clone());
+  for (var j = 0; j < t_insts.length; j++) {
+    sec5Insts.push(t_insts[j]);
+  }
+}
+for (var i = 0; i < sec5EvtAr.length; i++) {
+  var t_numInstsThisSection = rrandInt(2, 4);
+  t_instsAr = [];
+  //This rediculous, convoluted bit of code makes sure
+  //there are no duplicate instruments and each
+  //instrument gets equal playing time
+  for (var j = 0; j < t_numInstsThisSection; j++) {
+    if (j == 0) {
+      t_instsAr.push(sec5Insts[0]);
+      sec5Insts.splice(0, 1);
+
     } else {
-      t_instOrder = shuffle(ogInst.clone());
-      t_insts.push(t_instOrder[0]);
-      t_instOrder.splice(0, 1);
+      for (var k = 0; k < 99; k++) {
+        var t_inst = sec5Insts[k];
+        var t_dups = false;
+        for (var l = 0; l < t_instsAr.length; l++) {
+          if (t_instsAr[l] == t_inst) {
+            t_dups = true;
+          }
+        }
+        if (t_dups == false) {
+          t_instsAr.push(t_inst);
+          sec5Insts.splice(k, 1);
+          break;
+        }
+      }
     }
   }
-  t_arr.push(t_insts);
-  t_timeCode_Inst.push(t_arr);
+  //clone timecode and add instrument add event
+  for (var j = 0; j < t_numInstsThisSection; j++) {
+    var t_evar = sec5EvtAr[i].clone();
+    //add instrument
+    t_evar.push(t_instsAr[j]);
+    var t_randEvt = rrandInt(0, 4);
+    t_evar.push(t_randEvt);
+    sec5EventList.push(t_evar);
+  }
 }
-// cresc, trill, grace note accel, accel, at tempo
-
-
-//start with cres length
-//decrease with each articulation until times up
-//slightly shorter breath
-
-
-//crescendo - piano rearticulate 4 octives with pedal use fermata over rest
-//perc - tam tam
-//last section combo accels and multi tempi
-//like pitl make time containers, choose teams 1,2, 3, 4, more weighted toward 1 and 2
-// choose menu of accel and tempi, mix tr, cres, grace notes, single pitches
+//remove Pitches and notation for each section
+for (var i = 0; i < sec5EvtAr.length; i++) {
+  var t_tc = sec5EvtAr[i][0];
+  for (var j = 0; j < NUMTRACKS; j++) {
+    //remove pitches
+    eventSet.push([t_tc - 0.01, j, 2, 'nopitch']);
+    //remove notation
+    eventSet.push([t_tc - 0.01, j, 1, 'blank']);
+  }
+}
+//Add new events
+for (var i = 0; i < sec5EventList.length; i++) {
+  var t_tc = sec5EventList[i][0];
+  var t_dur = sec5EventList[i][1];
+  var t_instNum = sec5EventList[i][2];
+  var t_eventTp = sec5EventList[i][3];
+  switch (t_eventTp) {
+    case 0: //cres
+      //add pitches
+      eventSet.push([t_tc, t_instNum, 2, pitchSets[pitchSetIx]]);
+      //Load Notation ////////////////
+      eventSet.push([t_tc, t_instNum, 1, 'hairpin'])
+      //make event
+      eventSet.push([t_tc, t_instNum, 4, t_dur]);
+      break;
+    case 1: //Trill
+      //add pitches
+      eventSet.push([t_tc, t_instNum, 2, pitchSets[pitchSetIx]]);
+      //Load Notation ////////////////
+      eventSet.push([t_tc, t_instNum, 1, 'trill'])
+      //make event
+      eventSet.push([t_tc, t_instNum, 4, t_dur]);
+      break;
+    case 2: //Grace Note Accel
+      //Load Notation ////////////////
+      eventSet.push([t_tc, t_instNum, 1, 'graceNoteGestures'])
+      var t_minDur = 0.5;
+      var t_iBeatDur = t_dur / 4;
+      var t_accelRate = rrand(0.79, 0.87);
+      var t_beatDur = t_iBeatDur;
+      var t_timeCode = t_tc;
+      var t_tcNext = t_tc + t_dur;
+      for (var j = 0; j < 999; j++) {
+        if (t_timeCode < t_tcNext) {
+          eventSet.push([t_timeCode, t_instNum, 0, -1]);
+          var t_newBeatDur = t_beatDur * t_accelRate;
+          t_beatDur = Math.max(t_minDur, t_newBeatDur);
+          t_timeCode = t_timeCode + t_beatDur;
+        } else break;
+      }
+      break;
+    case 3: // Accel
+      //add pitches
+      eventSet.push([t_tc, t_instNum, 2, pitchSets[pitchSetIx]]);
+      var t_minDur = 0.4;
+      var t_iBeatDur = t_dur / 4;
+      var t_accelRate = rrand(0.77, 0.84);
+      var t_beatDur = t_iBeatDur;
+      var t_timeCode = t_tc;
+      var t_tcNext = t_tc + t_dur;
+      for (var j = 0; j < 999; j++) {
+        if (t_timeCode < t_tcNext) {
+          eventSet.push([t_timeCode, t_instNum, 0, -1]);
+          var t_newBeatDur = t_beatDur * t_accelRate;
+          t_beatDur = Math.max(t_minDur, t_newBeatDur);
+          t_timeCode = t_timeCode + t_beatDur;
+        } else break;
+      }
+      break;
+    case 4: // At Tempo
+      //add pitches
+      eventSet.push([t_tc, t_instNum, 2, pitchSets[pitchSetIx]]);
+      var t_tempo = rrand(58, 74);
+      var t_beatDur = t_tempo / 60;
+      var t_tcNext = t_tc + t_dur;
+      for (var j = 0; j < 999; j++) {
+        var t_newTime = (t_beatDur * j) + t_tc;
+        if (t_newTime < t_tcNext) {
+          eventSet.push([t_newTime, t_instNum, 0, -1]);
+        } else break;
+      }
+      break;
+  }
+  pitchSetIx++;
+}
 //long staggered entries of growing decels
-
-
 // EVENT TYPES: 0-beat; 1-notation; 2-pitch; 3-stop; 4-cres;
-
 eventSet.sort(sortFunction2DArray);

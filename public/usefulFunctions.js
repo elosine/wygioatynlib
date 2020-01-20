@@ -255,18 +255,31 @@ function plot(fn, range, width, height) {
     var xFnVal = (x / widthScale) - range[0];
     var yGVal = (fn(xFnVal) - range[2]) * heightScale;
     yGVal = height - yGVal; // 0,0 is top-left
-      var tar = {};
-      tar.x = x;
-      tar.y = yGVal;
-      first = false;
-      tpoints.push(tar);
+    var tar = {};
+    tar.x = x;
+    tar.y = yGVal;
+    first = false;
+    tpoints.push(tar);
   }
   return tpoints;
 }
 Array.prototype.clone = function() {
-	return this.slice(0);
+  return this.slice(0);
 };
 
+function removeDuplicates(arr) {
+  var c;
+  var len = arr.length;
+  var result = [];
+  var obj = {};
+  for (c = 0; c < len; c++) {
+    obj[arr[c]] = 0;
+  }
+  for (c in obj) {
+    result.push(parseInt(c));
+  }
+  return result;
+}
 
 
 
