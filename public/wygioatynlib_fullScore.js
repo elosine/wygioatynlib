@@ -13,8 +13,9 @@ var delta = 0.0;
 var lastFrameTimeMs = 0.0;
 var pieceClock = 0.0;
 var clockadj = 0.0;
-var leadTime = 7.0;
-var startTime = 610;
+var leadTime = 13.0;
+var startTime = 0;
+var played = false;
 // COLORS //////////////////////////////////////////////////////////////
 var clr_neonMagenta = new THREE.Color("rgb(255, 21, 160)");
 var clr_seaGreen = new THREE.Color("rgb(0, 255, 108)");
@@ -109,8 +110,20 @@ var notationCanvasH;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION: onstartup --------------------------------------------------------------- //
 function onstartup() {
+  var startButton = document.getElementById("startButton");
+  startButton.addEventListener("click", init);
+}
+// FUNCTION: init --------------------------------------------------------------- //
+function init() {
+  if (!played) {
+    played = true;
+    startButton.parentNode.removeChild(startButton);
+    eventMatrix = createEvents(); //startPiece trigger at end of this function
+  }
+}
+// FUNCTION: startPiece --------------------------------------------------------------- //
+function startPiece() {
   createScene();
-  eventMatrix = createEvents();
   requestAnimationFrame(animationEngine);
 }
 // FUNCTION: createScene ------------------------------------------------------------- //
@@ -379,18 +392,18 @@ function update(aMSPERFRAME) {
 
       //// UPDATES ////////////////////////////////////////////////////////////////////////////////////
       if (framect > t_goFrame && framect < t_endFrame) {
-      switch (t_eventType) {
-        case 4: // Cres
-          crvFollowData[t_playerNum] = Math.floor(scale(framect, t_goFrame, t_endFrame, 0, cresCrvCoords.length));
-          cresCrvFollowers[t_playerNum].setAttributeNS(null, "cx", cresCrvCoords[crvFollowData[t_playerNum]].x.toString());
-          cresCrvFollowers[t_playerNum].setAttributeNS(null, "cy", cresCrvCoords[crvFollowData[t_playerNum]].y.toString());
-          var temph = notationCanvasH - cresCrvCoords[crvFollowData[t_playerNum]].y;
-          cresCrvRects[t_playerNum].setAttributeNS(null, "y", cresCrvCoords[crvFollowData[t_playerNum]].y.toString());
-          cresCrvRects[t_playerNum].setAttributeNS(null, "height", temph.toString());
-          break;
-        default:
+        switch (t_eventType) {
+          case 4: // Cres
+            crvFollowData[t_playerNum] = Math.floor(scale(framect, t_goFrame, t_endFrame, 0, cresCrvCoords.length));
+            cresCrvFollowers[t_playerNum].setAttributeNS(null, "cx", cresCrvCoords[crvFollowData[t_playerNum]].x.toString());
+            cresCrvFollowers[t_playerNum].setAttributeNS(null, "cy", cresCrvCoords[crvFollowData[t_playerNum]].y.toString());
+            var temph = notationCanvasH - cresCrvCoords[crvFollowData[t_playerNum]].y;
+            cresCrvRects[t_playerNum].setAttributeNS(null, "y", cresCrvCoords[crvFollowData[t_playerNum]].y.toString());
+            cresCrvRects[t_playerNum].setAttributeNS(null, "height", temph.toString());
+            break;
+          default:
+        }
       }
-    }
 
       //// END FRAME ACTIONS /////////////////////////////////////////////////////////////////////////
       if (framect == t_endFrame) {
@@ -551,5 +564,6 @@ function createEvents() {
     var t_singleEventDataArray = [t_goFrame, t_playerNum, true, t_eventType, t_mesh, t_goTime, t_startZ, t_eventSpecificData, t_endFrame];
     t_eventMatrix.push(t_singleEventDataArray);
   }
+  startPiece();
   return t_eventMatrix;
 }

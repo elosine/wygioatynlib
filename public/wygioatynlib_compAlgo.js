@@ -397,15 +397,15 @@ for (var i = 0; i < NUMTRACKS; i++) {
 }
 var eventSet = [];
 // SECTION 1 ----------------------------------------------------------------------------- //
-var SECTION_1_DUR = rrand(100, 115);
+var SECTION_1_DUR = rrand(80, 100);
 //// Scramble Instrument Order
 var ogInst = [0, 1, 2, 3, 4, 5, 6, 7];
 var instrumentOrder = shuffle(ogInst.clone());
 var t_tempi = [55, 56, 57, 58, 59, 60, 61, 62];
-var t_2ndEntry = rrand(7, 11);
+var t_2ndEntry = rrand(6, 9);
 var t_sec2StartTimes = [0, t_2ndEntry, 0, 0, 0, 0, 0, 0];
 for (var i = 2; i < instrumentOrder.length; i++) {
-  var t_addTime = rrand(3, 7);
+  var t_addTime = rrand(2, 4);
   t_sec2StartTimes[i] = t_sec2StartTimes[i - 1] + t_addTime;
 }
 for (var i = 0; i < instrumentOrder.length; i++) {
@@ -447,7 +447,7 @@ for (var i = 0; i < NUMTRACKS; i++) {
 // SECTION 2 ----------------------------------------------------------------------------- //
 //Grace Note Motives ------------------------------------------------------------
 var SECTION_2_START = SECTION_1_DUR + 4;
-var SECTION_2_DUR = rrand(123, 153);
+var SECTION_2_DUR = rrand(97, 119);
 var SECTIION_2_END = SECTION_2_START + SECTION_2_DUR;
 //Load Notation ////////////////
 for (var i = 0; i < NUMTRACKS; i++) {
@@ -486,7 +486,7 @@ for (var i = 0; i < t_sec2StartTimes.length; i++) {
 // SECTION 3 ----------------------------------------------------------------------------- //
 // Section 3 - Crescendos
 var SECTION_3_START = SECTIION_2_END + 4;
-var SECTION_3_DUR = rrand(140, 169);
+var SECTION_3_DUR = rrand(110, 133);
 var SECTIION_3_END = SECTION_3_START + SECTION_3_DUR;
 //Load Notation ////////////////
 for (var i = 0; i < NUMTRACKS; i++) {
@@ -732,6 +732,93 @@ for (var i = 0; i < sec5EventList.length; i++) {
   }
   pitchSetIx++;
 }
-//long staggered entries of growing decels
+// SECTION 6 ----------------------------------------------------------------------------- //
+//Decel ------------------------------------------------------------
+var SECTION_6_START = SECTIION_5_END + 4;
+var SECTION_6_DUR = rrand(70, 88);
+var SECTIION_6_END = SECTION_6_START + SECTION_6_DUR;
+//load pitches & notation
+for (var i = 0; i < NUMTRACKS; i++) {
+  eventSet.push([SECTION_6_START, i, 2, pitchSets[pitchSetIx]]);
+  eventSet.push([SECTION_6_START, i, 1, 'blank']);
+}
+// Staggered entries
+var t_startOrder = shuffle(ogInst.clone());
+var t_sec6StartTimes = [0, 0, 0, 0, 0, 0, 0, 0];
+for (var i = 0; i < t_startOrder.length; i++) {
+  var t_addTime = rrand(3, 3.7);
+  t_sec6StartTimes[t_startOrder[i]] = (t_addTime * i) + SECTION_6_START;
+}
+// Decels
+for (var i = 0; i < NUMTRACKS; i++) {
+  var t_instNum = t_startOrder[i];
+  var t_iBeatDur = rrand(0.28, 0.47);
+  var t_decelRate = rrand(1.03, 1.07);
+  var t_beatDur = t_iBeatDur;
+  var t_timeCode = t_sec6StartTimes[t_instNum];
+  for (var j = 0; j < 999; j++) {
+    if (t_timeCode < SECTIION_6_END) {
+      eventSet.push([t_timeCode, t_instNum, 0, -1]);
+      t_beatDur = t_beatDur * t_decelRate;
+      t_timeCode = t_timeCode + t_beatDur;
+    } else break;
+  }
+}
 // EVENT TYPES: 0-beat; 1-notation; 2-pitch; 3-stop; 4-cres;
 eventSet.sort(sortFunction2DArray);
+// DOWNLOAD eventSet ------------------------------------------------------------ //
+//Make eventSet into parseable string
+var t_str1 = "";
+for (var i = 0; i < eventSet.length; i++) {
+  var t_str = "";
+  for (var j = 0; j < eventSet[i].length; j++) {
+    var t_itStr = eventSet[i][j].toString();
+    if(j==0){
+      t_str = t_itStr;
+    } else{
+      t_str = t_str + "," + t_itStr;
+    }
+  }
+  if(i==0){
+    t_str1 = t_str;
+  } else{
+    t_str1 = t_str1 + ";" + t_str;
+  }
+}
+var timestamp = curYear + "_" + pad(monthNum, 2) + "_" + pad(dayNum, 2) + "_" +  pad(curHour, 2) + "_" + pad(curMinute, 2);
+downloadStrToHD(t_str1, timestamp + "_" + "wygioatynlib_eventSet.txt", 'text/plain');
+
+var eventSet = [];
+loadEvents("/eventSets/2020_01_02_07_57_wygioatynlib_eventSet.txt");
+
+// FUNCTION: loadEvents ------------------------------------------------------------- //
+function loadEvents(path) {
+  fetch(path)
+    .then(response => response.text())
+    .then(text => {
+      var t1 = text.split(";");
+      var t_newArr1 = [];
+      for (var i = 0; i < t1.length; i++) {
+        var temparr = t1[i].split(',');
+        for (var j = 0; j < temparr.length; j++) {
+          if (j == 0) {
+            temparr[j] = parseFloat(temparr[j]);
+          }
+          if (j == 1 || j == 2) {
+            temparr[j] = parseInt(temparr[j]);
+          }
+        }
+        eventSet.push(temparr);
+
+      }
+    });
+}
+
+
+
+
+
+
+
+
+//
