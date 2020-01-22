@@ -409,7 +409,7 @@ for (var i = 2; i < instrumentOrder.length; i++) {
   t_sec2StartTimes[i] = t_sec2StartTimes[i - 1] + t_addTime;
 }
 for (var i = 0; i < instrumentOrder.length; i++) {
-  var t_beatDur = 60.0 / t_tempi[i];
+  var t_beatDur = 60.0 / t_tempi[ instrumentOrder[i] ];
   //// Load Notation
   eventSet.push([t_sec2StartTimes[i], instrumentOrder[i], 1, 'pulseTrack']);
   //// count in
@@ -786,10 +786,10 @@ for (var i = 0; i < eventSet.length; i++) {
   }
 }
 var timestamp = curYear + "_" + pad(monthNum, 2) + "_" + pad(dayNum, 2) + "_" +  pad(curHour, 2) + "_" + pad(curMinute, 2);
-downloadStrToHD(t_str1, timestamp + "_" + "wygioatynlib_eventSet.txt", 'text/plain');
+// downloadStrToHD(t_str1, timestamp + "_" + "wygioatynlib_eventSet.txt", 'text/plain');
 
 var eventSet = [];
-loadEvents("/eventSets/2020_01_02_07_57_wygioatynlib_eventSet.txt");
+loadEvents("/eventSets/2020_01_04_02_25_wygioatynlib_eventSet.txt");
 
 // FUNCTION: loadEvents ------------------------------------------------------------- //
 function loadEvents(path) {
