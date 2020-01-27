@@ -4,127 +4,120 @@
 <tspan>
  </tspan>
 </text>
-<rect transform="translate(113.6210, 9.8826)" x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
 <rect transform="translate(65.3898, 9.8826)" x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
-<rect transform="translate(39.4359, 9.8826)" x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
 <rect transform="translate(87.8150, 9.8826)" x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
-<line transform="translate(14.2264, 11.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0.0000" x2="99.5346" y2="0.0000"/>
-<line transform="translate(14.2264, 10.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0.0000" x2="99.5346" y2="0.0000"/>
-<line transform="translate(14.2264, 9.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0.0000" x2="99.5346" y2="0.0000"/>
-<line transform="translate(14.2264, 8.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0.0000" x2="99.5346" y2="0.0000"/>
-<line transform="translate(14.2264, 7.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0.0000" x2="99.5346" y2="0.0000"/>
+<rect transform="translate(39.4359, 9.8826)" x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+<rect transform="translate(113.6210, 9.8826)" x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+<line transform="translate(14.2264, 11.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="99.5346" y2="-0.0000"/>
+<line transform="translate(14.2264, 10.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="99.5346" y2="-0.0000"/>
+<line transform="translate(14.2264, 9.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="99.5346" y2="-0.0000"/>
+<line transform="translate(14.2264, 8.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="99.5346" y2="-0.0000"/>
+<line transform="translate(14.2264, 7.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="-0.0000" x2="99.5346" y2="-0.0000"/>
+<rect transform="translate(84.3839, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.1455" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:59:60">
+<path transform="translate(84.9770, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:57:58">
+<path transform="translate(84.9770, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:56:57">
+<path transform="translate(84.3189, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:6:7">
+<path transform="translate(27.2101, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
 <rect transform="translate(80.7583, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.1455" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:53:54">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:53:54">
 <path transform="translate(81.3514, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:51:52">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:51:52">
 <path transform="translate(81.3514, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:49:50">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:49:50">
 <path transform="translate(80.6933, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
-<rect transform="translate(77.8772, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:40:41">
-<path transform="translate(76.3337, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:5:6">
+<path transform="translate(26.5520, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:46:47">
-<path transform="translate(78.4703, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
-</a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:44:45">
-<path transform="translate(77.8122, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
-</a>
-<rect transform="translate(75.7406, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
 <rect transform="translate(92.4247, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
 <path transform="translate(88.7550, 11.8971) scale(0.0040, -0.0040)" d="M204 307c22 14 44 29 60 50c11 15 19 33 27 50c2 4 5 6 9 6c6 0 13 -5 13 -14v-245h72c10 0 15 -7 15 -14s-5 -15 -15 -15h-72v-8c0 -48 27 -94 72 -94c8 0 12 -5 12 -11s-4 -12 -12 -12c-44 0 -87 13 -131 13s-87 -13 -131 -13c-8 0 -12 6 -12 12s4 11 12 11
 c45 0 73 46 73 94v8h-167c-23 0 -31 14 -31 23c0 3 1 5 2 6c80 93 138 207 138 330c0 9 6 16 13 16h3c23 -7 47 -13 71 -13s48 6 71 13c2 1 3 1 5 1c11 0 18 -10 12 -17l-284 -330h167v131c0 8 1 17 8 22z" fill="currentColor"/>
 <path transform="translate(88.8916, 9.8826) scale(0.0040, -0.0040)" d="M150 477c-29 0 -59 -8 -59 -33c0 -22 36 -25 36 -47c0 -32 -26 -58 -58 -58s-57 26 -57 58c0 65 67 103 138 103c91 0 169 -33 169 -114c0 -43 -4 -82 -42 -100c-9 -4 -14 -12 -14 -21s5 -18 14 -22c41 -19 56 -57 56 -103c0 -92 -79 -140 -179 -140
 c-79 0 -154 42 -154 113c0 36 30 66 66 66s65 -30 65 -66c0 -25 -40 -28 -40 -53c0 -27 32 -37 63 -37c49 0 63 61 63 117v16c0 54 -2 94 -50 94h-80c-10 0 -14 8 -14 15s4 14 14 14h80c49 0 50 43 50 99v8c0 54 -18 91 -67 91z" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:9:10">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:9:10">
 <path transform="translate(93.0178, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:7:8">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:7:8">
 <path transform="translate(93.0178, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:5:6">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:5:6">
 <path transform="translate(92.3597, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
-<rect transform="translate(84.3839, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.1455" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:59:60">
-<path transform="translate(84.9770, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+<rect transform="translate(71.4674, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:30:31">
+<path transform="translate(72.0605, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:57:58">
-<path transform="translate(84.9770, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
-</a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:56:57">
-<path transform="translate(84.3189, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:27:28">
+<path transform="translate(71.4024, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
 <rect transform="translate(69.3308, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:23:24">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:23:24">
 <path transform="translate(69.9239, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:20:21">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:20:21">
 <path transform="translate(69.2658, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
-<rect transform="translate(66.4497, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:17:18">
-<path transform="translate(67.0428, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+<rect transform="translate(77.8772, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:46:47">
+<path transform="translate(78.4703, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:15:16">
-<path transform="translate(67.0428, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:44:45">
+<path transform="translate(77.8122, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:13:14">
-<path transform="translate(66.3847, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+<rect transform="translate(75.7406, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:40:41">
+<path transform="translate(76.3337, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:39:40">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:39:40">
 <path transform="translate(75.6756, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
 <rect transform="translate(73.6040, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:36:37">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:36:37">
 <path transform="translate(74.1971, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:34:35">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:34:35">
 <path transform="translate(74.1971, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:33:34">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:33:34">
 <path transform="translate(73.5390, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
-<rect transform="translate(71.4674, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:30:31">
-<path transform="translate(72.0605, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
-</a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:27:28">
-<path transform="translate(71.4024, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
-</a>
 <rect transform="translate(108.1254, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="2.8122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:19:9:10">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:19:9:10">
 <path transform="translate(108.7185, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:19:7:8">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:19:7:8">
 <path transform="translate(108.7185, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:19:5:6">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:19:5:6">
 <path transform="translate(108.0604, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
 <rect transform="translate(105.9888, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:41:42">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:41:42">
 <path transform="translate(106.5819, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:40:41">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:40:41">
 <path transform="translate(105.9238, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
 <rect transform="translate(103.8522, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:37:38">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:37:38">
 <path transform="translate(104.4453, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:36:37">
-<path transform="translate(103.7872, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
-</a>
-<polygon transform="translate(30.1776, 12.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0800" fill="currentColor" stroke="currentColor" points="2.9711 -0.2000 2.9711 0.2000 0.0400 0.2000 0.0400 -0.2000"/>
 <polygon transform="translate(43.3119, 12.5726)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0800" fill="currentColor" stroke="currentColor" points="2.2266 -0.2000 2.2266 0.2000 0.0400 0.2000 0.0400 -0.2000"/>
 <polygon transform="translate(40.4308, 13.3826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0800" fill="currentColor" stroke="currentColor" points="5.1077 -0.2000 5.1077 0.2000 0.0400 0.2000 0.0400 -0.2000"/>
 <polygon transform="translate(47.5851, 12.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0800" fill="currentColor" stroke="currentColor" points="2.9711 -0.2000 2.9711 0.2000 0.0400 0.2000 0.0400 -0.2000"/>
 <polygon transform="translate(53.3473, 12.5726)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0800" fill="currentColor" stroke="currentColor" points="6.4998 -0.2000 6.4998 0.2000 0.0400 0.2000 0.0400 -0.2000"/>
 <polygon transform="translate(53.3473, 13.3826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0800" fill="currentColor" stroke="currentColor" points="6.4998 -0.2000 6.4998 0.2000 0.0400 0.2000 0.0400 -0.2000"/>
+<polygon transform="translate(30.1776, 12.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0800" fill="currentColor" stroke="currentColor" points="2.9711 -0.2000 2.9711 0.2000 0.0400 0.2000 0.0400 -0.2000"/>
 <polygon transform="translate(69.2658, 12.5726)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0800" fill="currentColor" stroke="currentColor" points="2.2266 -0.2000 2.2266 0.2000 0.0400 0.2000 0.0400 -0.2000"/>
 <polygon transform="translate(66.3847, 13.3826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0800" fill="currentColor" stroke="currentColor" points="5.1077 -0.2000 5.1077 0.2000 0.0400 0.2000 0.0400 -0.2000"/>
 <polygon transform="translate(73.5390, 12.5726)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0800" fill="currentColor" stroke="currentColor" points="2.2266 -0.2000 2.2266 0.2000 0.0400 0.2000 0.0400 -0.2000"/>
@@ -135,79 +128,89 @@ c-79 0 -154 42 -154 113c0 36 30 66 66 66s65 -30 65 -66c0 -25 -40 -28 -40 -53c0 -
 <polygon transform="translate(99.5140, 13.3826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0800" fill="currentColor" stroke="currentColor" points="6.4998 -0.2000 6.4998 0.2000 0.0400 0.2000 0.0400 -0.2000"/>
 <polygon transform="translate(108.0604, 12.8826)" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0800" fill="currentColor" stroke="currentColor" points="2.9711 -0.2000 2.9711 0.2000 0.0400 0.2000 0.0400 -0.2000"/>
 <rect transform="translate(111.0065, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="2.8122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:19:13:14">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:19:13:14">
 <path transform="translate(111.5996, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:19:12:13">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:19:12:13">
 <path transform="translate(110.9415, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:19:20">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:12:4:5">
+<path transform="translate(22.9264, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<rect transform="translate(97.4424, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:19:20">
 <path transform="translate(98.0355, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:18:19">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:18:19">
 <path transform="translate(97.3774, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
+<rect transform="translate(26.6170, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.1455" ry="0.0400" fill="currentColor"/>
 <rect transform="translate(95.3058, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:15:16">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:15:16">
 <path transform="translate(95.8989, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:12:13">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:12:13">
 <path transform="translate(95.2408, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:8:9">
+<path transform="translate(27.2101, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:36:37">
+<path transform="translate(103.7872, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
 <rect transform="translate(101.7156, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:32:33">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:32:33">
 <path transform="translate(102.3087, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:31:32">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:31:32">
 <path transform="translate(101.6506, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
 <rect transform="translate(99.5790, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:28:29">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:28:29">
 <path transform="translate(100.1721, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:26:27">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:26:27">
 <path transform="translate(100.1721, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:23:24">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:18:23:24">
 <path transform="translate(99.5140, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
-<rect transform="translate(97.4424, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
 <rect transform="translate(40.4958, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:9:10">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:9:10">
 <path transform="translate(41.0889, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:7:8">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:7:8">
 <path transform="translate(41.0889, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:5:6">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:5:6">
 <path transform="translate(40.4308, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
-<rect transform="translate(36.0047, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.1455" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:28:29">
-<path transform="translate(36.5978, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+<rect transform="translate(47.6501, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="2.8122" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:27:28">
+<path transform="translate(48.2432, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:26:27">
-<path transform="translate(36.5978, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:25:26">
+<path transform="translate(48.2432, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:24:25">
-<path transform="translate(35.9397, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
-</a>
-<rect transform="translate(33.1236, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="2.8122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:20:21">
-<path transform="translate(33.7167, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
-</a>
-<rect transform="translate(43.3769, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:15:16">
-<path transform="translate(43.9700, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
-</a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:12:13">
-<path transform="translate(43.3119, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
-</a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:5:6">
-<path transform="translate(26.5520, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:23:24">
+<path transform="translate(47.5851, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
 <rect transform="translate(22.9914, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.1455" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:8:6:7">
+<rect transform="translate(45.5135, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:19:20">
+<path transform="translate(46.1066, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:18:19">
+<path transform="translate(45.4485, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<rect transform="translate(43.3769, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:15:16">
+<path transform="translate(43.9700, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:12:13">
+<path transform="translate(43.3119, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:8:6:7">
 <rect transform="translate(19.2264, 6.5373)" x="1.0563" y="-2.6727" width="0.1158" height="2.5113" ry="0.0193" fill="currentColor"/>
 <path transform="translate(19.2264, 6.5373) scale(0.0036, -0.0036)" d="M217 139c57 0 112 -31 112 -94c0 -72 -55 -121 -102 -149c-35 -21 -74 -35 -115 -35c-57 0 -112 31 -112 94c0 72 55 121 102 149c35 21 74 35 115 35z" fill="currentColor"/>
 <text transform="translate(20.3985, 7.0309)" font-family="Century Schoolbook L" font-size="2.2001" text-anchor="start" fill="currentColor">
@@ -215,11 +218,38 @@ c-79 0 -154 42 -154 113c0 36 30 66 66 66s65 -30 65 -66c0 -25 -40 -28 -40 -53c0 -
  = 62</tspan>
 </text>
 </a>
+<rect transform="translate(30.2426, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="2.8122" ry="0.0400" fill="currentColor"/>
 <path transform="translate(19.2264, 9.8826) scale(0.0040, -0.0040)" d="M359 27c-49 0 -75 42 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12c0 -94 -105 -174 -183 -174c-68 0 -137 21 -184 70
 c-49 51 -66 122 -66 193s17 142 66 193c47 49 116 69 184 69c87 0 160 -64 175 -150c1 -5 1 -9 1 -13c0 -40 -30 -72 -67 -72z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:16:17">
+<path transform="translate(30.8356, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
 <path transform="translate(15.0264, 8.8826) scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
 c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:12:6:7">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:14:15">
+<path transform="translate(30.8356, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:12:13">
+<path transform="translate(30.1776, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<rect transform="translate(36.0047, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.1455" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:28:29">
+<path transform="translate(36.5978, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:26:27">
+<path transform="translate(36.5978, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:24:25">
+<path transform="translate(35.9397, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<rect transform="translate(33.1236, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="2.8122" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:20:21">
+<path transform="translate(33.7167, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:19:20">
+<path transform="translate(33.0586, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:12:6:7">
 <g transform="translate(20.4262, 15.7280)" >
 <path transform="scale(0.0040, -0.0040)" d="M253 245l-50 -163c-30 -99 -121 -255 -218 -255c-45 0 -87 27 -87 69c0 39 17 77 52 77c24 0 44 -20 44 -44c0 -30 -38 -24 -38 -54c0 -10 11 -11 23 -11h6c48 0 61 58 73 108l68 273h-49c-11 0 -19 8 -19 19s8 19 19 19h60c32 96 118 191 213 191c45 0 87 -27 87 -69
 c0 -39 -17 -77 -52 -77c-24 0 -44 19 -44 43c0 30 38 25 38 55c0 10 -10 11 -22 11h-7c-62 0 -70 -88 -86 -154h55c11 0 19 -8 19 -19s-8 -19 -19 -19h-66z" fill="currentColor"/>
@@ -237,94 +267,64 @@ c0 -39 -17 -77 -52 -77c-24 0 -44 19 -44 43c0 30 38 25 38 55c0 10 -10 11 -22 11h-
 c0 -39 -17 -77 -52 -77c-24 0 -44 19 -44 43c0 30 38 25 38 55c0 10 -10 11 -22 11h-7c-62 0 -70 -88 -86 -154h55c11 0 19 -8 19 -19s-8 -19 -19 -19h-66z" fill="currentColor"/>
 </g>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:12:4:5">
-<path transform="translate(22.9264, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+<rect transform="translate(59.8221, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:52:53">
+<path transform="translate(60.4151, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:19:20">
-<path transform="translate(33.0586, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
-</a>
-<rect transform="translate(30.2426, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="2.8122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:16:17">
-<path transform="translate(30.8356, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
-</a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:14:15">
-<path transform="translate(30.8356, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
-</a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:12:13">
-<path transform="translate(30.1776, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
-</a>
-<rect transform="translate(26.6170, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.1455" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:8:9">
-<path transform="translate(27.2101, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
-</a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:14:6:7">
-<path transform="translate(27.2101, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:51:52">
+<path transform="translate(59.7571, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
 <rect transform="translate(57.6855, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:48:49">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:48:49">
 <path transform="translate(58.2785, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:47:48">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:47:48">
 <path transform="translate(57.6205, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
 <rect transform="translate(55.5489, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:43:44">
-<path transform="translate(56.1420, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+<rect transform="translate(66.4497, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:17:18">
+<path transform="translate(67.0428, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:42:43">
-<path transform="translate(55.4839, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:15:16">
+<path transform="translate(67.0428, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<rect transform="translate(53.4123, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:39:40">
-<path transform="translate(54.0054, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
-</a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:37:38">
-<path transform="translate(54.0054, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
-</a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:34:35">
-<path transform="translate(53.3473, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:13:14">
+<path transform="translate(66.3847, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
 <rect transform="translate(61.9586, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.1455" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:9:10">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:9:10">
 <path transform="translate(62.5517, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:7:8">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:7:8">
 <path transform="translate(62.5517, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:5:6">
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:16:5:6">
 <path transform="translate(61.8936, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
-<rect transform="translate(59.8221, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:52:53">
-<path transform="translate(60.4151, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+<rect transform="translate(53.4123, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:39:40">
+<path transform="translate(54.0054, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:51:52">
-<path transform="translate(59.7571, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:37:38">
+<path transform="translate(54.0054, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:30:31">
-<path transform="translate(50.4662, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
-</a>
-<rect transform="translate(47.6501, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="2.8122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:27:28">
-<path transform="translate(48.2432, 7.1326) scale(0.0040, -0.0040)" d="M-211 88c-8 2 -14 9 -14 18c0 10 9 19 19 19c2 0 3 -1 4 -1l408 -105c13 0 19 -6 19 -19s-6 -19 -19 -19l-408 -105c-1 0 -2 -1 -4 -1c-10 0 -19 9 -19 19c0 9 6 16 14 18l251 65l140 23l-140 23z" fill="currentColor"/>
-</a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:25:26">
-<path transform="translate(48.2432, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
-</a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:23:24">
-<path transform="translate(47.5851, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
-</a>
-<rect transform="translate(45.5135, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="3.3122" ry="0.0400" fill="currentColor"/>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:19:20">
-<path transform="translate(46.1066, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
-</a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:18:19">
-<path transform="translate(45.4485, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
-</a>
-<a style="color:inherit;" xlink:href="textedit://C:/Users/jwloy/OneDrive/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:31:32">
-<path transform="translate(51.1243, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:34:35">
+<path transform="translate(53.3473, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
 </a>
 <rect transform="translate(50.5312, 9.8826)" x="-0.0650" y="0.1878" width="0.1300" height="2.8122" ry="0.0400" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:31:32">
+<path transform="translate(51.1243, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:30:31">
+<path transform="translate(50.4662, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:43:44">
+<path transform="translate(56.1420, 8.3826) scale(0.0040, -0.0040)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///Users/jyang/Documents/GitHub/wygioatynlib/notation/pulseTrack_vc_62_ps1.ly:15:42:43">
+<path transform="translate(55.4839, 9.8826) scale(0.0040, -0.0040)" d="M220 138c56 0 109 -29 109 -91c0 -72 -56 -121 -103 -149c-36 -21 -76 -36 -117 -36c-56 0 -109 29 -109 91c0 72 56 121 103 149c36 21 76 36 117 36z" fill="currentColor"/>
+</a>
 <a transform="translate(31.4631, 165.1512)" xlink:href="http://lilypond.org/">
 <rect x="0.0000" y="-0.4439" width="56.5755" height="2.0827" fill="none" stroke="none" stroke-width="0.0"/>
 </a>
