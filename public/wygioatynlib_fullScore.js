@@ -218,6 +218,17 @@ function createScene() {
   for (var i = 0; i < notationContainers.length; i++) {
     notationContainerDOMs.push(document.getElementById(notationContainers[i].id));
   }
+
+
+  // TEXT LABELS ///////////////////////////////////////////////
+  var text = document.createElementNS(SVG_NS, 'text');
+  text.setAttribute('x', '10');
+  text.setAttribute('y', '20');
+  text.setAttribute('fill', '#000');
+  text.textContent = '2';
+
+
+
   // MAKE ALL NOTATION SVGS /////////////////////////////////////////////////////////////
   var notationCont_boundingBox = notationContainers[0].getBoundingClientRect();
   var notationContW = notationCont_boundingBox.width;
