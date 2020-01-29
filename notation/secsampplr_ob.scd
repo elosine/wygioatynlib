@@ -11,10 +11,10 @@
 (
 ~st = [
 
-	[ 474.09563591028, 0, 1, hairpin , 0],
-	[ 481.13836499803, 0, 1, trill, 1 ],
-	[ 485.47000813934, 0, 1, hairpin, 2 ],
-	[ 505.82298080905, 0, 1, trill, 3 ],
+	[ 474.09563591028, 0, 1, 'hairpin' , 0],
+	[ 481.13836499803, 0, 1, 'trill', 1 ],
+	[ 485.47000813934, 0, 1, 'hairpin', 2 ],
+	[ 505.82298080905, 0, 1, 'trill', 3 ],
 	[ 520.4507350397, 0, 0, -1 , 4],
 	[ 522.24713786304, 0, 0, -1, 4 ],
 	[ 523.69714171719, 0, 0, -1 , 4],
@@ -34,7 +34,7 @@
 	[ 566.35277250726, 0, 0, -1 , 5],
 	[ 567.52522184515, 0, 0, -1 , 5],
 	[ 568.69767118304, 0, 0, -1, 5 ],
-	[ 592.30814260905, 0, 1, trill , 6],
+	[ 592.30814260905, 0, 1, 'trill' , 6],
 	[ 598.37031198525, 0, 0, -1, 4 ],
 	[ 599.42469164269, 0, 0, -1 , 4],
 	[ 600.32269657246, 0, 0, -1 , 4],
@@ -104,8 +104,8 @@
 
 
 
-~sf = SoundFile.collectIntoBuffers("D:/lastSec/ob_samps/*", s);
-~gn = SoundFile.collectIntoBuffers("D:/graceNoteGestureRecordings/gn_ob/*", s);
+~sf = SoundFile.collectIntoBuffers("/Volumes/Untitled/lastSec/ob_samps/*", s);
+~gn = SoundFile.collectIntoBuffers("/Volumes/Untitled/graceNoteGestureRecordings/gn_ob/*", s);
 
 SynthDef(\playsamp, {
 	arg buf;
@@ -117,6 +117,7 @@ SynthDef(\playsamp, {
 r = Routine({
 	~st.do{|it ix|
 		var snum = it[4];
+		snum.postln;
 
 		if(snum == 4, {
 
@@ -137,3 +138,4 @@ r = Routine({
 	};
 }).play;
 )
+~sf[5]

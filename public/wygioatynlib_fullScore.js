@@ -15,7 +15,7 @@ var pieceClock = 0.0;
 var clockadj = 0.0;
 var leadTime = 13.0;
 var played = false;
-var startTime = 465;
+var startTime = 0;
 // var startTime = 205;
 // COLORS //////////////////////////////////////////////////////////////
 var clr_neonMagenta = new THREE.Color("rgb(255, 21, 160)");
@@ -218,18 +218,65 @@ function createScene() {
   for (var i = 0; i < notationContainers.length; i++) {
     notationContainerDOMs.push(document.getElementById(notationContainers[i].id));
   }
-
-
   // TEXT LABELS ///////////////////////////////////////////////
-  var text = document.createElementNS(SVG_NS, 'text');
-  text.setAttribute('x', '10');
-  text.setAttribute('y', '20');
-  text.setAttribute('fill', '#000');
-  text.textContent = '2';
-
-
-
-  // MAKE ALL NOTATION SVGS /////////////////////////////////////////////////////////////
+  var t_txY = NOTATION_CONTAINER_H - 15;
+  var lbl_ob = document.createElementNS(SVG_NS, 'text');
+  lbl_ob.setAttribute('x', '10');
+  lbl_ob.setAttribute('y', t_txY.toString());
+  lbl_ob.setAttribute('fill', 'black');
+  lbl_ob.setAttributeNS(null, "id",  'ob_lbl');
+  lbl_ob.textContent = 'ob';
+  notationContainerDOMs[0].appendChild(lbl_ob);
+  var lbl_vn = document.createElementNS(SVG_NS, 'text');
+  lbl_vn.setAttribute('x', '10');
+  lbl_vn.setAttribute('y', t_txY.toString());
+  lbl_vn.setAttribute('fill', 'black');
+  lbl_vn.setAttributeNS(null, "id",  'vn_lbl');
+  lbl_vn.textContent = 'vn';
+  notationContainerDOMs[1].appendChild(lbl_vn);
+  var lbl_pf = document.createElementNS(SVG_NS, 'text');
+  lbl_pf.setAttribute('x', '10');
+  lbl_pf.setAttribute('y', t_txY.toString());
+  lbl_pf.setAttribute('fill', 'black');
+  lbl_pf.setAttributeNS(null, "id",  'pf_lbl');
+  lbl_pf.textContent = 'pf';
+  notationContainerDOMs[2].appendChild(lbl_pf);
+  var lbl_perc = document.createElementNS(SVG_NS, 'text');
+  lbl_perc.setAttribute('x', '10');
+  lbl_perc.setAttribute('y', t_txY.toString());
+  lbl_perc.setAttribute('fill', 'black');
+  lbl_perc.setAttributeNS(null, "id",  'perc_lbl');
+  lbl_perc.textContent = 'perc';
+  notationContainerDOMs[3].appendChild(lbl_perc);
+  var lbl_va = document.createElementNS(SVG_NS, 'text');
+  lbl_va.setAttribute('x', '10');
+  lbl_va.setAttribute('y', t_txY.toString());
+  lbl_va.setAttribute('fill', 'black');
+  lbl_va.setAttributeNS(null, "id",  'va_lbl');
+  lbl_va.textContent = 'va';
+  notationContainerDOMs[4].appendChild(lbl_va);
+  var lbl_tbn = document.createElementNS(SVG_NS, 'text');
+  lbl_tbn.setAttribute('x', '10');
+  lbl_tbn.setAttribute('y', t_txY.toString());
+  lbl_tbn.setAttribute('fill', 'black');
+  lbl_tbn.setAttributeNS(null, "id",  'tbn_lbl');
+  lbl_tbn.textContent = 'tbn';
+  notationContainerDOMs[5].appendChild(lbl_tbn);
+  var lbl_bcl = document.createElementNS(SVG_NS, 'text');
+  lbl_bcl.setAttribute('x', '10');
+  lbl_bcl.setAttribute('y', t_txY.toString());
+  lbl_bcl.setAttribute('fill', 'black');
+  lbl_bcl.setAttributeNS(null, "id",  'bcl_lbl');
+  lbl_bcl.textContent = 'bcl';
+  notationContainerDOMs[6].appendChild(lbl_bcl);
+  var lbl_vc = document.createElementNS(SVG_NS, 'text');
+  lbl_vc.setAttribute('x', '10');
+  lbl_vc.setAttribute('y', t_txY.toString());
+  lbl_vc.setAttribute('fill', 'black');
+  lbl_vc.setAttributeNS(null, "id",  'vc_lbl');
+  lbl_vc.textContent = 'vc';
+  notationContainerDOMs[7].appendChild(lbl_vc);
+// MAKE ALL NOTATION SVGS /////////////////////////////////////////////////////////////
   var notationCont_boundingBox = notationContainers[0].getBoundingClientRect();
   var notationContW = notationCont_boundingBox.width;
   var notationContH = notationCont_boundingBox.height;
