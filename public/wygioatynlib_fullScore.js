@@ -15,7 +15,7 @@ var pieceClock = 0.0;
 var clockadj = 0.0;
 var leadTime = 13.0;
 var played = false;
-var startTime = 0;
+var startTime = 90;
 // var startTime = 205;
 // COLORS //////////////////////////////////////////////////////////////
 var clr_neonMagenta = new THREE.Color("rgb(255, 21, 160)");
